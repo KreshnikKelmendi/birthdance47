@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import image1 from "../assets/image (3).png";
-import image2 from "../assets/image2.png";
+import image1 from "../assets/poster1.png";
+import image2 from "../assets/poster2.png";
+import image3 from "../assets/poster3.png";
+import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 
 const data = [
   {
@@ -23,7 +25,7 @@ const data = [
   {
     title: "LAST DANCE WITH FAMILY",
     content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: image2,
+    image: image3,
     date: 'Sunday, March 03, 2024',
     day: '3rd Day',
   },
@@ -43,8 +45,8 @@ const GridItem = ({ item }) => {
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8, filter: 'blur(10px)' },
-    visible: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 0.5, ease: 'easeInOut' } },
+    hidden: { opacity: 0, scale: 0.8, filter: 'blur(20px)' },
+    visible: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 1, ease: 'easeInOut' } },
   };
 
   const transition = {
@@ -52,7 +54,7 @@ const GridItem = ({ item }) => {
     ease: "easeOut",
   };
 
-  // Close the modal when the "ESC" key is pressed
+  
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'Escape' && (showDetails || showImage)) {
@@ -68,27 +70,27 @@ const GridItem = ({ item }) => {
     };
   }, [showDetails, showImage]);
 
-  // Close details
+
   const handleSeeLess = () => {
     setShowDetails(false);
   };
 
-  // Open image
+
   const handleImageClick = () => {
     setShowImage(true);
   };
 
-  // Close image
+
   const handleCloseImage = () => {
     setShowImage(false);
   };
 
-  // Open details
+
   const handleSeeMore = () => {
     setShowDetails(true);
   };
 
-  // Close details in modal
+ 
   const handleCloseDetails = () => {
     setShowDetails(false);
   };
@@ -112,12 +114,12 @@ const GridItem = ({ item }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center"
+          className="fixed p-2 z-50 top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center"
           onClick={handleCloseImage}
         >
           <motion.div
             className="max-w-screen-md max-h-screen-md w-full h-full"
-            onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking on the image
+            onClick={(e) => e.stopPropagation()}
           >
             <motion.img
               src={item.image}
@@ -144,15 +146,15 @@ const GridItem = ({ item }) => {
         variants={textVariants}
         transition={transition}
       >
-        <p className="text-sm text-blue-900 mb-2">{item.date}</p>
-        <p className='test-base font-bold uppercase text-[#6d5027]'>
+        <p className="text-sm text-[#FF5454] mb-2">{item.date}</p>
+        <p className='test-base font-bold uppercase text-white'>
           <span>
             {item.title}
           </span>
         </p>
-        <p className="text-sm text-blue-900 mb-4">{item.day}</p>
+        <p className="text-sm text-[#FF5454] mb-4">{item.day}</p>
         {showDetails ? (
-          <motion.p className="text-sm text-justify tracking-tighter text-gray-800" variants={textVariants} transition={transition}>
+          <motion.p className="text-sm text-justify tracking-tighter text-white" variants={textVariants} transition={transition}>
             {item.content}
           </motion.p>
         ) : null}
@@ -160,14 +162,14 @@ const GridItem = ({ item }) => {
       {showDetails ? (
         <button
           onClick={handleSeeLess}
-          className="mt-2 text-sm text-[#6d5027] border-b rounded-sm border-[#6d5027] hover:scale-110 font-semibold focus:outline-none"
+          className="mt-2 text-sm text-white border-b rounded-sm border-[#6d5027] hover:scale-110 font-semibold focus:outline-none"
         >
           See Less
         </button>
       ) : (
         <button
           onClick={handleSeeMore}
-          className="mt-2 text-sm text-[#6d5027] border-b rounded-sm border-[#6d5027] hover:scale-110 font-semibold focus:outline-none"
+          className="mt-2 text-sm text-white border-b rounded-sm border-white hover:scale-110 font-semibold focus:outline-none"
         >
           See More
         </button>
@@ -178,9 +180,12 @@ const GridItem = ({ item }) => {
 
 const Banner = () => {
   return (
-    <div className='font-custom bg-[#b8a575] relative py-5 lg:py-10 px-10'>
+    <>
+  
+    <div className='font-custom bg-secret relative py-5 lg:py-10 px-10'>
+    {/* <Navbar /> */}
       <div className="text-center mb-8">
-        <p className="text-sm w-60 font-bold mx-auto text-[#6d5027]">SECRET<span className='text-lg'>47</span> BIRTHDANCE, PRISTINA MARCH 01, 02, 03</p>
+        <p className="text-sm w-60 font-bold mx-auto text-white">SECRET47 BIRTHDANCE, PRISTINA MARCH 01, 02, 03</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 justify-center">
@@ -188,21 +193,10 @@ const Banner = () => {
           <GridItem key={index} item={item} />
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="fixed bottom-1 right-0 mr-[3.5px] flex flex-col items-end space-y-5"
-      >
-        <a href='https://www.instagram.com/secret47file/' target='_blank' rel='noreferrer'>
-          <FaInstagramSquare size={30} color="#6d5027" />
-        </a>
-        <a href='https://www.facebook.com/gentianr' target='_blank' rel='noreferrer'>
-          <FaFacebookSquare size={30} color="#6d5027" />
-        </a>
-      </motion.div>
+<Footer />
+    
     </div>
+    </>
   );
 };
 

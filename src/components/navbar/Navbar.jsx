@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import logo from "../assets/IMG_2824.png";
+import logo from "../assets/Secret47 - Logo.png";
 
 const Navbar = () => {
   const containerVariants = {
@@ -23,7 +23,7 @@ const Navbar = () => {
       variants={containerVariants}
     >
       <motion.div 
-        className="flex items-center justify-center bg-[#b8a575] border-b border-b-[#6d5027] border-opacity-15 py-4 px-5 z-50 relative"
+        className="flex items-center justify-center border-opacity-15 py-4 px-5 z-50 relative"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

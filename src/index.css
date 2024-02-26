@@ -7,3 +7,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.bg-secret{
+  background-image: url(./components/assets/background\ 3.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
