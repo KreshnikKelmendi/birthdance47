@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import image1 from "../assets/image (3).png";
@@ -102,10 +102,14 @@ const Banner = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="fixed bottom-1 right-0 m-1 flex flex-col items-end space-y-5"
+        className="fixed bottom-1 right-0 mr-[3.5px] flex flex-col items-end space-y-5"
       >
-        <FaInstagram size={30} color="#6d5027" />
-        <FaFacebook size={30} color="#6d5027" />
+        <a href='https://www.instagram.com/secret47file/' target='_blank' rel='noreferrer'>
+            <FaInstagramSquare size={30} color="#6d5027" />
+        </a>
+        <a href='https://www.facebook.com/gentianr' target='_blank' rel='noreferrer'>
+            <FaFacebookSquare size={30} color="#6d5027" />
+        </a>
       </motion.div>
     </div>
   );
