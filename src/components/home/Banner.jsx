@@ -33,7 +33,7 @@ const GridItem = ({ item }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [showImage, setShowImage] = useState(false);
   const [ref, inView] = useInView({
-    threshold: 0.9,
+    
     rootMargin: '-100px 0px',
   });
 
