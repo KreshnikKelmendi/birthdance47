@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import image1 from "../assets/updatePoster1.png";
-import video1 from "../assets/video2-poster.mp4";
+import video1 from "../assets/video2.mp4";
 import image3 from "../assets/posterUpdate3.png";
 import Footer from '../footer/Footer';
 import InstagramIcon from "../assets/instagram-icon.png"; // Import the Instagram icon

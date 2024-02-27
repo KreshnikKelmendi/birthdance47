@@ -2,7 +2,6 @@ import React from 'react';
 
 const Download = () => {
 
-
   return (
     <div>
       <p className='text-base font-custom font-bold mx-auto text-white mt-5'>
