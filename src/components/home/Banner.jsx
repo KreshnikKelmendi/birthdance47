@@ -148,7 +148,7 @@ const GridItem = ({ item }) => {
       >
         <p className={`text-sm mb-2`} style={{ color: item.textColor }}>{item.date}</p>
         <p className='test-base font-bold uppercase text-white'>
-          <span>
+          <span style={{ color: item.textColor }}>
             {item.title}
           </span>
         </p>
@@ -164,14 +164,14 @@ const GridItem = ({ item }) => {
           onClick={handleSeeLess}
           className="mt-2 text-sm text-white border-b rounded-sm border-[#6d5027] hover:scale-110 font-semibold focus:outline-none"
         >
-          See Less
+          Hide Details
         </button>
       ) : (
         <button
           onClick={handleSeeMore}
-          className="mt-2 text-sm text-white border-b rounded-sm border-white hover:scale-110 font-semibold focus:outline-none"
+          className="mt-2 text-sm text-white border-b rounded-sm border-white hover:scale-110 font-semibold focus:outline-none" style={{ borderColor: item.textColor }}
         >
-          See More
+          See Details
         </button>
       )}
     </div>
@@ -182,7 +182,7 @@ const Banner = () => {
   return (
     <div className='font-custom bg-secret relative py-5 lg:py-10 px-10'>
       <div className="text-center mb-8">
-        <p className="text-sm w-60 font-bold mx-auto text-white">SECRET47 BIRTHDANCE 2024 <br /> PRISTINA MARCH 01, 02, 03</p>
+        <p className="text-base w-60 font-bold mx-auto text-white">SECRET47 BIRTHDANCE 2024 <br /> PRISTINA MARCH 01, 02, 03</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 justify-center">
