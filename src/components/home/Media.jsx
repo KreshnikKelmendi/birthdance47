@@ -9,10 +9,13 @@ const Media = ({ image, mediaType, onClick }) => {
 
   useEffect(() => {
     const video = document.querySelector("video");
-    
+
     // Play the video when the component mounts
     video.play();
-    
+
+    // Mute the video by default if not interacted
+    video.muted = !userInteracted;
+
     const handleInteraction = () => {
       if (!userInteracted) {
         setUserInteracted(true);
@@ -47,7 +50,7 @@ const Media = ({ image, mediaType, onClick }) => {
         <div className="relative">
           <video
             className="w-full h-full object-cover"
-            muted={!isMuted}
+            muted={isMuted}
             playsInline
             loop
           >
