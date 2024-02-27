@@ -169,10 +169,7 @@ const data = [
       name:'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
     }],
     
-artists: [{
-  
-    }
-    ],
+
     // time:[{
     //   name:'23:00h'
     // }],
@@ -324,7 +321,7 @@ const GridItem = ({ item }) => {
   return (
     <div className='col-span-1'>
       <div className="relative overflow-hidden rounded-lg justify-center items-center" ref={ref}>
-        <Media image={item.image} mediaType={item.mediaType} /> 
+        <Media image={item.image} mediaType={item.mediaType} onClick={handleImageClick} /> 
       </div>
       {showImage && (
         <motion.div
@@ -460,15 +457,20 @@ const GridItem = ({ item }) => {
 
             <div className='mt-4'>
             <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Music:</p>
-            {item.artists.map((artist, index) => (
-              <div key={index} className="flex items-center mb-[10px]">
-                <a href={artist.instagram} target='_blank' rel='noreferrer' className=''>
-                  <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                </a>
-                <p className="text-sm text-white ml-2">{artist.name}</p>
+            {item.artists && (
+                <>
+                  {item.artists.map((artists, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={artists.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {artists.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
               </div>
-            ))}
-            </div>
 
 
             {/* Producers section */}
