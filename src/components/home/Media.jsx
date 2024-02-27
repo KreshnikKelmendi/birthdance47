@@ -20,7 +20,7 @@ const Media = ({ image, mediaType }) => {
         <img src={image} alt="Event Poster" className="w-full h-full object-cover" />
       ) : (
         <div className="relative">
-          <video className="w-full h-full object-cover" autoPlay muted={isMuted} playsInline loop>
+          <video className="w-full h-full object-cover" autoPlay muted={!isMuted} playsInline loop>
             <source src={image} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
