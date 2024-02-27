@@ -14,3 +14,18 @@
   background-position: cover;
   background-size: cover;
 }
+
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the logo element */
+.logo {
+  animation: rotateAnimation infinite linear;
+}

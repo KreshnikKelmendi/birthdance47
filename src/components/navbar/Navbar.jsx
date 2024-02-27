@@ -1,5 +1,3 @@
-// Navbar.js
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import logo from "../assets/Secret47 - Logo.png";
@@ -24,23 +22,16 @@ const Navbar = () => {
     >
       <motion.div 
         className="flex items-center justify-center border-opacity-15 py-4 px-5 z-50 relative"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
       >
         <div className="font-bold text-2xl cursor-pointer flex items-center font-custom text-gray-800">
-          <span className="text-3xl text-indigo-600 pt-2">
-            <motion.img 
-              className="w-[127px] h-[64px] object-contain"
+            <img 
+              className="w-[127px] h-[64px] object-contain logo"
               src={logo} 
               alt="" 
-              initial={{ opacity: 0, rotate: -180 }}
-              animate={{ opacity: 1, rotate: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              variants={logoVariants}
-              whileHover={{ rotate: 360, transition: { duration: 1 }, loop: Infinity }}
+              style={{
+                animation: 'rotateAnimation 17s infinite linear', // Adjust duration and other properties as needed
+              }}
             />
-          </span>
         </div>
       </motion.div>
     </motion.div>

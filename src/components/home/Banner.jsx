@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import image1 from "../assets/poster1.png";
 import image2 from "../assets/poster2.png";
 import image3 from "../assets/poster3.png";
 import Footer from '../footer/Footer';
-import Navbar from '../navbar/Navbar';
 
 const data = [
   {
@@ -14,6 +13,7 @@ const data = [
     image: image1,
     date: 'Friday, March 01, 2024',
     day: '1st Day',
+    textColor: '#FF5454'
   },
   {
     title: "Concert Title 2",
@@ -21,6 +21,7 @@ const data = [
     image: image2,
     date: 'Saturday, March 02, 2024',
     day: '2nd Day',
+    textColor: "#06D04F"
   },
   {
     title: "LAST DANCE WITH FAMILY",
@@ -28,6 +29,7 @@ const data = [
     image: image3,
     date: 'Sunday, March 03, 2024',
     day: '3rd Day',
+    textColor: '#7C6DE7'
   },
 ];
 
@@ -35,7 +37,6 @@ const GridItem = ({ item }) => {
   const [showDetails, setShowDetails] = useState(false);
   const [showImage, setShowImage] = useState(false);
   const [ref, inView] = useInView({
-    
     rootMargin: '-100px 0px',
   });
 
@@ -54,7 +55,6 @@ const GridItem = ({ item }) => {
     ease: "easeOut",
   };
 
-  
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'Escape' && (showDetails || showImage)) {
@@ -90,7 +90,7 @@ const GridItem = ({ item }) => {
     setShowDetails(true);
   };
 
- 
+
   const handleCloseDetails = () => {
     setShowDetails(false);
   };
@@ -140,19 +140,19 @@ const GridItem = ({ item }) => {
         </motion.div>
       )}
       <motion.div
-        className={`mt-4 ${item.bgColor} mx-auto`}
+        className={`mt-4 mx-auto`}
         initial='hidden'
         animate={inView ? 'visible' : 'hidden'}
         variants={textVariants}
         transition={transition}
       >
-        <p className="text-sm text-[#FF5454] mb-2">{item.date}</p>
+        <p className={`text-sm mb-2`} style={{ color: item.textColor }}>{item.date}</p>
         <p className='test-base font-bold uppercase text-white'>
           <span>
             {item.title}
           </span>
         </p>
-        <p className="text-sm text-[#FF5454] mb-4">{item.day}</p>
+        <p className={`text-sm mb-4`} style={{ color: item.textColor }}>{item.day}</p>
         {showDetails ? (
           <motion.p className="text-sm text-justify tracking-tighter text-white" variants={textVariants} transition={transition}>
             {item.content}
@@ -180,12 +180,9 @@ const GridItem = ({ item }) => {
 
 const Banner = () => {
   return (
-    <>
-  
     <div className='font-custom bg-secret relative py-5 lg:py-10 px-10'>
-    {/* <Navbar /> */}
       <div className="text-center mb-8">
-        <p className="text-sm w-60 font-bold mx-auto text-white">SECRET47 BIRTHDANCE, PRISTINA MARCH 01, 02, 03</p>
+        <p className="text-sm w-60 font-bold mx-auto text-white">SECRET47 BIRTHDANCE 2024 <br /> PRISTINA MARCH 01, 02, 03</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 justify-center">
@@ -193,10 +190,8 @@ const Banner = () => {
           <GridItem key={index} item={item} />
         ))}
       </div>
-<Footer />
-    
+      <Footer />
     </div>
-    </>
   );
 };
 
