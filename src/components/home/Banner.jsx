@@ -11,15 +11,24 @@ import Media from './Media';
 
 const data = [
   {
-    title: "B2B BirthDance with SalihS at NOYA",
+    title: "BirthDance B2B SecretSS",
+    subtitle: "at NOYA / Very Limited Capacity. Please reserve +38346772777",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectou adis aaspic acit item dolor sit amet consectour, lorem ipsum dolor sit amet consectour and amet consectour.",
     image: image1,
     mediaType:'image',
     date: '01.03.2024 Friday',
-    day: 'Very Limited Capacity, please reserve your place on this phone number +38346772777',
     textColor: '#FF5454',
+    location:[{
+      name:'Noya at 20:00h', instagram:'https://www.instagram.com/noyaprishtina/'
+    }],
+    firstSponsor:[{
+      name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    }],
+    arian:[{
+      name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    }],
     art:[{
-      name:'Arian Ahmeti', instagram: 'https://www.instagram.com/arianahmetiart/'
+      name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
     sound:[{
       name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
@@ -39,11 +48,14 @@ const data = [
     ballons:[{
       name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
+    specialLove:[{
+      name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
+    }],
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
     secondLove:[{
-      name:'MY Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+      name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
@@ -59,21 +71,42 @@ const data = [
     }],
     artists: [
       { name: 'LAILA (Geneva)', instagram: 'https://www.instagram.com/lailammusic/' },
-      { name: 'VOCADO(Swiss)', instagram: 'https://www.instagram.com/vildyvocado/' },
+      { name: 'VOCADO (Swiss)', instagram: 'https://www.instagram.com/vildyvocado/' },
       { name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/' },
+      { name: 'R3BR (LONDON)', instagram: 'https://www.instagram.com/r.3.b.r/' },
       { name: 'NOKI & SECRET47 (Brothers)', instagram: 'https://www.instagram.com/secret47file/' },
+
     ],
+    // time:[{
+    //   name:'20:00h'
+    // }]
   },
   {
-    title: "MAIN EVENT at ZONE CLUB",
+    title: "BirthDance B2B SecretSS",
+    subtitle:"MAIN EVENT at ZONE CLUB",
     content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     image: video1,
     mediaType:'video',
     date: '02.03.2024 Saturday',
     day: 'ALL NIGHT LONG - 10H B2B with THE BEST EVER!',
     textColor: "#06D04F",
+    location:[{
+      name:'ZONE CLUB at 23:00h', instagram:'https://www.instagram.com/zoneclub/'
+    }],
+    firstSponsor:[{
+      name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    }],
+    secondSponsor:[{
+      name:'JagermeisterKosovo', instagram:'https://www.instagram.com/jagermeisterko/'
+    }],
+    arian:[{
+      name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    }],
     art:[{
-      name:'Arian Ahmeti', instagram: 'https://www.instagram.com/arianahmetiart/'
+      name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
+    }],
+    visuals:[{
+      name:'MNSC Visuals', instagram: 'https://www.instagram.com/mnsc.visuals/'
     }],
     sound:[{
       name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
@@ -95,9 +128,6 @@ const data = [
     }],
     sound:[{
       name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
-    }],
-    visuals:[{
-      name:'MNSC Visuals', instagram: 'https://www.instagram.com/mnsc.visuals/'
     }],
     makeUp:[{
       name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
@@ -117,11 +147,14 @@ const data = [
     coffee:[{
       name:'Bagolina Eatery', instagram: 'https://www.instagram.com/bagolinaeatery/'
     }],
+    specialLove:[{
+      name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
+    }],
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
     secondLove:[{
-      name:'MY Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+      name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
@@ -136,22 +169,34 @@ const data = [
       name:'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
     }],
     
-    artists: [
-      
-      
+artists: [{
+  
+    }
     ],
-    
+    // time:[{
+    //   name:'23:00h'
+    // }],
   },
   {
-    title: "LAST DANCE WITH FAMILY",
+    title: "BirthDance B2B SecretSS",
+    subtitle:'EDHE the LAST DANCE WITH FAMILY',
     content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: image3,
     mediaType:'image',
     date: '02.03.2024 Sunday',
     day: 'HEALTHY FOOD, ART, YOGA...',
     textColor: '#7C6DE7',
+    location:[{
+      name:'EDHE', instagram:'https://www.instagram.com/edheeeee/'
+    }],
+    firstSponsor:[{
+      name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    }],
+    arian:[{
+      name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    }],
     art:[{
-      name:'Arian Ahmeti', instagram: 'https://www.instagram.com/arianahmetiart/'
+      name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
     sound:[{
       name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
@@ -174,11 +219,14 @@ const data = [
     sound:[{
       name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
+    specialLove:[{
+      name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
+    }],
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
     secondLove:[{
-      name:'MY Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+      name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
@@ -192,11 +240,27 @@ const data = [
     sixthLove:[{
       name:'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
     }],
-    artists: [
-     
-      // Add more artists if needed
+   artists: [{
+      name: 'R3BR (London)', instagram: 'https://www.instagram.com/r.3.b.r/'
+    },{
+      name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/'
+    },{
+      name: 'RAYO (Montenegro)', instagram: 'https://www.instagram.com/rayo_positive_crew/'
+    },{
+      name: 'TOMI GJ (Tirana)', instagram: 'https://www.instagram.com/tomi.gjikuria/'
+    },{
+      name: 'SECRET47 & NOKI (Brothers)', instagram: 'https://www.instagram.com/secret47file/'
+    }
     ],
-    
+    time:[{
+      name:'13:00h with Kids'
+    }],
+    secondTime:[{
+      name:'16:00h Adults Only', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
+    }],
+    thirdTime:[{
+      name:'14:00h Yoga by Urban Yoga'
+    }]
   },
 ];
 
@@ -305,10 +369,97 @@ const GridItem = ({ item }) => {
           <span style={{ color: item.textColor }}>
             {item.title}
           </span>
+          <p style={{ color: item.textColor }}>{item.subtitle}</p>
         </p>
         <p className={`text-sm mb-4`} style={{ color: item.textColor }}>{item.day}</p>
         {showDetails ? (
           <>
+
+<div className="mt-4">
+<p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Made possible by:</p>
+
+              {item.secondSponsor && (
+                <>
+                  {item.secondSponsor.map((secondSponsor, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={secondSponsor.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {secondSponsor.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+            <div className="">
+              {item.firstSponsor && (
+                <>
+                  {item.firstSponsor.map((firstSponsor, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={firstSponsor.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {firstSponsor.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+            
+            
+<div className="mt-4">
+            <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Location & Schedule</p>
+            {item.location && (
+                <>
+                  {item.location.map((location, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={location.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {location.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+              </div>
+
+              {item.time && (
+                <>
+                  {item.time.map((time, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={time.instagram} target='_blank' rel='noreferrer' className=''>
+                        {/* <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" /> */}
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {time.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+          
+           
+  
+            <div className="">
+              {item.secondTime && (
+                <>
+                  {item.secondTime.map((secondTime, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={secondTime.instagram} target='_blank' rel='noreferrer' className=''>
+                        {/* <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" /> */}
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {secondTime.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className='mt-4'>
+            <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Music:</p>
             {item.artists.map((artist, index) => (
               <div key={index} className="flex items-center mb-[10px]">
                 <a href={artist.instagram} target='_blank' rel='noreferrer' className=''>
@@ -317,9 +468,29 @@ const GridItem = ({ item }) => {
                 <p className="text-sm text-white ml-2">{artist.name}</p>
               </div>
             ))}
+            </div>
+
+
             {/* Producers section */}
+            
             <div className="mt-4">
-              <p className="text-sm text-white mb-2">Produced by:</p>
+            <div className="">
+            <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Produced by:</p>
+
+          {item.thirdTime && (
+            <>
+              {item.thirdTime.map((thirdTime, index) => (
+                <div key={index} className="flex items-center">
+                  <a href={thirdTime.instagram} target='_blank' rel='noreferrer' className=''>
+                    <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                  </a>
+                  <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {thirdTime.name}</p>
+
+                </div>
+              ))}
+            </>
+          )}
+        </div>
               {item.art && (
                 <>
                   {item.art.map((art, index) => (
@@ -327,7 +498,42 @@ const GridItem = ({ item }) => {
                       <a href={art.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Piece of Art</span> {art.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Powered by:</span> {art.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+            
+            
+
+            <div className="">
+              
+              {item.arian && (
+                <>
+                  {item.arian.map((arian, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={arian.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Master piece by: </span>{arian.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.visuals && (
+                <>
+                  {item.visuals.map((visuals, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={visuals.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Visuals:</span> {visuals.name}</p>
 
                     </div>
                   ))}
@@ -437,21 +643,6 @@ const GridItem = ({ item }) => {
                 </>
               )}
             </div>
-            <div className="">
-              {item.visuals && (
-                <>
-                  {item.visuals.map((visuals, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={visuals.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Visuals:</span> {visuals.name}</p>
-
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
 
             <div className="">
               {item.acrobatics && (
@@ -469,9 +660,23 @@ const GridItem = ({ item }) => {
               )}
             </div>
 
-
             <div className="mt-4">
-              <p className="text-sm text-white mb-2">MAXIMUM LOVE POSSIBLE:</p>
+              <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Maximum LOVE Possible:</p>
+            {item.specialLove && (
+                <>
+                  {item.specialLove.map((specialLove, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={specialLove.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Birthdance B2B </span>{specialLove.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+              </div>
+            
               {item.firstLove && (
                 <>
                   {item.firstLove.map((firstLove, index) => (
@@ -485,8 +690,10 @@ const GridItem = ({ item }) => {
                   ))}
                 </>
               )}
-            </div>
-
+          
+          
+             
+            
             <div className="">
               {item.secondLove && (
                 <>

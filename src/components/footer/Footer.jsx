@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Footer = () => {
   return (
+    <>
     <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
@@ -16,7 +17,14 @@ const Footer = () => {
     <a href='https://www.facebook.com/gentianr' target='_blank' rel='noreferrer' className='hover:scale-125'>
       <FaFacebookSquare size={30} color="#fff" />
     </a>
+
   </motion.div>
+
+  <div className='text-white text-center mt-4'>
+     <p>Track: Secret47 & Jay Fase ft. Ardit Gjebrea - EJA</p>
+     <a className='text-yellow-500 text-sm hover:text-red-500' href='https://www.instagram.com/sol.selectas?igsh=MW1maXM4MWZva2R2ZA%3D%3D' target='_blank' rel='noreferrer'>Released Soon on Sol Selectas</a>
+  </div>
+  </>
   )
 }
 
