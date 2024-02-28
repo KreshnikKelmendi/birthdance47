@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 
-const LazyMedia = React.lazy(() => import('../assets/video2-posterCompress.mp4')); // Adjust the import path
+const LazyMedia = React.lazy(() => import('../assets/finalVideo2.mp4')); // Adjust the import path
 
 const ParentComponent = () => {
   // Other logic...
