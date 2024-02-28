@@ -24,6 +24,9 @@ const data = [
     firstSponsor:[{
       name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
     }],
+    specialSponsor:[{
+      name:'Red Bull Kosova', instagram:'https://www.instagram.com/redbullkosova/'
+    }],
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
     }],
@@ -98,6 +101,9 @@ const data = [
     }],
     firstSponsor:[{
       name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    }],
+    specialSponsor:[{
+      name:'Red Bull Kosova', instagram:'https://www.instagram.com/redbullkosova/'
     }],
     secondSponsor:[{
       name:'JagermeisterKosovo', instagram:'https://www.instagram.com/jagermeisterko/'
@@ -196,6 +202,9 @@ const data = [
     }],
     firstSponsor:[{
       name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    }],
+    specialSponsor:[{
+      name:'Red Bull Kosova', instagram:'https://www.instagram.com/redbullkosova/'
     }],
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
@@ -410,6 +419,22 @@ const GridItem = ({ item }) => {
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
                       <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {firstSponsor.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.specialSponsor && (
+                <>
+                  {item.specialSponsor.map((specialSponsor, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={specialSponsor.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {specialSponsor.name}</p>
 
                     </div>
                   ))}
