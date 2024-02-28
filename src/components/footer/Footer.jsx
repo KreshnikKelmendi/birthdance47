@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Footer = () => {
   return (
     <>
-    <p className='text-center text-[#E1306C] text-change font-bold mt-5 lg:mt-4'>*Click on ALL Instagram ICONS for more*</p>
+    <p className='text-center text-[#E1306C] text-change font-bold text-[11px] lg:text-base mt-6 lg:mt-4'>*Click on ALL Instagram ICONS for more*</p>
     <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}

@@ -22,7 +22,7 @@ const data = [
       name:'Noya at 20:00h / Free event', instagram:'https://www.instagram.com/noyaprishtina/'
     }],
     firstSponsor:[{
-      name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+      name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
     }],
     specialSponsor:[{
       name:'Red Bull Kosova', instagram:'https://www.instagram.com/redbullkosova/'
@@ -100,7 +100,7 @@ const data = [
       name:'ZONE CLUB at 23:00h', instagram:'https://www.instagram.com/zoneclub/'
     }],
     firstSponsor:[{
-      name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+      name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
     }],
     specialSponsor:[{
       name:'Red Bull Kosova', instagram:'https://www.instagram.com/redbullkosova/'
@@ -201,7 +201,7 @@ const data = [
       name:'EDHE', instagram:'https://www.instagram.com/edheeeee/'
     }],
     firstSponsor:[{
-      name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+      name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
     }],
     specialSponsor:[{
       name:'Red Bull Kosova', instagram:'https://www.instagram.com/redbullkosova/'
