@@ -53,6 +53,7 @@ const Media = ({ image, mediaType, onClick }) => {
             muted={isMuted}
             playsInline
             loop
+            controls
           >
             <source src={image} type="video/mp4" />
             Your browser does not support the video tag.

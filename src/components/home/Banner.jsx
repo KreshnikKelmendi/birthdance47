@@ -354,7 +354,7 @@ const GridItem = ({ item }) => {
           onClick={handleCloseImage}
         >
           <motion.div
-            className="max-w-screen-md max-h-screen-md w-full h-full"
+            className="max-w-screen-md max-h-screen-md w-full h-full relative"
             onClick={(e) => e.stopPropagation()}
           >
             <motion.img
@@ -368,7 +368,7 @@ const GridItem = ({ item }) => {
             {/* Close button for image modal */}
             <button
               onClick={handleCloseImage}
-              className="absolute top-2 right-2 text-white text-sm bg-gray-800 px-2 py-1 rounded-full"
+              className="absolute top-52 right-2 text-red-600 bg-white text-xl  px-2 py-1 rounded-full"
             >
               X
             </button>
