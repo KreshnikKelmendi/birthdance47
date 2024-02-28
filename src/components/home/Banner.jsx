@@ -63,6 +63,9 @@ const data = [
     secondLove:[{
       name:'Moki Wear', instagram: 'https://www.instagram.com/moki.wear/'
     }],
+    mirosLove:[{
+      name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
+    }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
@@ -165,6 +168,9 @@ const data = [
     secondLove:[{
       name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
+    mirosLove:[{
+      name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
+    }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
@@ -238,6 +244,9 @@ const data = [
     }],
     secondLove:[{
       name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+    }],
+    mirosLove:[{
+      name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
     }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
@@ -835,6 +844,22 @@ const GridItem = ({ item }) => {
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
                       <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{secondLove.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.mirosLove && (
+                <>
+                  {item.mirosLove.map((mirosLove, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={mirosLove.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{mirosLove.name}</p>
 
                     </div>
                   ))}
