@@ -252,6 +252,8 @@ const data = [
       name:'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
     }],
    artists: [{
+      name: 'LAILA (Geneva)', instagram: 'https://www.instagram.com/lailammusic/',
+   },{
       name: 'R3BR (London)', instagram: 'https://www.instagram.com/r.3.b.r/'
     },{
       name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/'
