@@ -29,3 +29,27 @@
 .logo {
   animation: rotateAnimation infinite linear;
 }
+
+@keyframes colorChange {
+  0% { color: #E1306C; }
+  50% { color: #4285F4; }
+  100% { color: #34A853; }
+}
+
+.text-change {
+  animation: colorChange 3s infinite; /* Adjust the duration and other properties as needed */
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 1s infinite; /* Adjust the duration and other properties as needed */
+}
+

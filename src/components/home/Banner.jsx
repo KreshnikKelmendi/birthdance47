@@ -5,7 +5,7 @@ import image1 from "../assets/updatePoster1.png";
 import video1 from "../assets/video2-posterCompress.mp4";
 import image3 from "../assets/posterUpdate3.png";
 import Footer from '../footer/Footer';
-import InstagramIcon from "../assets/instagram-icon.png"; // Import the Instagram icon
+import InstagramIcon from "../assets/instagram-icon.png";
 import Download from './Download';
 import Media from './Media';
 
@@ -19,7 +19,7 @@ const data = [
     date: '01.03.2024 Friday',
     textColor: '#FF5454',
     location:[{
-      name:'Noya at 20:00h', instagram:'https://www.instagram.com/noyaprishtina/'
+      name:'Noya at 20:00h / Free event', instagram:'https://www.instagram.com/noyaprishtina/'
     }],
     firstSponsor:[{
       name:'Win Music Freedom', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
@@ -31,7 +31,7 @@ const data = [
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
     sound:[{
-      name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
+      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
     laser:[{
       name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
@@ -54,14 +54,17 @@ const data = [
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
+    diellza:[{
+      name:'Diellza Nushi', instagram: 'https://www.instagram.com/diellzanushi/'
+    }],
     secondLove:[{
-      name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+      name:'Moki Wear', instagram: 'https://www.instagram.com/moki.wear/'
     }],
     thirdLove:[{
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
     fourthLove:[{
-      name:'Donnie Brasco', instagram: 'https://www.instagram.com/donrozhaja/'
+      name:'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
     }],
     fifthLove:[{
       name:'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
@@ -88,7 +91,7 @@ const data = [
     image: video1,
     mediaType:'video',
     date: '02.03.2024 Saturday',
-    day: 'ALL NIGHT LONG - 10H B2B with THE BEST EVER!',
+    // day: 'ALL NIGHT LONG - 10H B2B with THE BEST EVER!',
     textColor: "#06D04F",
     location:[{
       name:'ZONE CLUB at 23:00h', instagram:'https://www.instagram.com/zoneclub/'
@@ -106,10 +109,13 @@ const data = [
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
     visuals:[{
-      name:'MNSC Visuals', instagram: 'https://www.instagram.com/mnsc.visuals/'
+      name:'MNSC', instagram: 'https://www.instagram.com/mnsc.visuals/'
     }],
     sound:[{
-      name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
+      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    }],
+    lights:[{
+      name:'Kujtim Arifi', instagram: 'https://www.instagram.com/kujtiimarifi/'
     }],
     laser:[{
       name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
@@ -127,7 +133,7 @@ const data = [
       name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
     sound:[{
-      name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
+      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
     makeUp:[{
       name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
@@ -142,7 +148,7 @@ const data = [
       name:'Matisse Patisserie', instagram: 'https://www.instagram.com/matisse.patisserie/'
     }],
     iceCream:[{
-      name:'MoritZeis Kosovo', instagram: 'https://www.instagram.com/moritzeiskosovo/'
+      name:'Moritz Eis Kosovo', instagram: 'https://www.instagram.com/moritzeiskosovo/'
     }],
     coffee:[{
       name:'Bagolina Eatery', instagram: 'https://www.instagram.com/bagolinaeatery/'
@@ -160,27 +166,29 @@ const data = [
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
     fourthLove:[{
-      name:'Donnie Brasco', instagram: 'https://www.instagram.com/donrozhaja/'
+      name:'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
     }],
     fifthLove:[{
       name:'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
     }],
     sixthLove:[{
-      name:'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
+      name:'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
     }],
     
-
+    artists: [{
+      name: 'ALL NIGHT LONG - 10H B2B with THE BEST EVER!'
+    }],
     // time:[{
     //   name:'23:00h'
     // }],
   },
   {
     title: "BirthDance B2B SecretSS",
-    subtitle:'EDHE the LAST DANCE WITH FAMILY',
+    subtitle:'EDHE the LAST DANCE with Family',
     content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: image3,
     mediaType:'image',
-    date: '02.03.2024 Sunday',
+    date: '03.03.2024 Sunday',
     day: 'HEALTHY FOOD, ART, YOGA...',
     textColor: '#7C6DE7',
     location:[{
@@ -196,7 +204,7 @@ const data = [
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
     sound:[{
-      name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
+      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
     laser:[{
       name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
@@ -214,7 +222,7 @@ const data = [
       name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
     sound:[{
-      name:'DUKA ALFA STUDIO', instagram: 'https://www.instagram.com/dukalfaudio/'
+      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
     specialLove:[{
       name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
@@ -229,13 +237,13 @@ const data = [
       name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
     fourthLove:[{
-      name:'Donnie Brasco', instagram: 'https://www.instagram.com/donrozhaja/'
+      name:'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
     }],
     fifthLove:[{
       name:'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
     }],
     sixthLove:[{
-      name:'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
+      name:'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
     }],
    artists: [{
       name: 'R3BR (London)', instagram: 'https://www.instagram.com/r.3.b.r/'
@@ -250,13 +258,17 @@ const data = [
     }
     ],
     time:[{
-      name:'13:00h with Kids'
+      name:'13:00h with Kids / Free event'
     }],
     secondTime:[{
-      name:'16:00h Adults Only', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
+      name:'16:00h Adults Only / Free event', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
     }],
     thirdTime:[{
-      name:'14:00h Yoga by Urban Yoga'
+      name:'14:00h Yoga by Urban Yoga', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
+    }],
+
+    freshJuice:[{
+      name: 'Crust N Crumb', instagram: 'https://www.instagram.com/crustncrumb.ks/'
     }]
   },
 ];
@@ -373,7 +385,7 @@ const GridItem = ({ item }) => {
           <>
 
 <div className="mt-4">
-<p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Made possible by:</p>
+<p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Made possible by:</p>
 
               {item.secondSponsor && (
                 <>
@@ -382,7 +394,7 @@ const GridItem = ({ item }) => {
                       <a href={secondSponsor.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {secondSponsor.name}</p>
+                      <p className="text-[10px] text-white ml-2"><span className='text-sm'>{secondSponsor.name}</span> (Follow for free WOW gifts)</p>
 
                     </div>
                   ))}
@@ -397,7 +409,7 @@ const GridItem = ({ item }) => {
                       <a href={firstSponsor.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {firstSponsor.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {firstSponsor.name}</p>
 
                     </div>
                   ))}
@@ -407,7 +419,7 @@ const GridItem = ({ item }) => {
             
             
 <div className="mt-4">
-            <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Location & Schedule</p>
+            <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Location & Time</p>
             {item.location && (
                 <>
                   {item.location.map((location, index) => (
@@ -415,7 +427,7 @@ const GridItem = ({ item }) => {
                       <a href={location.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {location.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {location.name}</p>
 
                     </div>
                   ))}
@@ -430,7 +442,7 @@ const GridItem = ({ item }) => {
                       <a href={time.instagram} target='_blank' rel='noreferrer' className=''>
                         {/* <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" /> */}
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {time.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {time.name}</p>
 
                     </div>
                   ))}
@@ -447,7 +459,7 @@ const GridItem = ({ item }) => {
                       <a href={secondTime.instagram} target='_blank' rel='noreferrer' className=''>
                         {/* <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" /> */}
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {secondTime.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {secondTime.name}</p>
 
                     </div>
                   ))}
@@ -456,7 +468,7 @@ const GridItem = ({ item }) => {
             </div>
 
             <div className='mt-4'>
-            <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Music:</p>
+            <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Music:</p>
             {item.artists && (
                 <>
                   {item.artists.map((artists, index) => (
@@ -464,7 +476,7 @@ const GridItem = ({ item }) => {
                       <a href={artists.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {artists.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {artists.name}</p>
 
                     </div>
                   ))}
@@ -477,7 +489,7 @@ const GridItem = ({ item }) => {
             
             <div className="mt-4">
             <div className="">
-            <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Produced by:</p>
+            <p className="text-sm text-white uppercase mb-2" style={{ color: item.textColor }}>Produced by:</p>
 
           {item.thirdTime && (
             <>
@@ -486,13 +498,29 @@ const GridItem = ({ item }) => {
                   <a href={thirdTime.instagram} target='_blank' rel='noreferrer' className=''>
                     <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                   </a>
-                  <p className="text-sm text-white ml-2"><span className='text-[8px]'></span> {thirdTime.name}</p>
+                  <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {thirdTime.name}</p>
 
                 </div>
               ))}
             </>
           )}
         </div>
+
+        <div className="">
+              {item.freshJuice && (
+                <>
+                  {item.freshJuice.map((freshJuice, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={freshJuice.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Fresh Ginger shots & juices + desserts by: </span> {freshJuice.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
               {item.art && (
                 <>
                   {item.art.map((art, index) => (
@@ -500,7 +528,7 @@ const GridItem = ({ item }) => {
                       <a href={art.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Powered by:</span> {art.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Powered by:</span> {art.name}</p>
 
                     </div>
                   ))}
@@ -519,7 +547,7 @@ const GridItem = ({ item }) => {
                       <a href={arian.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Master piece by: </span>{arian.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Cake piece by: </span>{arian.name}</p>
 
                     </div>
                   ))}
@@ -535,13 +563,77 @@ const GridItem = ({ item }) => {
                       <a href={visuals.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Visuals:</span> {visuals.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Visuals:</span> {visuals.name}</p>
 
                     </div>
                   ))}
                 </>
               )}
             </div>
+
+            <div className="">
+              {item.acrobatics && (
+                <>
+                  {item.acrobatics.map((acrobatics, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={acrobatics.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Artobatics by:</span> {acrobatics.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.iceCream && (
+                <>
+                  {item.iceCream.map((iceCream, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={iceCream.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Free ICE CREAM at 7am by:</span> {iceCream.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+            <div className="">
+              {item.coffee && (
+                <>
+                  {item.coffee.map((coffee, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={coffee.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Coffee at 8am:</span> {coffee.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.cake && (
+                <>
+                  {item.cake.map((cake, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={cake.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>FOREVER BirthDance Cake by:</span> {cake.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
 
             {/* sound  */}
             <div className="">
@@ -552,7 +644,7 @@ const GridItem = ({ item }) => {
                       <a href={sound.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Sound & Light LOVE:</span> {sound.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>LOVE sound:</span> {sound.name}</p>
 
                     </div>
                   ))}
@@ -569,7 +661,23 @@ const GridItem = ({ item }) => {
                       <a href={laser.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Laser Art:</span> {laser.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Laser Art:</span> {laser.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.lights && (
+                <>
+                  {item.lights.map((lights, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={lights.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Lights by: </span>  {lights.name}</p>
 
                     </div>
                   ))}
@@ -586,7 +694,7 @@ const GridItem = ({ item }) => {
                       <a href={makeUp.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Make Up:</span> {makeUp.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Make Up:</span> {makeUp.name}</p>
 
                     </div>
                   ))}
@@ -603,7 +711,7 @@ const GridItem = ({ item }) => {
                       <a href={liveArt.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Live Art by:</span> {liveArt.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Live Art by:</span> {liveArt.name}</p>
 
                     </div>
                   ))}
@@ -620,7 +728,7 @@ const GridItem = ({ item }) => {
                       <a href={magicBY.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Magic by:</span> {magicBY.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Magic by:</span> {magicBY.name}</p>
 
                     </div>
                   ))}
@@ -638,7 +746,7 @@ const GridItem = ({ item }) => {
                       <a href={ballons.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Ballons:</span> {ballons.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Ballons:</span> {ballons.name}</p>
 
                     </div>
                   ))}
@@ -646,24 +754,9 @@ const GridItem = ({ item }) => {
               )}
             </div>
 
-            <div className="">
-              {item.acrobatics && (
-                <>
-                  {item.acrobatics.map((acrobatics, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={acrobatics.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Acrobatics by:</span> {acrobatics.name}</p>
-
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
 
             <div className="mt-4">
-              <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Maximum LOVE Possible:</p>
+              <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Max LOVE:</p>
             {item.specialLove && (
                 <>
                   {item.specialLove.map((specialLove, index) => (
@@ -671,7 +764,7 @@ const GridItem = ({ item }) => {
                       <a href={specialLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Birthdance B2B </span>{specialLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Birthdance B2B: </span>{specialLove.name}</p>
 
                     </div>
                   ))}
@@ -686,7 +779,21 @@ const GridItem = ({ item }) => {
                       <a href={firstLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>for just being Qukla WOW: </span>{firstLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>for just being Qukla WOW: </span>{firstLove.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+
+          {item.diellza && (
+                <>
+                  {item.diellza.map((diellza, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={diellza.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>The 1: </span>{diellza.name}</p>
 
                     </div>
                   ))}
@@ -704,7 +811,7 @@ const GridItem = ({ item }) => {
                       <a href={secondLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span>{secondLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{secondLove.name}</p>
 
                     </div>
                   ))}
@@ -720,7 +827,7 @@ const GridItem = ({ item }) => {
                       <a href={thirdLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span>{thirdLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{thirdLove.name}</p>
 
                     </div>
                   ))}
@@ -736,7 +843,7 @@ const GridItem = ({ item }) => {
                       <a href={fourthLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span>{fourthLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{fourthLove.name}</p>
 
                     </div>
                   ))}
@@ -752,7 +859,7 @@ const GridItem = ({ item }) => {
                       <a href={fifthLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span>{fifthLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{fifthLove.name}</p>
 
                     </div>
                   ))}
@@ -768,7 +875,7 @@ const GridItem = ({ item }) => {
                       <a href={sixthLove.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'></span>{sixthLove.name}</p>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{sixthLove.name}</p>
 
                     </div>
                   ))}
@@ -776,53 +883,7 @@ const GridItem = ({ item }) => {
               )}
             </div>
 
-            <div className="">
-              {item.cake && (
-                <>
-                  {item.cake.map((cake, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={cake.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>FOREVER BirthDance Cake by:</span> {cake.name}</p>
-
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
-
-            <div className="">
-              {item.iceCream && (
-                <>
-                  {item.iceCream.map((iceCream, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={iceCream.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Free Ice Cream at 7am by:</span> {iceCream.name}</p>
-
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
-
-            <div className="">
-              {item.coffee && (
-                <>
-                  {item.coffee.map((coffee, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={coffee.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[8px]'>Coffee at 8am:</span> {coffee.name}</p>
-
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
+            
             
              {/* <motion.p className="text-sm text-justify tracking-tighter text-white" variants={textVariants} transition={transition}>
               {item.content}
@@ -853,7 +914,7 @@ const Banner = () => {
   return (
     <div className='font-custom bg-secret relative py-5 lg:py-10 px-10'>
       <div className="text-center tracking-tighter lg:tracking-normal lg:text-center mb-8">
-        <p className="text-sm w-fit lg:w-[75%] font-bold mx-auto text-white">BirthDance is one of the most iconic nights/weekends in this part of the world, where we present the most amazing artists & with guests that fly from all over the world just to be part of the dancefloor.</p>
+        <p className="text-sm w-fit lg:w-[75%] font-bold mx-auto text-white">BirthDance is one of the most iconic nights/weekends in this part of the world, where we present the most amazing artists & with guests that fly from all over the world to be part of the dancefloors.</p>
           <Download />
       </div>
 
