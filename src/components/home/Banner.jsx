@@ -24,6 +24,9 @@ const data = [
     firstSponsor:[{
       name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
     }],
+    specialSponsor:[{
+      name:'Red Bull Kosova' , instagram: 'https://www.instagram.com/redbullkosova/'
+    }],
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
     }],
@@ -196,6 +199,9 @@ const data = [
     }],
     firstSponsor:[{
       name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    }],
+    specialSponsor:[{
+      name:'Red Bull Kosova' , instagram: 'https://www.instagram.com/redbullkosova/'
     }],
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
@@ -383,8 +389,7 @@ const GridItem = ({ item }) => {
         <p className={`text-sm mb-4`} style={{ color: item.textColor }}>{item.day}</p>
         {showDetails ? (
           <>
-
-<div className="mt-4">
+<div className="mt-5">
 <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Made possible by:</p>
 
               {item.secondSponsor && (
@@ -410,6 +415,22 @@ const GridItem = ({ item }) => {
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
                       <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {firstSponsor.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.specialSponsor && (
+                <>
+                  {item.specialSponsor.map((specialSponsor, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={specialSponsor.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {specialSponsor.name}</p>
 
                     </div>
                   ))}
@@ -756,7 +777,7 @@ const GridItem = ({ item }) => {
 
 
             <div className="mt-4">
-              <p className="text-sm text-white mb-2" style={{ color: item.textColor }}>Max LOVE:</p>
+              <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Max LOVE:</p>
             {item.specialLove && (
                 <>
                   {item.specialLove.map((specialLove, index) => (
