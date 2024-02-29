@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import image1 from "../assets/updatePoster1.png";
+import image1 from "../assets/firstPoster.png";
 import video1 from "../assets/finalVideo2.mp4";
 import image3 from "../assets/posterUpdate3.png";
 import Footer from '../footer/Footer';
@@ -29,6 +29,9 @@ const data = [
     }],
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    }],
+    drone:[{
+      name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
     }],
     art:[{
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
@@ -63,6 +66,9 @@ const data = [
     secondLove:[{
       name:'Moki Wear', instagram: 'https://www.instagram.com/moki.wear/'
     }],
+    tendaLove:[{
+      name:'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
+    }],
     mirosLove:[{
       name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
     }],
@@ -80,11 +86,10 @@ const data = [
     }],
     artists: [
       { name: 'LAILA (Geneva)', instagram: 'https://www.instagram.com/lailammusic/' },
-      { name: 'VOCADO (Swiss)', instagram: 'https://www.instagram.com/vildyvocado/' },
-      { name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/' },
       { name: 'R3BR (LONDON)', instagram: 'https://www.instagram.com/r.3.b.r/' },
-      { name: 'NOKI & SECRET47 (Brothers)', instagram: 'https://www.instagram.com/secret47file/' },
-
+      { name: 'VOCADO (Swiss)', instagram: 'https://www.instagram.com/vildyvocado/' },
+      { name: 'TOMI GJ (Tirana)', instagram: 'https://www.instagram.com/tomi.gjikuria/' },  
+      { name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/' },  
     ],
     // time:[{
     //   name:'20:00h'
@@ -110,6 +115,9 @@ const data = [
     }],
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    }],
+    drone:[{
+      name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
     }],
     art:[{
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
@@ -168,6 +176,9 @@ const data = [
     secondLove:[{
       name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
+    tendaLove:[{
+      name:'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
+    }],
     mirosLove:[{
       name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
     }],
@@ -212,6 +223,9 @@ const data = [
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
     }],
+    drone:[{
+      name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
+    }],
     art:[{
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
@@ -244,6 +258,9 @@ const data = [
     }],
     secondLove:[{
       name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+    }],
+    tendaLove:[{
+      name:'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
     }],
     mirosLove:[{
       name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
@@ -588,6 +605,23 @@ const GridItem = ({ item }) => {
             </div>
 
             <div className="">
+              
+              {item.drone && (
+                <>
+                  {item.drone.map((drone, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={drone.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Drone Master: </span>{drone.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
               {item.visuals && (
                 <>
                   {item.visuals.map((visuals, index) => (
@@ -818,7 +852,24 @@ const GridItem = ({ item }) => {
                 </>
               )}
 
-          {item.diellza && (
+          
+          <div className="">
+              {item.tendaLove && (
+                <>
+                  {item.tendaLove.map((tendaLove, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={tendaLove.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span>{tendaLove.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            {item.diellza && (
                 <>
                   {item.diellza.map((diellza, index) => (
                     <div key={index} className="flex items-center">
@@ -826,13 +877,10 @@ const GridItem = ({ item }) => {
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
                       <p className="text-sm text-white ml-2"><span className='text-[10px]'>The 1: </span>{diellza.name}</p>
-
                     </div>
                   ))}
                 </>
               )}
-          
-          
              
             
             <div className="">
