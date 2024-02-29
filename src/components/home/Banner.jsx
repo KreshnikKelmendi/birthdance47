@@ -11,7 +11,7 @@ import Media from './Media';
 
 const data = [
   {
-    title: "BirthDance B2B SecretSS",
+    title: "Birthdance47",
     subtitle: "at NOYA / Very Limited Capacity. Please reserve +38346772777",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectou adis aaspic acit item dolor sit amet consectour, lorem ipsum dolor sit amet consectour and amet consectour.",
     image: image1,
@@ -54,9 +54,9 @@ const data = [
     ballons:[{
       name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
-    specialLove:[{
-      name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
-    }],
+    // specialLove:[{
+    //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
+    // }],
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
@@ -96,7 +96,7 @@ const data = [
     // }]
   },
   {
-    title: "BirthDance B2B SecretSS",
+    title: "Birthdance47",
     subtitle:"MAIN EVENT at ZONE CLUB",
     content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     image: video1,
@@ -167,9 +167,9 @@ const data = [
     coffee:[{
       name:'Bagolina Eatery', instagram: 'https://www.instagram.com/bagolinaeatery/'
     }],
-    specialLove:[{
-      name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
-    }],
+    // specialLove:[{
+    //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
+    // }],
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
@@ -203,7 +203,7 @@ const data = [
     // }],
   },
   {
-    title: "BirthDance B2B SecretSS",
+    title: "Birthdance47",
     subtitle:'EDHE the LAST DANCE with Family',
     content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: image3,
@@ -250,9 +250,9 @@ const data = [
     sound:[{
       name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
-    specialLove:[{
-      name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
-    }],
+    // specialLove:[{
+    //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
+    // }],
     firstLove:[{
       name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
