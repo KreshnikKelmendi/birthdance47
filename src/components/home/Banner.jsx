@@ -88,7 +88,7 @@ const data = [
       { name: 'LAILA (Geneva)', instagram: 'https://www.instagram.com/lailammusic/' },
       { name: 'R3BR (LONDON)', instagram: 'https://www.instagram.com/r.3.b.r/' },
       { name: 'VOCADO (Swiss)', instagram: 'https://www.instagram.com/vildyvocado/' },
-      { name: 'TOMI GJ (Tirana)', instagram: 'https://www.instagram.com/tomi.gjikuria/' },  
+      // { name: 'TOMI GJ (Tirana)', instagram: 'https://www.instagram.com/tomi.gjikuria/' },  
       { name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/' },  
     ],
     // time:[{
