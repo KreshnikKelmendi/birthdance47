@@ -116,9 +116,9 @@ const data = [
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
     }],
-    drone:[{
-      name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
-    }],
+    // drone:[{
+    //   name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
+    // }],
     art:[{
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
@@ -133,6 +133,9 @@ const data = [
     }],
     laser:[{
       name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
+    }],
+    brothers:[{
+      name:'Martinez Brothers of Visual World', instagram: 'https://www.instagram.com/prettylightsz/'
     }],
     makeUp:[{
       name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
@@ -223,9 +226,9 @@ const data = [
     arian:[{
       name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
     }],
-    drone:[{
-      name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
-    }],
+    // drone:[{
+    //   name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
+    // }],
     art:[{
       name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
@@ -234,6 +237,9 @@ const data = [
     }],
     laser:[{
       name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
+    }],
+    brothers:[{
+      name:'Martinez Brothers of Visual World', instagram: 'https://www.instagram.com/prettylightsz/'
     }],
     makeUp:[{
       name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
@@ -249,6 +255,9 @@ const data = [
     }],
     sound:[{
       name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    }],
+    artBy:[{
+      name:'Made by Stern', instagram: 'https://www.instagram.com/madebystern/'
     }],
     // specialLove:[{
     //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
@@ -613,8 +622,7 @@ const GridItem = ({ item }) => {
                       <a href={drone.instagram} target='_blank' rel='noreferrer' className=''>
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Drone Master: </span>{drone.name}</p>
-
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Albanian Eagle & Master: </span>{drone.name}</p>
                     </div>
                   ))}
                 </>
@@ -728,6 +736,38 @@ const GridItem = ({ item }) => {
                         <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
                       </a>
                       <p className="text-sm text-white ml-2"><span className='text-[10px]'>Laser Art:</span> {laser.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.brothers && (
+                <>
+                  {item.brothers.map((brothers, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={brothers.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {brothers.name}</p>
+
+                    </div>
+                  ))}
+                </>
+              )}
+            </div>
+
+            <div className="">
+              {item.artBy && (
+                <>
+                  {item.artBy.map((artBy, index) => (
+                    <div key={index} className="flex items-center">
+                      <a href={artBy.instagram} target='_blank' rel='noreferrer' className=''>
+                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                      </a>
+                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Art by:</span> {artBy.name}</p>
 
                     </div>
                   ))}
