@@ -301,7 +301,7 @@ const data = [
     }
     ],
     time:[{
-      name:'13:00h with Kids / Free event'
+      name:'13:00h Brunch with Organic Food, Art, Yoga & more'
     }],
     secondTime:[{
       name:'16:00h Adults Only / Free event', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
