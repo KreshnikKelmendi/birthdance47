@@ -8,6 +8,7 @@ import Footer from '../footer/Footer';
 import InstagramIcon from "../assets/instagram-icon.png";
 import Download from './Download';
 import Media from './Media';
+import Navbar from '../navbar/Navbar';
 
 const data = [
   {
@@ -1048,13 +1049,14 @@ const GridItem = ({ item }) => {
 
 const Banner = () => {
   return (
-    <div className='font-custom bg-secret relative py-5 lg:py-10 px-10'>
+    <div className='font-custom bg-secret relative py-5 lg:py-10 '>
+      <Navbar />
       <div className="text-center tracking-tighter lg:tracking-normal lg:text-center mb-8">
         <p className="text-sm w-fit lg:w-[75%] font-bold mx-auto text-white">BirthDance is one of the most iconic nights/weekends in this part of the world, where we present the most amazing artists & with guests that fly from all over the world to be part of the dancefloors.</p>
           <Download />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 px-10 gap-14 justify-center">
         {data?.map((item, index) => (
           <GridItem key={index} item={item} />
         ))}

@@ -1,6 +1,16 @@
 
 @font-face {
-  font-family: Rubik;
+  font-family: Snarky;
+  src: url(../public/fonts/SNARKYPUPPY.ttf);
+}
+
+@font-face {
+  font-family: Asphaltic;
+  src: url(../public/fonts/font1/ASPHALTICSCRATCHROUNDEDPERSONALUSE.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
   src: url(../public/fonts/Poppins-Medium.ttf);
 }
 
@@ -9,7 +19,13 @@
 @import 'tailwindcss/utilities';
 
 .bg-secret{
-  background-image: url(./components/assets/background\ 3.png);
+  background-image: url(./components/assets/IMG_0142.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
+.bg-banner{
+  background-image: url(./components/assets/background.png);
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
@@ -50,6 +66,66 @@
 }
 
 .heartbeat {
-  animation: heartbeat 1s infinite; /* Adjust the duration and other properties as needed */
+  animation: heartbeat 1.5s infinite; /* Adjust the duration and other properties as needed */
 }
 
+
+.img {
+  flex: 1;
+  cursor: pointer;
+  transition: all .5s;
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid pink; */
+  position: relative;
+}
+.main_box:hover .img {
+  transform: skew(0);
+}
+
+.img:hover {
+  flex: 2;
+}
+
+body{
+  background-image: url(./components/assets/background1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.active{
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+.active::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background:#fff;
+  z-index: -1;
+}
+.active:hover::before{
+  animation: fill 0.5s forwards;
+}
+
+@keyframes fill{
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 100%;
+    height: 2px;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FF0903, #5c0200);
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+}
