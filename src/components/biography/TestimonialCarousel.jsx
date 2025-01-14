@@ -83,7 +83,7 @@ const TestimonialCarousel = () => {
 
                 <motion.div
                     ref={ref}
-                    className="grid mb-8 lg:mb-12 lg:grid-cols-3 gap-8"
+                    className="grid mb-8 lg:mb-12 lg:grid-cols-3 gap-8 "
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
                     variants={{
