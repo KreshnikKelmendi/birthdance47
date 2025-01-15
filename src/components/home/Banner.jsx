@@ -16,81 +16,81 @@ const data = [
     subtitle: "at NOYA / Very Limited Capacity. Please reserve +38346772777",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectou adis aaspic acit item dolor sit amet consectour, lorem ipsum dolor sit amet consectour and amet consectour.",
     image: image1,
-    mediaType:'image',
+    mediaType: 'image',
     date: '01.03.2024 Friday',
     textColor: '#FF5454',
-    location:[{
-      name:'Noya at 20:00h / Free event', instagram:'https://www.instagram.com/noyaprishtina/'
+    location: [{
+      name: 'Noya at 20:00h / Free event', instagram: 'https://www.instagram.com/noyaprishtina/'
     }],
-    firstSponsor:[{
-      name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    firstSponsor: [{
+      name: 'WinMusicFreedomKosova', instagram: 'https://www.instagram.com/winmusicfreedomkosova/'
     }],
-    specialSponsor:[{
-      name:'Red Bull Kosova' , instagram: 'https://www.instagram.com/redbullkosova/'
+    specialSponsor: [{
+      name: 'Red Bull Kosova', instagram: 'https://www.instagram.com/redbullkosova/'
     }],
-    arian:[{
-      name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    arian: [{
+      name: 'Arian Ahmeti', instagram: 'https://www.instagram.com/arianahmetiart/'
     }],
-    drone:[{
-      name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
+    drone: [{
+      name: 'Erald Halili', instagram: 'https://www.instagram.com/erald.halili/'
     }],
-    art:[{
-      name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
+    art: [{
+      name: 'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
-    sound:[{
-      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    sound: [{
+      name: 'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
-    laser:[{
-      name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
+    laser: [{
+      name: 'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
     }],
-    makeUp:[{
-      name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
+    makeUp: [{
+      name: 'Flloja', instagram: 'https://www.instagram.com/flloja/'
     }],
-    liveArt:[{
-      name:'Donat Krasniqi', instagram: 'https://www.instagram.com/donatkrasniqi_/'
+    liveArt: [{
+      name: 'Donat Krasniqi', instagram: 'https://www.instagram.com/donatkrasniqi_/'
     }],
-    magicBy:[{
-      name:'Adrianus', instagram: 'https://www.instagram.com/adriankqiku/'
+    magicBy: [{
+      name: 'Adrianus', instagram: 'https://www.instagram.com/adriankqiku/'
     }],
-    ballons:[{
-      name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
+    ballons: [{
+      name: 'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
     // specialLove:[{
     //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
     // }],
-    firstLove:[{
-      name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
+    firstLove: [{
+      name: 'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
-    diellza:[{
-      name:'Diellza Nushi', instagram: 'https://www.instagram.com/diellzanushi/'
+    diellza: [{
+      name: 'Diellza Nushi', instagram: 'https://www.instagram.com/diellzanushi/'
     }],
-    secondLove:[{
-      name:'Moki Wear', instagram: 'https://www.instagram.com/moki.wear/'
+    secondLove: [{
+      name: 'Moki Wear', instagram: 'https://www.instagram.com/moki.wear/'
     }],
-    tendaLove:[{
-      name:'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
+    tendaLove: [{
+      name: 'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
     }],
-    mirosLove:[{
-      name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
+    mirosLove: [{
+      name: 'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
     }],
-    thirdLove:[{
-      name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
+    thirdLove: [{
+      name: 'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
-    fourthLove:[{
-      name:'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
+    fourthLove: [{
+      name: 'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
     }],
-    fifthLove:[{
-      name:'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
+    fifthLove: [{
+      name: 'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
     }],
-    sixthLove:[{
-      name:'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
+    sixthLove: [{
+      name: 'Petrit Kllokoqi & NOYA Family', instagram: 'https://www.instagram.com/petritkllokoqi/'
     }],
     artists: [
       { name: 'LAILA (Geneva)', instagram: 'https://www.instagram.com/lailammusic/' },
       { name: 'R3BR (LONDON)', instagram: 'https://www.instagram.com/r.3.b.r/' },
       { name: 'VOCADO (Swiss)', instagram: 'https://www.instagram.com/vildyvocado/' },
       // { name: 'TOMI GJ (Tirana)', instagram: 'https://www.instagram.com/tomi.gjikuria/' },  
-      { name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/' },  
+      { name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/' },
     ],
     // time:[{
     //   name:'20:00h'
@@ -98,107 +98,107 @@ const data = [
   },
   {
     title: "Birthdance47",
-    subtitle:"MAIN EVENT at ZONE CLUB",
+    subtitle: "MAIN EVENT at ZONE CLUB",
     content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     image: video1,
-    mediaType:'video',
+    mediaType: 'video',
     date: '02.03.2024 Saturday',
     // day: 'ALL NIGHT LONG - 10H B2B with THE BEST EVER!',
     textColor: "#06D04F",
-    location:[{
-      name:'ZONE CLUB at 23:00h', instagram:'https://www.instagram.com/zoneclub/'
+    location: [{
+      name: 'ZONE CLUB at 23:00h', instagram: 'https://www.instagram.com/zoneclub/'
     }],
-    firstSponsor:[{
-      name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    firstSponsor: [{
+      name: 'WinMusicFreedomKosova', instagram: 'https://www.instagram.com/winmusicfreedomkosova/'
     }],
-    secondSponsor:[{
-      name:'JagermeisterKosovo', instagram:'https://www.instagram.com/jagermeisterko/'
+    secondSponsor: [{
+      name: 'JagermeisterKosovo', instagram: 'https://www.instagram.com/jagermeisterko/'
     }],
-    arian:[{
-      name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    arian: [{
+      name: 'Arian Ahmeti', instagram: 'https://www.instagram.com/arianahmetiart/'
     }],
     // drone:[{
     //   name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
     // }],
-    art:[{
-      name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
+    art: [{
+      name: 'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
-    visuals:[{
-      name:'MNSC', instagram: 'https://www.instagram.com/mnsc.visuals/'
+    visuals: [{
+      name: 'MNSC', instagram: 'https://www.instagram.com/mnsc.visuals/'
     }],
-    sound:[{
-      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    sound: [{
+      name: 'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
-    lights:[{
-      name:'Kujtim Arifi', instagram: 'https://www.instagram.com/kujtiimarifi/'
+    lights: [{
+      name: 'Kujtim Arifi', instagram: 'https://www.instagram.com/kujtiimarifi/'
     }],
-    laser:[{
-      name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
+    laser: [{
+      name: 'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
     }],
-    brothers:[{
-      name:'Martinez Brothers of Visual World', instagram: 'https://www.instagram.com/prettylightsz/'
+    brothers: [{
+      name: 'Martinez Brothers of Visual World', instagram: 'https://www.instagram.com/prettylightsz/'
     }],
-    makeUp:[{
-      name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
+    makeUp: [{
+      name: 'Flloja', instagram: 'https://www.instagram.com/flloja/'
     }],
-    liveArt:[{
-      name:'Donat Krasniqi', instagram: 'https://www.instagram.com/donatkrasniqi_/'
+    liveArt: [{
+      name: 'Donat Krasniqi', instagram: 'https://www.instagram.com/donatkrasniqi_/'
     }],
-    magicBy:[{
-      name:'Adrianus', instagram: 'https://www.instagram.com/adriankqiku/'
+    magicBy: [{
+      name: 'Adrianus', instagram: 'https://www.instagram.com/adriankqiku/'
     }],
-    ballons:[{
-      name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
+    ballons: [{
+      name: 'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
-    sound:[{
-      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    sound: [{
+      name: 'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
-    makeUp:[{
-      name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
+    makeUp: [{
+      name: 'Flloja', instagram: 'https://www.instagram.com/flloja/'
     }],
-    acrobatics:[{
-      name:'Nxtlvl Events Entertainment', instagram: 'https://www.instagram.com/nxtlvl_events_entertainment/'
+    acrobatics: [{
+      name: 'Nxtlvl Events Entertainment', instagram: 'https://www.instagram.com/nxtlvl_events_entertainment/'
     }],
-    ballons:[{
-      name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
+    ballons: [{
+      name: 'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
-    cake:[{
-      name:'Matisse Patisserie', instagram: 'https://www.instagram.com/matisse.patisserie/'
+    cake: [{
+      name: 'Matisse Patisserie', instagram: 'https://www.instagram.com/matisse.patisserie/'
     }],
-    iceCream:[{
-      name:'Moritz Eis Kosovo', instagram: 'https://www.instagram.com/moritzeiskosovo/'
+    iceCream: [{
+      name: 'Moritz Eis Kosovo', instagram: 'https://www.instagram.com/moritzeiskosovo/'
     }],
-    coffee:[{
-      name:'Bagolina Eatery', instagram: 'https://www.instagram.com/bagolinaeatery/'
+    coffee: [{
+      name: 'Bagolina Eatery', instagram: 'https://www.instagram.com/bagolinaeatery/'
     }],
     // specialLove:[{
     //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
     // }],
-    firstLove:[{
-      name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
+    firstLove: [{
+      name: 'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
-    secondLove:[{
-      name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+    secondLove: [{
+      name: 'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
-    tendaLove:[{
-      name:'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
+    tendaLove: [{
+      name: 'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
     }],
-    mirosLove:[{
-      name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
+    mirosLove: [{
+      name: 'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
     }],
-    thirdLove:[{
-      name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
+    thirdLove: [{
+      name: 'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
-    fourthLove:[{
-      name:'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
+    fourthLove: [{
+      name: 'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
     }],
-    fifthLove:[{
-      name:'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
+    fifthLove: [{
+      name: 'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
     }],
-    sixthLove:[{
-      name:'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
+    sixthLove: [{
+      name: 'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
     }],
-    
+
     artists: [{
       name: 'ALL NIGHT LONG - 10H B2B with THE BEST EVER!'
     }],
@@ -208,110 +208,110 @@ const data = [
   },
   {
     title: "Birthdance47",
-    subtitle:'EDHE the LAST DANCE with Family',
+    subtitle: 'EDHE the LAST DANCE with Family',
     content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: image3,
-    mediaType:'image',
+    mediaType: 'image',
     date: '03.03.2024 Sunday',
     day: 'HEALTHY FOOD, ART, YOGA...',
     textColor: '#7C6DE7',
-    location:[{
-      name:'EDHE', instagram:'https://www.instagram.com/edheeeee/'
+    location: [{
+      name: 'EDHE', instagram: 'https://www.instagram.com/edheeeee/'
     }],
-    firstSponsor:[{
-      name:'WinMusicFreedomKosova', instagram:'https://www.instagram.com/winmusicfreedomkosova/'
+    firstSponsor: [{
+      name: 'WinMusicFreedomKosova', instagram: 'https://www.instagram.com/winmusicfreedomkosova/'
     }],
-    specialSponsor:[{
-      name:'Red Bull Kosova' , instagram: 'https://www.instagram.com/redbullkosova/'
+    specialSponsor: [{
+      name: 'Red Bull Kosova', instagram: 'https://www.instagram.com/redbullkosova/'
     }],
-    arian:[{
-      name:'Arian Ahmeti', instagram:'https://www.instagram.com/arianahmetiart/'
+    arian: [{
+      name: 'Arian Ahmeti', instagram: 'https://www.instagram.com/arianahmetiart/'
     }],
     // drone:[{
     //   name:'Erald Halili', instagram:'https://www.instagram.com/erald.halili/'
     // }],
-    art:[{
-      name:'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
+    art: [{
+      name: 'Trekuartista', instagram: 'https://www.instagram.com/trekuartista/'
     }],
-    sound:[{
-      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    sound: [{
+      name: 'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
-    laser:[{
-      name:'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
+    laser: [{
+      name: 'ARTin', instagram: 'https://www.instagram.com/artinsahiiti/'
     }],
-    brothers:[{
-      name:'Martinez Brothers of Visual World', instagram: 'https://www.instagram.com/prettylightsz/'
+    brothers: [{
+      name: 'Martinez Brothers of Visual World', instagram: 'https://www.instagram.com/prettylightsz/'
     }],
-    makeUp:[{
-      name:'Flloja', instagram: 'https://www.instagram.com/flloja/'
+    makeUp: [{
+      name: 'Flloja', instagram: 'https://www.instagram.com/flloja/'
     }],
-    liveArt:[{
-      name:'Donat Krasniqi', instagram: 'https://www.instagram.com/donatkrasniqi_/'
+    liveArt: [{
+      name: 'Donat Krasniqi', instagram: 'https://www.instagram.com/donatkrasniqi_/'
     }],
-    magicBy:[{
-      name:'Adrianus', instagram: 'https://www.instagram.com/adriankqiku/'
+    magicBy: [{
+      name: 'Adrianus', instagram: 'https://www.instagram.com/adriankqiku/'
     }],
-    ballons:[{
-      name:'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
+    ballons: [{
+      name: 'Reks Ballon', instagram: ' https://www.instagram.com/reksballoon/'
     }],
-    sound:[{
-      name:'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
+    sound: [{
+      name: 'Duka alfa audio', instagram: 'https://www.instagram.com/dukalfaudio/'
     }],
-    artBy:[{
-      name:'Made by Stern', instagram: 'https://www.instagram.com/madebystern/'
+    artBy: [{
+      name: 'Made by Stern', instagram: 'https://www.instagram.com/madebystern/'
     }],
     // specialLove:[{
     //   name:'Salih Sinani', instagram:'https://www.instagram.com/saalihsinani/'
     // }],
-    firstLove:[{
-      name:'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
+    firstLove: [{
+      name: 'Kushtrim Sahiti', instagram: 'https://www.instagram.com/kushtrimsahiti/'
     }],
-    secondLove:[{
-      name:'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
+    secondLove: [{
+      name: 'My Yllka Brada', instagram: 'https://www.instagram.com/yllkabradaofficial/'
     }],
-    tendaLove:[{
-      name:'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
+    tendaLove: [{
+      name: 'Tenda Dielli', instagram: 'https://www.instagram.com/albania_shades/'
     }],
-    mirosLove:[{
-      name:'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
+    mirosLove: [{
+      name: 'Ujë Miros', instagram: 'https://www.instagram.com/ujemiros/'
     }],
-    thirdLove:[{
-      name:'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
+    thirdLove: [{
+      name: 'Secret3148', instagram: 'https://www.instagram.com/gencgenc3148/'
     }],
-    fourthLove:[{
-      name:'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
+    fourthLove: [{
+      name: 'Don Rozhaja', instagram: 'https://www.instagram.com/donrozhaja/'
     }],
-    fifthLove:[{
-      name:'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
+    fifthLove: [{
+      name: 'Lon Mehmeti', instagram: 'https://www.instagram.com/lonmehmeti/'
     }],
-    sixthLove:[{
-      name:'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
+    sixthLove: [{
+      name: 'Derand Hotel', instagram: 'https://www.instagram.com/derand_hotel/'
     }],
-   artists: [{
+    artists: [{
       name: 'LAILA (Geneva)', instagram: 'https://www.instagram.com/lailammusic/',
-   },{
+    }, {
       name: 'R3BR (London)', instagram: 'https://www.instagram.com/r.3.b.r/'
-    },{
+    }, {
       name: 'NADAL JR (Paris)', instagram: 'https://www.instagram.com/nadal_jr/'
-    },{
+    }, {
       name: 'RAYO (Montenegro)', instagram: 'https://www.instagram.com/rayo_positive_crew/'
-    },{
+    }, {
       name: 'TOMI GJ (Tirana)', instagram: 'https://www.instagram.com/tomi.gjikuria/'
-    },{
+    }, {
       name: 'SECRET47 & NOKI (Brothers)', instagram: 'https://www.instagram.com/secret47file/'
     }
     ],
-    time:[{
-      name:'13:00h Brunch with Organic Food, Art, Yoga & more'
+    time: [{
+      name: '13:00h Brunch with Organic Food, Art, Yoga & more'
     }],
-    secondTime:[{
-      name:'16:00h Adults Only / Free event', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
+    secondTime: [{
+      name: '16:00h Adults Only / Free event', instagram: 'https://www.instagram.com/urbanyoga_prishtine/'
     }],
-    thirdTime:[{
-      name:'14:00h Yoga by Urban Yoga', instagram:'https://www.instagram.com/urbanyoga_prishtine/'
+    thirdTime: [{
+      name: '14:00h Yoga by Urban Yoga', instagram: 'https://www.instagram.com/urbanyoga_prishtine/'
     }],
 
-    freshJuice:[{
+    freshJuice: [{
       name: 'Crust N Crumb', instagram: 'https://www.instagram.com/crustncrumb.ks/'
     }]
   },
@@ -377,7 +377,7 @@ const GridItem = ({ item }) => {
   return (
     <div className='col-span-1'>
       <div className="relative overflow-hidden rounded-lg justify-center items-center" ref={ref}>
-        <Media image={item.image} mediaType={item.mediaType} onClick={handleImageClick} /> 
+        <Media image={item.image} mediaType={item.mediaType} onClick={handleImageClick} />
       </div>
       {showImage && (
         <motion.div
@@ -427,8 +427,8 @@ const GridItem = ({ item }) => {
         <p className={`text-sm mb-4`} style={{ color: item.textColor }}>{item.day}</p>
         {showDetails ? (
           <>
-<div className="mt-5">
-<p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Made possible by:</p>
+            <div className="mt-5">
+              <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Made possible by:</p>
 
               {item.secondSponsor && (
                 <>
@@ -475,11 +475,11 @@ const GridItem = ({ item }) => {
                 </>
               )}
             </div>
-            
-            
-<div className="mt-4">
-            <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Location & Time</p>
-            {item.location && (
+
+
+            <div className="mt-4">
+              <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Location & Time</p>
+              {item.location && (
                 <>
                   {item.location.map((location, index) => (
                     <div key={index} className="flex items-center">
@@ -492,24 +492,24 @@ const GridItem = ({ item }) => {
                   ))}
                 </>
               )}
-              </div>
+            </div>
 
-              {item.time && (
-                <>
-                  {item.time.map((time, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={time.instagram} target='_blank' rel='noreferrer' className=''>
-                        {/* <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" /> */}
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {time.name}</p>
+            {item.time && (
+              <>
+                {item.time.map((time, index) => (
+                  <div key={index} className="flex items-center">
+                    <a href={time.instagram} target='_blank' rel='noreferrer' className=''>
+                      {/* <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" /> */}
+                    </a>
+                    <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {time.name}</p>
 
-                    </div>
-                  ))}
-                </>
-              )}
-          
-           
-  
+                  </div>
+                ))}
+              </>
+            )}
+
+
+
             <div className="">
               {item.secondTime && (
                 <>
@@ -527,8 +527,8 @@ const GridItem = ({ item }) => {
             </div>
 
             <div className='mt-4'>
-            <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Music:</p>
-            {item.artists && (
+              <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Music:</p>
+              {item.artists && (
                 <>
                   {item.artists.map((artists, index) => (
                     <div key={index} className="flex items-center">
@@ -541,45 +541,45 @@ const GridItem = ({ item }) => {
                   ))}
                 </>
               )}
-              </div>
+            </div>
 
 
             {/* Producers section */}
-            
+
             <div className="mt-4">
-            <div className="">
-            <p className="text-sm text-white uppercase mb-2" style={{ color: item.textColor }}>Produced by:</p>
+              <div className="">
+                <p className="text-sm text-white uppercase mb-2" style={{ color: item.textColor }}>Produced by:</p>
 
-          {item.thirdTime && (
-            <>
-              {item.thirdTime.map((thirdTime, index) => (
-                <div key={index} className="flex items-center">
-                  <a href={thirdTime.instagram} target='_blank' rel='noreferrer' className=''>
-                    <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                  </a>
-                  <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {thirdTime.name}</p>
+                {item.thirdTime && (
+                  <>
+                    {item.thirdTime.map((thirdTime, index) => (
+                      <div key={index} className="flex items-center">
+                        <a href={thirdTime.instagram} target='_blank' rel='noreferrer' className=''>
+                          <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                        </a>
+                        <p className="text-sm text-white ml-2"><span className='text-[10px]'></span> {thirdTime.name}</p>
 
-                </div>
-              ))}
-            </>
-          )}
-        </div>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </div>
 
-        <div className="">
-              {item.freshJuice && (
-                <>
-                  {item.freshJuice.map((freshJuice, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={freshJuice.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>Fresh Ginger shots & juices + desserts by: </span> {freshJuice.name}</p>
+              <div className="">
+                {item.freshJuice && (
+                  <>
+                    {item.freshJuice.map((freshJuice, index) => (
+                      <div key={index} className="flex items-center">
+                        <a href={freshJuice.instagram} target='_blank' rel='noreferrer' className=''>
+                          <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                        </a>
+                        <p className="text-sm text-white ml-2"><span className='text-[10px]'>Fresh Ginger shots & juices + desserts by: </span> {freshJuice.name}</p>
 
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </div>
               {item.art && (
                 <>
                   {item.art.map((art, index) => (
@@ -594,11 +594,11 @@ const GridItem = ({ item }) => {
                 </>
               )}
             </div>
-            
-            
+
+
 
             <div className="">
-              
+
               {item.arian && (
                 <>
                   {item.arian.map((arian, index) => (
@@ -615,7 +615,7 @@ const GridItem = ({ item }) => {
             </div>
 
             <div className="">
-              
+
               {item.drone && (
                 <>
                   {item.drone.map((drone, index) => (
@@ -809,8 +809,8 @@ const GridItem = ({ item }) => {
               )}
             </div>
 
-           {/* liveArt */}
-        <div className="">
+            {/* liveArt */}
+            <div className="">
               {item.liveArt && (
                 <>
                   {item.liveArt.map((liveArt, index) => (
@@ -825,9 +825,9 @@ const GridItem = ({ item }) => {
                 </>
               )}
             </div>
-{/* 
+            {/* 
             magicBY */}
-          <div className="">
+            <div className="">
               {item.liveArt && (
                 <>
                   {item.magicBy.map((magicBY, index) => (
@@ -864,7 +864,7 @@ const GridItem = ({ item }) => {
 
             <div className="mt-4">
               <p className="text-sm text-white mb-2 uppercase" style={{ color: item.textColor }}>Max LOVE:</p>
-            {item.specialLove && (
+              {item.specialLove && (
                 <>
                   {item.specialLove.map((specialLove, index) => (
                     <div key={index} className="flex items-center">
@@ -877,24 +877,24 @@ const GridItem = ({ item }) => {
                   ))}
                 </>
               )}
-              </div>
-            
-              {item.firstLove && (
-                <>
-                  {item.firstLove.map((firstLove, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={firstLove.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>for just being Qukla WOW: </span>{firstLove.name}</p>
+            </div>
 
-                    </div>
-                  ))}
-                </>
-              )}
+            {item.firstLove && (
+              <>
+                {item.firstLove.map((firstLove, index) => (
+                  <div key={index} className="flex items-center">
+                    <a href={firstLove.instagram} target='_blank' rel='noreferrer' className=''>
+                      <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                    </a>
+                    <p className="text-sm text-white ml-2"><span className='text-[10px]'>for just being Qukla WOW: </span>{firstLove.name}</p>
 
-          
-          <div className="">
+                  </div>
+                ))}
+              </>
+            )}
+
+
+            <div className="">
               {item.tendaLove && (
                 <>
                   {item.tendaLove.map((tendaLove, index) => (
@@ -911,19 +911,19 @@ const GridItem = ({ item }) => {
             </div>
 
             {item.diellza && (
-                <>
-                  {item.diellza.map((diellza, index) => (
-                    <div key={index} className="flex items-center">
-                      <a href={diellza.instagram} target='_blank' rel='noreferrer' className=''>
-                        <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
-                      </a>
-                      <p className="text-sm text-white ml-2"><span className='text-[10px]'>The 1: </span>{diellza.name}</p>
-                    </div>
-                  ))}
-                </>
-              )}
-             
-            
+              <>
+                {item.diellza.map((diellza, index) => (
+                  <div key={index} className="flex items-center">
+                    <a href={diellza.instagram} target='_blank' rel='noreferrer' className=''>
+                      <img src={InstagramIcon} alt="Instagram" className="w-4 h-4" />
+                    </a>
+                    <p className="text-sm text-white ml-2"><span className='text-[10px]'>The 1: </span>{diellza.name}</p>
+                  </div>
+                ))}
+              </>
+            )}
+
+
             <div className="">
               {item.secondLove && (
                 <>
@@ -1020,9 +1020,9 @@ const GridItem = ({ item }) => {
               )}
             </div>
 
-            
-            
-             {/* <motion.p className="text-sm text-justify tracking-tighter text-white" variants={textVariants} transition={transition}>
+
+
+            {/* <motion.p className="text-sm text-justify tracking-tighter text-white" variants={textVariants} transition={transition}>
               {item.content}
             </motion.p> */}
           </>
@@ -1053,7 +1053,7 @@ const Banner = () => {
       <Navbar />
       <div className="text-center tracking-tighter lg:tracking-normal lg:text-center mb-8">
         <p className="text-sm w-fit lg:w-[75%] font-bold mx-auto text-white">BirthDance is one of the most iconic nights/weekends in this part of the world, where we present the most amazing artists & with guests that fly from all over the world to be part of the dancefloors.</p>
-          <Download />
+        <Download />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 px-10 gap-14 justify-center">

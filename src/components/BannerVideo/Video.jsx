@@ -10,7 +10,7 @@ const Video = () => {
   const videoRef = useRef(null);
   const posterVideoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
-  const [isPosterMuted, setIsPosterMuted] = useState(true);
+  const [isPosterMuted, setIsPosterMuted] = useState(false); // Set to false for the sound to be on by default
   const [isPosterPlaying, setIsPosterPlaying] = useState(false);
   const [count, setCount] = useState(0);
 
@@ -167,7 +167,6 @@ const Video = () => {
               ></motion.span>
               <span className="relative z-10 text-3xl">Full info Soon</span>
             </motion.button>
-
           </div>
           <video
             ref={posterVideoRef}
@@ -176,7 +175,7 @@ const Video = () => {
             autoPlay
             playsInline
             loop
-            muted={isPosterMuted}
+            muted={isPosterMuted} // Ensure it's unmuted by default
           >
             <source src={videoPoster} type="video/mp4" />
             Your browser does not support the video tag.

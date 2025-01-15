@@ -6,6 +6,7 @@ import BiographyPage from './components/pages/BiographyPage';
 import Birthdance2024 from './components/pages/Birthdance2024';
 import Footer from './components/footer/Footer';
 import ScrollToTopButton from './components/home/ScrollToTopButton';
+import Birthdance2025 from './components/pages/Birthdance2025';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/my-biography" element={<BiographyPage />} />
           <Route path="/photos" element={<PhotoPage />} />
           <Route path="/birthdance/2024" element={<Birthdance2024 />} />
+          {/* <Route path="/birthdance/2025" element={<Birthdance2025 />} /> */}
         </Routes>
         <Footer />
         <ScrollToTopButton />
