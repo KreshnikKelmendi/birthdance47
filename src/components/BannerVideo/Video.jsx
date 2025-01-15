@@ -90,7 +90,7 @@ const Video = () => {
         </motion.button>
       </div>
 
-      {/* Poster Video */}
+      
       <PosterVideo />
 
       {/* Mute/Unmute Button */}
