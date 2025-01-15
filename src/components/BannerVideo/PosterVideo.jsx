@@ -57,12 +57,13 @@ const PosterVideo = () => {
                   </motion.span>
                 </motion.h1>
                 <motion.p
-                  className="text-sm md:text-lg lg:text-[18px] lg:max-w-lg font-custom2"
+                  className="text-base md:text-lg lg:text-[18px] lg:max-w-lg font-custom2 mt-6"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
                 >
-          
+                    Birthdance47 returns from <b>February 19-23, 2025,</b> for five days of electrifying music, dance, and unforgettable energy. 
+
                 </motion.p>
                 <motion.button
                   className="relative mt-6 font-custom1 uppercase px-4 md:px-6 w-full py-4 md:w-[220px] rounded-tl-[20px] rounded-br-[20px] md:py-3 bg-gradient-to-r from-[#FF0903] to-[#5c0200] text-white tracking-[1px] font-medium text-lg md:text-2xl shadow-lg overflow-hidden transition duration-300 group"

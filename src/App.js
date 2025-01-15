@@ -1,18 +1,16 @@
-// src/App.js
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import HomePage from './components/pages/HomePage';
 import PhotoPage from './components/pages/PhotoPage';
 import BiographyPage from './components/pages/BiographyPage';
 import Birthdance2024 from './components/pages/Birthdance2024';
 import Footer from './components/footer/Footer';
 import ScrollToTopButton from './components/home/ScrollToTopButton';
-import Birthdance2025 from './components/pages/Birthdance2025';
 
 function App() {
   const [showWebsite, setShowWebsite] = useState(false);
+  const [hideTexts, setHideTexts] = useState(false);
   const texts = [
     { title: "BIRTHDANCE47", date: "" },
     { title: "FIVE NIGHTS", date: "FEBRUARY 19TH TO 23RD, 2025" },
@@ -20,70 +18,92 @@ function App() {
     { title: "BRUNCH CLOSING", date: "FEBRUARY 23RD" },
     { title: "Be professional, get organized...", date: "" }
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % texts.length);
-    }, 2000); // Speed up the animation (2 seconds)
+    const timer = setTimeout(() => {
+      setHideTexts(true); 
+      setTimeout(() => {
+        setShowWebsite(true); 
+      }, 1500); 
+    }, 5000); 
 
-    setTimeout(() => {
-      setShowWebsite(true); // Show website after animation
-    }, 7000); // Duration to show the animation before transitioning to the website
-
-    return () => clearInterval(interval);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <BrowserRouter>
-      {!showWebsite ? (
-        <div className="flex justify-center items-center h-screen bg-black text-white font-custom2">
+      <AnimatePresence>
+        {!showWebsite ? (
           <motion.div
-            key={texts[currentIndex].title}
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-center"
+            key="loading-screen"
+            className="relative flex justify-center items-center h-screen bg-black text-white font-custom2 overflow-hidden"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
           >
-            {/* Title */}
+            {/* Background gradient covering the screen */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-black to-black"></div>
+
+            {/* Text animation */}
             <motion.div
-              className="text-5xl font-bold mb-2"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="text-center relative"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.4, 
+                  },
+                },
+              }}
             >
-              {texts[currentIndex].title}
+              {texts.map((text, index) => (
+                <motion.div
+                  key={index}
+                  className="mb-6"
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  <div className="text-4xl font-bold">{text.title}</div>
+                  {text.date && <div className="text-lg mt-2">{text.date}</div>}
+                </motion.div>
+              ))}
             </motion.div>
 
-            {/* Date */}
-            {texts[currentIndex].date && (
-              <motion.div
-                className="text-xl mt-2"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -50 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-              >
-                {texts[currentIndex].date}
-              </motion.div>
-            )}
+            {/* Text exit animation */}
+            <motion.div
+              className="absolute inset-0 bg-black"
+              initial={{ y: "100%" }}
+              animate={hideTexts ? { y: "0%" } : {}}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+            />
           </motion.div>
-        </div>
-      ) : (
-        <>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/my-biography" element={<BiographyPage />} />
-            <Route path="/photos" element={<PhotoPage />} />
-            <Route path="/birthdance/2024" element={<Birthdance2024 />} />
-            {/* <Route path="/birthdance/2025" element={<Birthdance2025 />} /> */}
-          </Routes>
-          <Footer />
-          <ScrollToTopButton />
-        </>
-      )}
+        ) : (
+          <motion.div
+            key="main-website"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{
+              x: "100%", 
+              transition: { duration: 1, ease: "easeInOut" }
+            }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/my-biography" element={<BiographyPage />} />
+              <Route path="/photos" element={<PhotoPage />} />
+              <Route path="/birthdance/2024" element={<Birthdance2024 />} />
+            </Routes>
+            <Footer />
+            <ScrollToTopButton />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </BrowserRouter>
   );
 }
