@@ -15,10 +15,10 @@ const Footer = () => {
   const socialLinks = [
     { name: 'Instagram', icon: FaInstagram, url: 'https://www.instagram.com/secret47file/' },
     { name: 'Facebook', icon: FaFacebookF, url: 'https://www.facebook.com/gentianr' },
-    { name: 'Spotify', icon: FaSpotify, url: 'https://open.spotify.com/' },
-    { name: 'Music', icon: FaMusic, url: 'https://twitter.com/' },
-    { name: 'Snapchat', icon: FaSnapchatGhost, url: 'https://www.snapchat.com/' },
-    { name: 'Tiktok', icon: FaTiktok, url: 'https://www.snapchat.com/' },
+    // { name: 'Spotify', icon: FaSpotify, url: 'https://open.spotify.com/' },
+    // { name: 'Music', icon: FaMusic, url: 'https://twitter.com/' },
+    // { name: 'Snapchat', icon: FaSnapchatGhost, url: 'https://www.snapchat.com/' },
+    // { name: 'Tiktok', icon: FaTiktok, url: 'https://www.snapchat.com/' },
   ];
 
   const footerMenu = [
@@ -45,7 +45,7 @@ const Footer = () => {
   return (
     <div className="py-12 lg:py-32 px-5 lg:px-0 text-center text-white bg-[#00000071]">
       {/* Social Links Section */}
-      <p className="text-white font-bold text-3xl lg:tracking-[1px] font-custom1">Follow me</p>
+      <p className="text-white font-bold text-3xl lg:tracking-[1px] font-custom1">That SECRET!</p>
       <div
         ref={ref}
         className="flex justify-center items-center mt-6"
