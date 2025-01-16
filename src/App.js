@@ -73,7 +73,7 @@ function App() {
                   <div className="text-2xl lg:text-4xl font-bold">{text.title}</div>
                   {text.date && (
                     <div
-                      className={`mt-2 text-gray-500 ${
+                      className={`mt-2 text-gray-400 ${
                         index === texts.length - 1
                           ? "text-2xl lg:text-4xl text-white"
                           : "text-lg"
