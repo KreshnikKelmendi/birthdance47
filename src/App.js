@@ -61,7 +61,7 @@ function App() {
               {texts.map((text, index) => (
                 <motion.div
                   key={index}
-                  className={`mb-4 ${index === 0 ? "py-16 lg:py-12" : ""} ${
+                  className={`mb-4 ${index === 0 ? "py-16 lg:py-12 font-extrabold" : ""} ${
                     index === texts.length - 1 ? "py-16 lg:py-12" : ""
                   }`}
                   variants={{
@@ -70,13 +70,19 @@ function App() {
                   }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                  <div className="text-2xl lg:text-4xl font-bold">{text.title}</div>
+                  <div
+                    className={`${
+                      index === texts.length - 1 ? "text-base lg:text-base" : "text-2xl lg:text-4xl"
+                    } font-bold`}
+                  >
+                    {text.title}
+                  </div>
                   {text.date && (
                     <div
                       className={`mt-2 text-gray-400 ${
                         index === texts.length - 1
-                          ? "text-2xl lg:text-4xl text-white"
-                          : "text-lg"
+                          ? "text-base lg:text-base text-white"
+                          : "text-base"
                       }`}
                     >
                       {text.date}
