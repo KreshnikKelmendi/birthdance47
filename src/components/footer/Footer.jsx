@@ -1,20 +1,13 @@
 import React from 'react';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaMusic,
-  FaSnapchatGhost,
-  FaSpotify,
-  FaTiktok,
-} from 'react-icons/fa';
+import { FaFacebookSquare,FaInstagram, FaInstagramSquare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'Instagram', icon: FaInstagram, url: 'https://www.instagram.com/secret47file/' },
-    { name: 'Facebook', icon: FaFacebookF, url: 'https://www.facebook.com/gentianr' },
+    { name: 'Instagram', icon: FaInstagramSquare, url: 'https://www.instagram.com/secret47file/' },
+    { name: 'Facebook', icon: FaFacebookSquare, url: 'https://www.facebook.com/gentianr' },
     // { name: 'Spotify', icon: FaSpotify, url: 'https://open.spotify.com/' },
     // { name: 'Music', icon: FaMusic, url: 'https://twitter.com/' },
     // { name: 'Snapchat', icon: FaSnapchatGhost, url: 'https://www.snapchat.com/' },
@@ -43,9 +36,9 @@ const Footer = () => {
   };
 
   return (
-    <div className="py-12 lg:py-32 px-5 lg:px-0 text-center text-white bg-[#00000071]">
+    <div className="py-16 lg:py-32 px-5 lg:px-0 text-center text-black bg-[#F4ECE9]">
       {/* Social Links Section */}
-      <p className="text-white font-bold text-3xl lg:tracking-[1px] font-custom1">That SECRET!</p>
+      <p className="text-black text-2xl lg:tracking-[1px] font-custom3">That SECRET!</p>
       <div
         ref={ref}
         className="flex justify-center items-center mt-6"
@@ -56,19 +49,19 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
             key={name}
-            className="group relative overflow-hidden shadow-2xl shadow-red-900 flex flex-col items-center justify-center w-20 h-16 lg:h-20 border border-slate-500 hover:border-white transition duration-300"
+            className="group relative overflow-hidden flex flex-col items-center justify-center w-20 h-16 lg:h-20 border border-slate-500 hover:border-white transition duration-300"
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
             custom={index}
             variants={socialVariants}
           >
             {/* Hover Background */}
-            <div className="absolute inset-0 bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <div className="absolute inset-0 bg-black transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
 
             {/* Icon */}
             <Icon
               size={30}
-              className="relative z-10 text-white group-hover:text-black transition duration-300"
+              className="relative z-10 text-black group-hover:text-white transition duration-300"
             />
 
             {/* Name (visible only on hover) */}
@@ -84,7 +77,7 @@ const Footer = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-20 px-5 lg:px-0 text-lg lg:text-2xl font-custom2 font-medium italic text-gray-300"
+        className="mt-16 x-5 lg:px-0 text-xl lg:text-2xl font-custom3 italic text-gray-800"
       >
         <p>
           "The best way to predict the future is to create it."
@@ -92,8 +85,8 @@ const Footer = () => {
       </motion.div>
 
       {/* Footer Menu and Copyright Section */}
-      <div className="mt-20">
-        <ul className="flex flex-wrap justify-center space-x-7 lg:space-x-12 mb-6 text-xl lg:text-3xl lg:tracking-[1px] font-medium font-custom1">
+      {/* <div className="mt-20">
+        <ul className="flex flex-wrap justify-center space-x-7 lg:space-x-12 mb-6 text-xl lg:text-xl font-custom3">
           {footerMenu.map(({ name, url }) => (
             <li key={name}>
               <Link
@@ -105,10 +98,10 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <p className="text-xs lg:text-sm font-custom2 text-gray-500">
+        <p className="text-xs lg:text-sm font-custom3 text-gray-500">
           © {new Date().getFullYear()} Birthdance47 {">"} Secret47. All rights reserved.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import logo from "../assets/Secret47---Logo.png";
+import logo from "../assets/47---BLACK.png";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -47,13 +47,13 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`w-full sticky top-0 z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-[#0000009d]" : "bg-transparent"
+      className={`w-full relative top-0 z-50 transition-colors duration-300 ${
+        isScrolled ? "bg-transparent" : "bg-transparent"
       } lg:px-6`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <div className="flex items-center justify-between lg:justify-start py-4">
+      <div className="flex items-center justify-center lg:justify-center pt-6">
         {/* Logo */}
         <motion.div
           className="flex items-center"
@@ -63,15 +63,16 @@ const Navbar = () => {
         >
           <Link to="/">
             <img
-              className="px-4 lg:px-0 lg:w-[127px] h-[64px] object-contain"
+              className="px-4 lg:mx-1 lg:w-[130px] w-24 h-auto object-contain z-50"
               src={logo}
               alt="Logo"
             />
           </Link>
+          
         </motion.div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-12 items-center lg:pl-2">
+        {/* <div className="hidden md:flex space-x-12 items-center lg:pl-2">
           {links.map((link, index) => (
             <Link
               key={index}
@@ -89,7 +90,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Birthdance Dropdown */}
+      
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={toggleDropdown}
@@ -144,17 +145,17 @@ const Navbar = () => {
               </motion.div>
             )}
           </div>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button
+        <div className="hidden">
+          {/* <button
             className="text-white pr-5 focus:outline-none text-4xl"
             aria-label="Toggle Menu"
             onClick={toggleMenu}
           >
             {isOpen ? "x" : "☰"}
-          </button>
+          </button> */}
         </div>
       </div>
 

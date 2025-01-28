@@ -9,6 +9,7 @@ module.exports = {
         custom: ['Snarky', 'sans serif'],
         custom1: ['Asphaltic', 'sans serif'],
         custom2: ['Poppins', 'sans serif'],
+        custom3: ['n27', 'sans serif'],
       },
     },
   },

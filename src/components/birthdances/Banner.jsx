@@ -1049,7 +1049,7 @@ const GridItem = ({ item }) => {
 
 const Banner = () => {
   return (
-    <div className='relative bg-[#00000071]'>
+    <div className='relative bg-black'>
       <Navbar />
       <div className="text-center tracking-tighter lg:tracking-normal lg:text-center mb-8 lg:mb-12 lg:mt-16 mt-8">
         <p className="text-base w-fit lg:w-[75%] 2xl:w-1/2 font-bold mx-auto text-white font-custom2 px-5"><b>BirthDance</b> is one of the most iconic nights/weekends in this part of the world, where we present the most amazing artists & with guests that fly from all over the world to be part of the dancefloors.</p>
