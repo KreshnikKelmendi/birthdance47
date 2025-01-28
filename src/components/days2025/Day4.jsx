@@ -6,7 +6,7 @@ import { FaCalendarCheck, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from "../assets/47---WHITE.png"
 
-import poster4 from "../assets/birthdance2025/ArAund.mp4"
+import poster4 from "../assets/birthdance2025/ArAund (1).mp4"
 
 const Day4 = () => {
     const users = [
@@ -310,7 +310,15 @@ const Day4 = () => {
                     </div>
                 </div>
                 <div className='hidden lg:w-1/2 sticky top-0 h-fit lg:flex justify-center items-center '>
-                    <video loop muted playsInline autoPlay src={poster4} alt='w-full h-full' />
+                <video
+                    className="w-full h-full"
+                    autoPlay
+                    playsInline
+                    loop
+                    muted
+                    >
+                    <source src={poster4} type="video/mp4" />
+                    </video>
                 </div>
                 </div>
             </div>
