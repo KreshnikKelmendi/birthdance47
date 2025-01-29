@@ -50,30 +50,29 @@ const Day4 = () => {
     
 
     const users = [
-        { name:'Jagermeister', made: "Kosovo", instagram:'https://www.instagram.com/jagermeisterko/'},
-        { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
+        { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
+        { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
         { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
 
     ];
 
     const location = [
-        { name: 'ZONE', made: "CLUB", link: 'https://www.instagram.com/zoneclub/' },
+        { name: 'Zone', made: "Club", link: 'https://www.instagram.com/zoneclub/' },
        
     ];
 
     const music = [
-        { name: `Unknown Secret's`, made: "", link: '' },
-
+        { name: `Secret LineUP`, made: "", link: '' },
     ];
 
     const produced = [
         { name: 'Kuju', made: "Visuals",link: 'https://www.instagram.com/kujulightfestival/' },
-        { name: 'FOTO GAGI', made: "47 Gifts",link: 'https://www.instagram.com/gagi_giftshop/' },
+        { name: 'Foto Gagi', made: "47 Gifts",link: 'https://www.instagram.com/gagi_giftshop/' },
         { name: 'PM Creative Studio', made: "47",link: 'https://www.instagram.com/pellumbmetastudio/' },
         { name: 'Dekor Tropikal', made: "Decor",link: 'https://www.instagram.com/dekortropikal/' },
-
         { name: 'Trekuartista', made: "Powered",link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
+        { name: 'Yllka Brada', made: "Clothes", link: 'https://www.instagram.com/yllkabradaofficial/' },
         { name: 'Elios Dhora', made: "Photographer", instagram: 'https://www.instagram.com/prettylightsz/'},
         { name: 'Erald Halili', made: "Visual Storyteller", instagram: 'https://www.instagram.com/erald.halili/'},
         { name: 'Next Level', made: "Artobatics", instagram: 'https://www.instagram.com/nxtlvl_events_entertainment/' },
@@ -91,7 +90,9 @@ const Day4 = () => {
 
     const love = [
         { name: 'Kushtrim Sahiti', made: "Lumturia jonë", link: 'https://www.instagram.com/kushtrimsahiti/' },
-        { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
+        { name: 'Salih Sinani', made: "Birthday", link: 'https://www.instagram.com/saalihsinani/' },
+        { name: 'Gera Tagani', made: "Birthday30", link: 'https://www.instagram.com/dr_geratagani/' },
+        { name: 'Secret3148', made: "Love", link: 'https://www.instagram.com/gencgenc3148/' },
     ];
 
     return (
@@ -120,7 +121,7 @@ const Day4 = () => {
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
                 <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center relative'>
-                    <video loop playsInline autoPlay src={poster4} muted={isMuted} className='w-full h-full'>
+                    <video loop playsInline autoPlay muted={isMuted} className='w-full h-full'>
                     <source src={poster4} type="video/mp4" />
                     </video>
                     <button
@@ -179,7 +180,7 @@ const Day4 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                       <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                       <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:shadow-md hover:shadow-gray-600 hover:border-none hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -224,7 +225,7 @@ const Day4 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:shadow-md hover:shadow-gray-600 hover:border-none hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -269,7 +270,7 @@ const Day4 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:shadow-md hover:shadow-gray-600 hover:border-none hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -293,7 +294,7 @@ const Day4 = () => {
                             className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                          
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
                                 Produced
                             </p>
                         
@@ -313,7 +314,7 @@ const Day4 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:shadow-md hover:shadow-gray-600 hover:border-none hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -357,7 +358,7 @@ const Day4 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:shadow-md hover:shadow-gray-600 hover:border-none hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -379,7 +380,7 @@ const Day4 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='hidden lg:w-1/2 sticky top-0 h-fit lg:flex justify-center items-center '>
+                <div className='hidden lg:w-1/2 sticky top-0 h-fit lg:flex justify-center items-center border-[3px] border-[#FF4B2B]'>
                 <video
                     className="w-full h-full"
                     autoPlay

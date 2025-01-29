@@ -45,9 +45,9 @@ const Footer = () => {
       quote: '“Every dance tells a story!”',
     },
     '/birthdance/day-6': {
-      bgColor: '#FFD200',
-      textColor: '#000000',
-      quote: '“Every dance tells a story!”',
+      bgColor: '#000000',
+      textColor: '#FFD200',
+      quote: '“Some dance to remember! Some dance to forget.”',
     },
   };
 

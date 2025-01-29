@@ -1,66 +1,83 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import { FaCalendarCheck, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import muteIcon from '../assets/off.png';
+import unmuteIcon from '../assets/on.png';
 
-import poster6 from "../assets/birthdance2025/day-6.png"
+import poster6 from "../assets/birthdance2025/Tunnel (1) (1).mp4"
 
 const Day6 = () => {
+    const [isMuted, setIsMuted] = useState(false); // Sound enabled by default
+        const [userInteracted, setUserInteracted] = useState(false);
+    
+         useEffect(() => {
+            const video = document.querySelector("video");
+        
+            // Play the video when the component mounts
+            video.play();
+        
+            // Mute the video by default if not interacted
+            video.muted = !userInteracted;
+        
+            const handleInteraction = () => {
+              if (!userInteracted) {
+                setUserInteracted(true);
+              }
+            };
+        
+            // Add event listeners for user interaction
+            document.addEventListener("click", handleInteraction);
+            document.addEventListener("keydown", handleInteraction);
+        
+            return () => {
+              // Remove event listeners when component is unmounted
+              document.removeEventListener("click", handleInteraction);
+              document.removeEventListener("keydown", handleInteraction);
+            };
+          }, [userInteracted]);
+        
+          useEffect(() => {
+            const video = document.querySelector("video");
+            video.muted = isMuted;
+          }, [isMuted]);
+        
+          const toggleMute = () => {
+            setIsMuted(!isMuted);
+          };
     const users = [
-        // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
-        { name: 'Red Bull Kosova', link: 'https://www.instagram.com/redbullkosova/' },
-
+        { name: 'WinMusicFreedom', made: "Albania", link: 'https://www.instagram.com/winmusicfreedomalbania/' },
     ];
 
     const location = [
-        { name: 'TUNEL', made: "", link: 'https://www.instagram.com/tunelmusicvenue/' },
-       
+        { name: 'Tunel', made: "Tirana", link: 'https://www.instagram.com/tunelmusicvenue/' },
     ];
 
     const music = [
-        { name: 'Laila', made: "Swiss", link: 'https://www.instagram.com/lailammusic/' },
-        { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
-        { name: 'Rayo', made: "Montenegro", link: 'https://www.instagram.com/rayo_positive_crew/' },
-        { name: 'Noki', made: "Home", link: 'https://www.instagram.com/lakuru_/' },
-        { name: 'Secret47', made: "Yours", link: 'https://www.instagram.com/secret47file/' },
-
+        // { name: 'Laila', made: "Swiss", link: 'https://www.instagram.com/lailammusic/' },
+        // { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
+        // { name: 'Rayo', made: "Montenegro", link: 'https://www.instagram.com/rayo_positive_crew/' },
+        // { name: 'Noki', made: "Home", link: 'https://www.instagram.com/lakuru_/' },
+        // { name: 'Secret47', made: "Yours", link: 'https://www.instagram.com/secret47file/' },
+        { name: `Secret LineUP`, made: "", link: '' },
     ];
 
     const produced = [
         { name: 'Trekuartista', made: "Powered",link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
+        { name: 'Moki Wear', made: "Kimono", link: 'https://www.instagram.com/moki.wear/' },
         { name: 'Faces & Places', made: "Hotel", link: 'https://www.instagram.com/facesandplaces.al/' },
-        { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Donat Krasniqi', made: "Live Art", link: 'https://www.instagram.com/donatkrasniqi_/' },
+        { name: 'Unknown', made: "Make up", link: '' },
+        { name: 'Unknown', made: "Live Art", link: '' },
         { name: 'Adrianus', made: "Magic", link: 'https://www.instagram.com/adriankqiku/' },
-        { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
 
     const love = [
-        { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
+        { name: 'Danier Shkurti', made: "The 1", link: 'https://www.instagram.com/danier.sh/' },
     ];
 
-    // const { ref: containerRef, inView: containerInView } = useInView({
-    //     triggerOnce: true,
-    // });
-
-    // const iconAnimation = {
-    //     hidden: { opacity: 0, x: -50 }, // Starts closer to reduce vibration
-    //     visible: (index) => ({
-    //         opacity: 1,
-    //         x: 0, // Moves smoothly to its final position
-    //         transition: {
-    //             duration: 0.5, // Faster animation
-    //             delay: index * 0.15, // Staggered delay for a faster sequence
-    //             ease: 'easeInOut', // Smooth and natural easing
-    //         },
-    //     }),
-    // };
-
     return (
-        <div className="text-black bg-[#FFD200]">
+        <div className="text-[#FFD200] bg-black">
             <Navbar />
 
             <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-12 lg:py-20">
@@ -76,10 +93,25 @@ const Day6 = () => {
 
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
+                <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center relative'>
+                    <video loop playsInline autoPlay muted={isMuted} className='w-full h-full'>
+                    <source src={poster6} type="video/mp4" />
+                    </video>
+                    <button
+                        onClick={toggleMute}
+                        className="absolute bottom-4 left-0 bg-black rounded-full text-[#FFD200] text-sm p-1"
+                    >
+                        {isMuted ? (
+                            <img src={muteIcon} alt="Mute" className="h-4 w-4" />
+                        ) : (
+                            <img src={unmuteIcon} alt="Unmute" className="h-4 w-4" />
+                        )}
+                    </button>
+                </div>
                     <div className='lg:w-1/2'>
-                    <p className="text-2xl lg:text-4xl font-bold text-black leading-tight tracking-[1px] font-custom3 uppercase">
+                    <p className="text-2xl lg:text-4xl font-bold text-[#FFD200] leading-tight tracking-[1px] font-custom3 uppercase">
                           
-                        <span className="text-3xl lg:text-5xl text-black">1ST BIRTHDANCE IN TIRANA</span> 
+                        <span className="text-3xl lg:text-5xl text-[#FFD200]">1ST BIRTHDANCE IN TIRANA</span> 
                         <span className="flex text-3xl pt-1 items-center">
                             01.03.2025 Saturday - TUNEL
                         </span>
@@ -96,13 +128,13 @@ const Day6 = () => {
                     {/* <p className="text-sm lg:text-sm underline underline-offset-4 text-pink-800 mt-2 lg:pr-5 font-custom3">
                         Organized by Yllka Brada & Secret47
                     </p> */}
-
+ 
                     <div className="grid lg:grid-cols-1">
                         <div
                             className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
                                 Made Possible
                             </p>
                      
@@ -122,16 +154,16 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
-                                                <FaInstagram color="black" className="w-6 h-6" />
+                                                <FaInstagram color="#FFD200" className="w-6 h-6" />
                                                     <span className="text-sm lg:text-base font-custom3">{user.name}</span>
                                             </div>
                                         
                                             {/* E djathta */}
                                             {user.made && (
-                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-black">
+                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FFD200]">
                                                 {user.made}
                                                </span>
                                             )}
@@ -146,7 +178,7 @@ const Day6 = () => {
                             className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                             
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
                                Location
                             </p>
                          
@@ -166,16 +198,16 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
-                                                <FaInstagram color="black" className="w-6 h-6" />
+                                                <FaInstagram color="#FFD200" className="w-6 h-6" />
                                                     <span className="text-sm lg:text-base font-custom3">{user.name}</span>
                                             </div>
                                         
                                             {/* E djathta */}
                                             {user.made && (
-                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-black">
+                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FFD200]">
                                                 {user.made}
                                                </span>
                                             )}
@@ -191,7 +223,7 @@ const Day6 = () => {
                             className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                         
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
                                 Music
                             </p>
                          
@@ -211,16 +243,16 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
-                                                <FaInstagram color="black" className="w-6 h-6" />
+                                                <FaInstagram color="#FFD200" className="w-6 h-6" />
                                                     <span className="text-sm lg:text-base font-custom3">{user.name}</span>
                                             </div>
                                         
                                             {/* E djathta */}
                                             {user.made && (
-                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-black">
+                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FFD200]">
                                                 {user.made}
                                                </span>
                                             )}
@@ -235,7 +267,7 @@ const Day6 = () => {
                             className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                          
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
                                 Produced
                             </p>
                         
@@ -255,16 +287,16 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
-                                                <FaInstagram color="black" className="w-6 h-6" />
+                                                <FaInstagram color="#FFD200" className="w-6 h-6" />
                                                     <span className="text-sm lg:text-base font-custom3">{user.name}</span>
                                             </div>
                                         
                                             {/* E djathta */}
                                             {user.made && (
-                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-black">
+                                                <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FFD200]">
                                                 {user.made}
                                                </span>
                                             )}
@@ -279,7 +311,7 @@ const Day6 = () => {
                             className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
                                 MAX Love
                             </p>
                         
@@ -299,16 +331,16 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
-                                                <FaInstagram color="black" className="w-6 h-6" />
+                                                <FaInstagram color="#FFD200" className="w-6 h-6" />
                                                     <span className="text-sm lg:text-base font-custom3">{user.name}</span>
                                             </div>
                                         
                                             {/* E djathta */}
                                             {user.made && (
-                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-black">
+                                               <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FFD200]">
                                                 {user.made}
                                                </span>
                                             )}
@@ -321,9 +353,27 @@ const Day6 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:w-1/2 sticky top-0 h-fit flex justify-center items-center '>
-                    <img src={poster6} alt='w-full h-full' />
-                </div>
+                 <div className='hidden lg:w-1/2 sticky top-0 h-fit lg:flex justify-center items-center border-[3px] border-[#FFD200]'>
+                                <video
+                                    className="w-full h-full"
+                                    autoPlay
+                                    playsInline
+                                    loop
+                                    muted={isMuted}
+                                >
+                                    <source src={poster6} type="video/mp4" />
+                                </video>
+                                <button
+                                    onClick={toggleMute}
+                                    className="absolute top-2 right-2 text-white text-sm px-2 py-1 rounded-full"
+                                >
+                                    {isMuted ? (
+                                        <img src={muteIcon} alt="Mute" className="h-6 w-6" />
+                                    ) : (
+                                        <img src={unmuteIcon} alt="Unmute" className="h-6 w-6" />
+                                    )}
+                                </button>
+                                </div>
                 </div>
             </div>
         </div>
