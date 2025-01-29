@@ -104,6 +104,7 @@ const Day6 = () => {
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
                 <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center relative'>
+                <p className='text-center font-custom3 pb-3'>Click the poster to play</p>
                     <video loop playsInline autoPlay muted={isMuted} className='w-full h-full'>
                     <source src={poster6} type="video/mp4" />
                     </video>
@@ -119,10 +120,10 @@ const Day6 = () => {
                     </button>
                 </div>
                     <div className='lg:w-1/2'>
-                    <p className="text-2xl lg:text-4xl font-bold text-[#FFD200] leading-tight tracking-[1px] font-custom3 uppercase">
+                    <p className="text-2xl lg:text-4xl font-bold text-[#FFD200] leading-tight font-custom3 uppercase">
                           
-                        <span className="text-2xl lg:text-5xl text-[#FFD200]">1ST BIRTHDANCE IN TIRANA</span> 
-                        <span className="flex text-2xl lg:text-3xl pt-1 items-center">
+                        <span className="text-xl lg:text-5xl text-[#FFD200]">1ST BIRTHDANCE IN TIRANA</span> 
+                        <span className="flex text-xl lg:text-3xl pt-1 items-center">
                             01.03.2025 Saturday - TUNEL
                         </span>
                         {/* <span className="flex pt-1 items-center">
@@ -164,7 +165,7 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-white hover:border-none hover:text-white font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
                                                 <FaInstagram color="#FFD200" className="w-6 h-6" />
@@ -185,8 +186,7 @@ const Day6 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
-                            
+                            className="my-6 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]" 
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
                                Location
@@ -208,7 +208,7 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-white hover:border-none hover:text-white font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
                                                 <FaInstagram color="#FFD200" className="w-6 h-6" />
@@ -253,7 +253,7 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-white hover:border-none hover:text-whitefont-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
                                                 <FaInstagram color="#FFD200" className="w-6 h-6" />
@@ -297,7 +297,7 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-white hover:border-none hover:text-white font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
                                                 <FaInstagram color="#FFD200" className="w-6 h-6" />
@@ -341,7 +341,7 @@ const Day6 = () => {
                                         rel="noopener noreferrer"
                                         className="block"
                                     >
-                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                        <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FFD200] text-[#FFD200] hover:shadow-md hover:shadow-white hover:border-none hover:text-white font-custom2">
                                                                                 {/* E majta */}
                                             <div className="flex items-center space-x-3">
                                                 <FaInstagram color="#FFD200" className="w-6 h-6" />

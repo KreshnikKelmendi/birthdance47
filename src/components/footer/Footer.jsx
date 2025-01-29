@@ -47,7 +47,7 @@ const Footer = () => {
     '/birthdance/day-6': {
       bgColor: '#000000',
       textColor: '#FFD200',
-      quote: '“Some dance to remember! Some dance to forget.”',
+      quote: '“Some dance to remember... some dance to forget.”',
     },
   };
 

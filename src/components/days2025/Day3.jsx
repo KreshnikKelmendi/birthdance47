@@ -10,7 +10,7 @@ import poster3 from "../assets/birthdance2025/day-3.png"
 const Day3 = () => {
     const users = [
         // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
-        { name: 'Red Bull', made:" Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name: 'Red Bull', made: " Kosova", link: 'https://www.instagram.com/redbullkosova/' },
 
     ];
 
@@ -78,17 +78,17 @@ const Day3 = () => {
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
                     <div className='lg:w-1/2'>
-                        <p className="text-2xl lg:text-4xl font-bold text-black leading-tight tracking-[1px] font-custom3 uppercase">
+                        <p className="text-xl lg:text-4xl font-bold text-black leading-tight font-custom3 uppercase">
 
-                            <span className="text-3xl lg:text-5xl text-black">Dance with a view</span>
-                            <span className="flex text-3xl pt-1 items-center">
+                            <span className="text-xl lg:text-5xl text-black">Dance with a view</span>
+                            <span className="flex text-xl lg:text-3xl pt-1 items-center">
                                 21.02.2025 Friday
                             </span>
                             {/* <span className="flex pt-1 items-center">
                             Wednesday
                         </span> */}
                         </p>
-                        <p className="text-base lg:text-lg text-black mt-3 lg:pr-5 font-custom3">
+                        <p className="text-[14px] lg:text-lg text-black mt-3 lg:pr-5 font-custom3">
                             20:00h NOYA / Limited Capacity / Please Reserve with NOYA
                         </p>
 
@@ -101,7 +101,7 @@ const Day3 = () => {
                                 className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
-                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                     Made Possible
                                 </p>
 
@@ -121,13 +121,19 @@ const Day3 = () => {
                                             rel="noopener noreferrer"
                                             className="block"
                                         >
-                                            <button className="flex items-center w-72 lg:w-[300px] justify-start space-x-3 font-custom2 py-3 px-4 border-b-[2px] border-black text-black hover:shadow-md hover:shadow-black hover:border-none hover:text-black">
-                                                <FaInstagram color='black' className="w-6 h-6" />
-                                                <span className="text-sm lg:text-base font-custom3">{user.name}</span>
-                                                {user.made && (
-                                                    <span className="text-sm lg:text-base font-custom3 text-black">{user.made}</span>
-                                                )}
+                                            <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                                {/* E majta */}
+                                                <div className="flex items-center space-x-3">
+                                                    <FaInstagram color="#000000" className="w-6 h-6" />
+                                                    <span className="text-sm lg:text-base font-custom3">{user.name}</span>
+                                                </div>
 
+                                                {/* E djathta */}
+                                                {user.made && (
+                                                    <span className="text-[10px] lg:text-[10px] font-custom3 text-black">
+                                                        {user.made}
+                                                    </span>
+                                                )}
                                             </button>
                                         </a>
                                     </div>
@@ -139,7 +145,7 @@ const Day3 = () => {
                                 className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
-                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                     Location
                                 </p>
 
@@ -184,7 +190,7 @@ const Day3 = () => {
                                 className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
-                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                     Music
                                 </p>
 
@@ -228,7 +234,7 @@ const Day3 = () => {
                                 className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
-                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                     Produced
                                 </p>
 
@@ -272,7 +278,7 @@ const Day3 = () => {
                                 className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
-                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                                <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                     MAX Love
                                 </p>
 

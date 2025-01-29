@@ -85,10 +85,10 @@ const Day5 = () => {
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
                     <div className='lg:w-1/2'>
-                    <p className="text-2xl lg:text-4xl font-bold text-black leading-tight tracking-[1px] font-custom3 uppercase">
+                    <p className="text-2xl lg:text-4xl font-bold text-black leading-tight font-custom3 uppercase">
                           
-                        <span className="text-3xl lg:text-5xl text-black">Last dance<p>with healthy food, yoga...</p></span> 
-                        <span className="flex text-3xl pt-1 items-center">
+                        <span className="text-xl lg:text-5xl text-black">Last dance<p>with healthy food, yoga...</p></span> 
+                        <span className="flex text-xl lg:text-3xl pt-1 items-center">
                             23.02.2025 Sunday - EDHE
                         </span>
                         {/* <span className="flex pt-1 items-center">
@@ -115,10 +115,10 @@ const Day5 = () => {
 
                     <div className="grid lg:grid-cols-1">
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                 Made Possible
                             </p>
                      
@@ -159,10 +159,10 @@ const Day5 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                             
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                Location
                             </p>
                          
@@ -204,10 +204,10 @@ const Day5 = () => {
                         </div>
 
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                         
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                 Music
                             </p>
                          
@@ -248,10 +248,10 @@ const Day5 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                          
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                 Produced
                             </p>
                         
@@ -292,10 +292,10 @@ const Day5 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-black">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
                                 MAX Love
                             </p>
                         
