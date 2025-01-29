@@ -58,7 +58,7 @@ const birth2025 = [
     date: '03.03.2024 Sunday',
     day: 'HEALTHY FOOD, ART, YOGA...',
     textColor: '#7C6DE7',
-    route: "/details/day-5",
+    route: "/birthdance/day-5",
   },
   {
     title: "Birthdance47",
@@ -69,7 +69,7 @@ const birth2025 = [
     date: '03.03.2024 Sunday',
     day: 'HEALTHY FOOD, ART, YOGA...',
     textColor: '#7C6DE7',
-    route: "/details/day-5",
+    route: "/birthdance/day-6",
   },
 ];
 

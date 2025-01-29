@@ -11,6 +11,8 @@ import Day1 from "./components/days2025/Day1";
 import Day2 from "./components/days2025/Day2";
 import Day3 from "./components/days2025/Day3";
 import Day4 from "./components/days2025/Day4";
+import Day5 from "./components/days2025/Day5";
+import Day6 from "./components/days2025/Day6";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="/birthdance/day-2" element={<Day2 />} />
             <Route path="/birthdance/day-3" element={<Day3 />} />
             <Route path="/birthdance/day-4" element={<Day4 />} />
+            <Route path="/birthdance/day-5" element={<Day5 />} />
+            <Route path="/birthdance/day-6" element={<Day6 />} />
           </Routes>
           <Footer />
           <ScrollToTopButton />

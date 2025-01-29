@@ -20,31 +20,42 @@ const Footer = () => {
   // Define background and text colors based on route
   const routeStyles = {
     '/birthdance/day-1': {
-      bgColor: '#D9C1DF', // Light red background
-      textColor: '#000000', // Dark red text
+      bgColor: '#D9C1DF',
+      textColor: '#000000',
+      quote: `“You don't stop dancing because you grow old! You grow old because you stop dancing.”`,
     },
     '/birthdance/day-2': {
-      bgColor: '#EFEFEF', // Light blue background
-      textColor: '#000000', // Dark blue text
+      bgColor: '#EFEFEF',
+      textColor: '#000000',
+      quote: '“You are what you dance!”',
     },
     '/birthdance/day-3': {
-      bgColor: '#F08168', // Light green background
-      textColor: '#000000', // Dark green text
+      bgColor: '#F08168',
+      textColor: '#000000',
+      quote: '“I wanna dance with somebody (Who loves me)!”',
     },
     '/birthdance/day-4': {
-      bgColor: '#000000', // Light orange background
-      textColor: '#E65100', // Dark orange text
+      bgColor: '#000000',
+      textColor: '#FF4B2B',
+      quote: `“Don't ever be too shy to dance your heart out!”`,
     },
     '/birthdance/day-5': {
-      bgColor: '#FFF3E0', // Light orange background
-      textColor: '#E65100', // Dark orange text
+      bgColor: '#00EDBF',
+      textColor: '#000000',
+      quote: '“Every dance tells a story!”',
+    },
+    '/birthdance/day-6': {
+      bgColor: '#FFD200',
+      textColor: '#000000',
+      quote: '“Every dance tells a story!”',
     },
   };
 
   const currentStyle =
     routeStyles[location.pathname] || {
-      bgColor: '#F4ECE9', // Default background
-      textColor: '#000000', // Default text color
+      bgColor: '#F4ECE9',
+      textColor: '#000000',
+      quote: '“The best way to predict the future is to create it.”',
     };
 
   const socialVariants = {
@@ -70,14 +81,15 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
             key={name}
-            className="group relative overflow-hidden flex flex-col items-center justify-center w-20 h-16 lg:h-20 border border-slate-500 hover:border-white transition duration-300"
+            className="group relative overflow-hidden flex flex-col items-center justify-center w-20 h-16 lg:h-20 border hover:border-white transition duration-300"
+            style={{ border: currentStyle.textColor }}
             initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
+            animate={inView ? 'visible' : 'hidden' }
             custom={index}
             variants={socialVariants}
           >
             {/* Hover Background */}
-            <div className="absolute inset-0 bg-black transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <div className="absolute inset-0 bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
 
             {/* Icon */}
             <Icon
@@ -99,9 +111,9 @@ const Footer = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-16 x-5 lg:px-0 text-xl lg:text-2xl font-custom3 italic"
+        className="mt-16 px-5 lg:px-0 text-xl lg:text-2xl lg:w-[28%] mx-auto font-custom3 italic"
       >
-        <p>"The best way to predict the future is to create it."</p>
+        <p>{currentStyle.quote}</p>
       </motion.div>
     </div>
   );

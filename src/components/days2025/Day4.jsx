@@ -120,7 +120,9 @@ const Day4 = () => {
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
                 <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center relative'>
-                    <video loop playsInline autoPlay src={poster4} muted={isMuted} className='w-full h-full' />
+                    <video loop playsInline autoPlay src={poster4} muted={isMuted} className='w-full h-full'>
+                    <source src={poster4} type="video/mp4" />
+                    </video>
                     <button
                         onClick={toggleMute}
                         className="absolute bottom-4 left-0 bg-black rounded-full text-black text-sm p-1"
@@ -175,9 +177,9 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block w-full"
+                                        className="block"
                                     >
-                                       <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                       <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -220,9 +222,9 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block w-full"
+                                        className="block"
                                     >
-                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -265,9 +267,9 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block w-full"
+                                        className="block"
                                     >
-                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -309,9 +311,9 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block w-full"
+                                        className="block"
                                     >
-                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
@@ -353,9 +355,9 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block w-full"
+                                        className="block"
                                     >
-                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                         <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
                                         {/* E majta */}
                                         <div className="flex items-center space-x-3">
                                             <FaInstagram color="#FF4B2B" className="w-6 h-6" />
