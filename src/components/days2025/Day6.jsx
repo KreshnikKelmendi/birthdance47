@@ -4,6 +4,7 @@ import { FaCalendarCheck, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import muteIcon from '../assets/off.png';
 import unmuteIcon from '../assets/on.png';
+import logo from "../assets/47---WHITE.png"
 
 import poster6 from "../assets/birthdance2025/Tunnel (1) (1).mp4"
 
@@ -78,7 +79,16 @@ const Day6 = () => {
 
     return (
         <div className="text-[#FFD200] bg-black">
-            <Navbar />
+            {/* <Navbar /> */}
+            <div className='flex justify-center items-center'>
+                        <Link to="/">
+                        <img
+                          className="px-4 lg:mx-1 lg:w-[130px] w-24 flex justify-center items-center h-auto object-contain z-50"
+                          src={logo}
+                          alt="Logo"
+                        />
+                      </Link>
+                      </div>
 
             <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-12 lg:py-20">
                 {/* Back Button */}
@@ -99,7 +109,7 @@ const Day6 = () => {
                     </video>
                     <button
                         onClick={toggleMute}
-                        className="absolute bottom-4 left-0 bg-black rounded-full text-[#FFD200] text-sm p-1"
+                        className="absolute hidden bottom-4 left-0 bg-black rounded-full text-[#FFD200] text-sm p-1"
                     >
                         {isMuted ? (
                             <img src={muteIcon} alt="Mute" className="h-4 w-4" />
@@ -111,8 +121,8 @@ const Day6 = () => {
                     <div className='lg:w-1/2'>
                     <p className="text-2xl lg:text-4xl font-bold text-[#FFD200] leading-tight tracking-[1px] font-custom3 uppercase">
                           
-                        <span className="text-3xl lg:text-5xl text-[#FFD200]">1ST BIRTHDANCE IN TIRANA</span> 
-                        <span className="flex text-3xl pt-1 items-center">
+                        <span className="text-2xl lg:text-5xl text-[#FFD200]">1ST BIRTHDANCE IN TIRANA</span> 
+                        <span className="flex text-2xl lg:text-3xl pt-1 items-center">
                             01.03.2025 Saturday - TUNEL
                         </span>
                         {/* <span className="flex pt-1 items-center">
@@ -120,7 +130,7 @@ const Day6 = () => {
                         </span> */}
                     </p>
                     
-                    <p className="text-base lg:text-lg text-black mt-3 lg:pr-5 font-custom3">
+                    <p className="text-[15px] lg:text-lg text-[#FFD200] mt-3 lg:pr-5 font-custom3">
                             22:00h / Limited Capacity / Please Reserve with TUNEL
                     </p>
                   
@@ -131,7 +141,7 @@ const Day6 = () => {
  
                     <div className="grid lg:grid-cols-1">
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
@@ -175,7 +185,7 @@ const Day6 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                             
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
@@ -220,7 +230,7 @@ const Day6 = () => {
                         </div>
 
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                         
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
@@ -264,7 +274,7 @@ const Day6 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                          
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
@@ -308,7 +318,7 @@ const Day6 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FFD200]">
