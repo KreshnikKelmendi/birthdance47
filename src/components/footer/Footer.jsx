@@ -1,30 +1,51 @@
 import React from 'react';
-import { FaFacebookSquare,FaInstagram, FaInstagramSquare } from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   const socialLinks = [
     { name: 'Instagram', icon: FaInstagramSquare, url: 'https://www.instagram.com/secret47file/' },
     { name: 'Facebook', icon: FaFacebookSquare, url: 'https://www.facebook.com/gentianr' },
-    // { name: 'Spotify', icon: FaSpotify, url: 'https://open.spotify.com/' },
-    // { name: 'Music', icon: FaMusic, url: 'https://twitter.com/' },
-    // { name: 'Snapchat', icon: FaSnapchatGhost, url: 'https://www.snapchat.com/' },
-    // { name: 'Tiktok', icon: FaTiktok, url: 'https://www.snapchat.com/' },
-  ];
-
-  const footerMenu = [
-    { name: 'HOME', url: '/' },
-    { name: 'MY BIOGRAPHY', url: '/my-biography' },
-    { name: 'PHOTOS', url: '/photos' },
-    { name: 'BIRTHDANCE', url: '/contact' },
   ];
 
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const location = useLocation();
+
+  // Define background and text colors based on route
+  const routeStyles = {
+    '/birthdance/day-1': {
+      bgColor: '#D9C1DF', // Light red background
+      textColor: '#000000', // Dark red text
+    },
+    '/birthdance/day-2': {
+      bgColor: '#EFEFEF', // Light blue background
+      textColor: '#000000', // Dark blue text
+    },
+    '/birthdance/day-3': {
+      bgColor: '#F08168', // Light green background
+      textColor: '#000000', // Dark green text
+    },
+    '/birthdance/day-4': {
+      bgColor: '#000000', // Light orange background
+      textColor: '#E65100', // Dark orange text
+    },
+    '/birthdance/day-5': {
+      bgColor: '#FFF3E0', // Light orange background
+      textColor: '#E65100', // Dark orange text
+    },
+  };
+
+  const currentStyle =
+    routeStyles[location.pathname] || {
+      bgColor: '#F4ECE9', // Default background
+      textColor: '#000000', // Default text color
+    };
 
   const socialVariants = {
     hidden: { y: 50, opacity: 0 },
@@ -36,13 +57,13 @@ const Footer = () => {
   };
 
   return (
-    <div className="py-16 lg:py-32 px-5 lg:px-0 text-center text-black bg-[#F4ECE9]">
+    <div
+      className="py-16 lg:py-32 px-5 lg:px-0 text-center"
+      style={{ backgroundColor: currentStyle.bgColor, color: currentStyle.textColor }}
+    >
       {/* Social Links Section */}
-      <p className="text-black text-2xl lg:tracking-[1px] font-custom3">That SECRET!</p>
-      <div
-        ref={ref}
-        className="flex justify-center items-center mt-6"
-      >
+      <p className="text-2xl lg:tracking-[1px] font-custom3">That SECRET!</p>
+      <div ref={ref} className="flex justify-center items-center mt-6">
         {socialLinks.map(({ name, icon: Icon, url }, index) => (
           <motion.a
             href={url}
@@ -61,11 +82,12 @@ const Footer = () => {
             {/* Icon */}
             <Icon
               size={30}
-              className="relative z-10 text-black group-hover:text-white transition duration-300"
+              className="relative z-10 group-hover:text-white transition duration-300"
+              style={{ color: currentStyle.textColor }}
             />
 
             {/* Name (visible only on hover) */}
-            <span className="absolute bottom-[2px] py-2 flex justify-center items-center opacity-0 group-hover:opacity-100 z-10 text-[10px] font-custom2 font-medium text-black transition duration-300">
+            <span className="absolute bottom-[2px] py-2 flex justify-center items-center opacity-0 group-hover:opacity-100 z-10 text-[10px] font-custom2 font-medium transition duration-300">
               {name}
             </span>
           </motion.a>
@@ -77,31 +99,10 @@ const Footer = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-16 x-5 lg:px-0 text-xl lg:text-2xl font-custom3 italic text-gray-800"
+        className="mt-16 x-5 lg:px-0 text-xl lg:text-2xl font-custom3 italic"
       >
-        <p>
-          "The best way to predict the future is to create it."
-        </p>
+        <p>"The best way to predict the future is to create it."</p>
       </motion.div>
-
-      {/* Footer Menu and Copyright Section */}
-      {/* <div className="mt-20">
-        <ul className="flex flex-wrap justify-center space-x-7 lg:space-x-12 mb-6 text-xl lg:text-xl font-custom3">
-          {footerMenu.map(({ name, url }) => (
-            <li key={name}>
-              <Link
-                href={url}
-                className="hover:text-gray-300 transition duration-300"
-              >
-                {name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <p className="text-xs lg:text-sm font-custom3 text-gray-500">
-          © {new Date().getFullYear()} Birthdance47 {">"} Secret47. All rights reserved.
-        </p>
-      </div> */}
     </div>
   );
 };

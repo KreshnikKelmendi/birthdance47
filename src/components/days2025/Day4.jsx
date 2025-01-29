@@ -1,14 +1,54 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
-import { FaCalendarCheck, FaInstagram } from 'react-icons/fa';
+import { FaArrowDown, FaCalendarCheck, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from "../assets/47---WHITE.png"
 
 import poster4 from "../assets/birthdance2025/ArAund (1).mp4"
+import muteIcon from '../assets/off.png';
+import unmuteIcon from '../assets/on.png';
 
 const Day4 = () => {
+    const [isMuted, setIsMuted] = useState(false); // Sound enabled by default
+    const [userInteracted, setUserInteracted] = useState(false);
+
+     useEffect(() => {
+        const video = document.querySelector("video");
+    
+        // Play the video when the component mounts
+        video.play();
+    
+        // Mute the video by default if not interacted
+        video.muted = !userInteracted;
+    
+        const handleInteraction = () => {
+          if (!userInteracted) {
+            setUserInteracted(true);
+          }
+        };
+    
+        // Add event listeners for user interaction
+        document.addEventListener("click", handleInteraction);
+        document.addEventListener("keydown", handleInteraction);
+    
+        return () => {
+          // Remove event listeners when component is unmounted
+          document.removeEventListener("click", handleInteraction);
+          document.removeEventListener("keydown", handleInteraction);
+        };
+      }, [userInteracted]);
+    
+      useEffect(() => {
+        const video = document.querySelector("video");
+        video.muted = isMuted;
+      }, [isMuted]);
+    
+      const toggleMute = () => {
+        setIsMuted(!isMuted);
+      };
+
+    
+
     const users = [
         { name:'Jagermeister', made: "Kosovo", instagram:'https://www.instagram.com/jagermeisterko/'},
         { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
@@ -54,23 +94,6 @@ const Day4 = () => {
         { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
     ];
 
-    // const { ref: containerRef, inView: containerInView } = useInView({
-    //     triggerOnce: true,
-    // });
-
-    // const iconAnimation = {
-    //     hidden: { opacity: 0, x: -50 }, // Starts closer to reduce vibration
-    //     visible: (index) => ({
-    //         opacity: 1,
-    //         x: 0, // Moves smoothly to its final position
-    //         transition: {
-    //             duration: 0.5, // Faster animation
-    //             delay: index * 0.15, // Staggered delay for a faster sequence
-    //             ease: 'easeInOut', // Smooth and natural easing
-    //         },
-    //     }),
-    // };
-
     return (
         <div className="text-[#FF4B2B] bg-black">
             {/* <Navbar /> */}
@@ -85,21 +108,31 @@ const Day4 = () => {
           </div>
             <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-12 lg:py-20">
                 {/* Back Button */}
-                <div className="absolute top-0 w-fit lg:right-6 left-5 lg:left-16 lg:my-4 z-10 border-[1px] hover:opacity-100 rounded-l-[25px] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white opacity-35">
+                {/* <div className="absolute top-0 w-fit lg:right-6 left-5 lg:left-16 lg:my-4 z-10 border-[1px] hover:opacity-100 rounded-l-[25px] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white opacity-35">
                     <Link
                         to="/birthdance/2025"
                         className="inline-flex items-center text-[#FF4B2B] rounded-full px-4 font-custom2 lg:px-8 "
                     >
                         <span className="mr-2 text-lg">↩</span> Back
                     </Link>
-                </div>
+                </div> */}
                
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
-                <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center '>
-                    <video loop muted playsInline autoPlay src={poster4} alt='w-full h-full' />
+                <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center relative'>
+                    <video loop playsInline autoPlay src={poster4} muted={isMuted} className='w-full h-full' />
+                    <button
+                        onClick={toggleMute}
+                        className="absolute bottom-4 left-0 bg-black rounded-full text-black text-sm p-1"
+                    >
+                        {isMuted ? (
+                            <img src={muteIcon} alt="Mute" className="h-4 w-4" />
+                        ) : (
+                            <img src={unmuteIcon} alt="Unmute" className="h-4 w-4" />
+                        )}
+                    </button>
                 </div>
-                    <div className='lg:w-1/2'>
+                <div className='lg:w-1/2'>
                     
                     <p className="text-2xl lg:text-4xl font-bold text-[#FF4B2B] leading-tight tracking-[1px] font-custom3 uppercase">
                           
@@ -121,10 +154,10 @@ const Day4 = () => {
 
                     <div className="grid lg:grid-cols-1">
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
+                            <p className="uppercase flex lg:justify-start justify-center items-center text-center lg:text-left font-custom3 text-2xl lg:text-3xl  text-[#FF4B2B]">
                                 Made Possible
                             </p>
                      
@@ -142,16 +175,23 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block"
+                                        className="block w-full"
                                     >
-                                        <button className="flex items-center w-[250px] justify-start space-x-3 font-custom2 py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white">
-                                            <FaInstagram color='#FF4B2B' className="w-6 h-6" />
+                                       <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        {/* E majta */}
+                                        <div className="flex items-center space-x-3">
+                                            <FaInstagram color="#FF4B2B" className="w-6 h-6" />
                                             <span className="text-sm lg:text-base font-custom3">{user.name}</span>
-                                            {user.made && (
-                                                <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">{user.made}</span>
-                                                )}
+                                        </div>
 
+                                        {/* E djathta */}
+                                        {user.made && (
+                                            <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">
+                                            {user.made}
+                                            </span>
+                                        )}
                                         </button>
+
                                     </a>
                                 </div>
                             ))}
@@ -159,10 +199,10 @@ const Day4 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                             
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
                                Location
                             </p>
                          
@@ -180,14 +220,21 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block"
+                                        className="block w-full"
                                     >
-                                        <button className="flex items-center w-[250px] justify-start space-x-3 font-custom2 py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-[#D9C1DF] hover:text-black">
-                                            <FaInstagram color='#FF4B2B' className="w-6 h-6" />
+                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        {/* E majta */}
+                                        <div className="flex items-center space-x-3">
+                                            <FaInstagram color="#FF4B2B" className="w-6 h-6" />
                                             <span className="text-sm lg:text-base font-custom3">{user.name}</span>
-                                            {user.made && (
-                                                <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">{user.made}</span>
-                                            )}
+                                        </div>
+
+                                        {/* E djathta */}
+                                        {user.made && (
+                                            <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">
+                                            {user.made}
+                                            </span>
+                                        )}
                                         </button>
                                     </a>
                                 </div>
@@ -197,10 +244,10 @@ const Day4 = () => {
                         </div>
 
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                         
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
                                 Music
                             </p>
                          
@@ -218,14 +265,21 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block"
+                                        className="block w-full"
                                     >
-                                        <button className="flex items-center w-[250px] justify-start space-x-3 font-custom2 py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white">
-                                            {/* <FaInstagram color='#FF4B2B' className="w-6 h-6" /> */}
+                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        {/* E majta */}
+                                        <div className="flex items-center space-x-3">
+                                            <FaInstagram color="#FF4B2B" className="w-6 h-6" />
                                             <span className="text-sm lg:text-base font-custom3">{user.name}</span>
-                                            {user.made && (
-                                                <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">{user.made}</span>
-                                                )}
+                                        </div>
+
+                                        {/* E djathta */}
+                                        {user.made && (
+                                            <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">
+                                            {user.made}
+                                            </span>
+                                        )}
                                         </button>
                                     </a>
                                 </div>
@@ -234,7 +288,7 @@ const Day4 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                          
                         >
                             <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
@@ -246,7 +300,7 @@ const Day4 = () => {
                             {produced?.map((user, index) => (
                                 <div
                                     key={user.name}
-                                    className="flex items-center justify-center lg:justify-start transform duration-300 lg:w-80"
+                                    className="flex items-center justify-center lg:justify-start transform duration-300 w-full lg:w-80"
                                     initial="hidden"
                                    
                                     custom={index}
@@ -255,14 +309,21 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block"
+                                        className="block w-full"
                                     >
-                                        <button className="flex items-center w-[260px] justify-start space-x-3 font-custom2 py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white">
-                                            <FaInstagram color='#FF4B2B' className="w-6 h-6" />
+                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        {/* E majta */}
+                                        <div className="flex items-center space-x-3">
+                                            <FaInstagram color="#FF4B2B" className="w-6 h-6" />
                                             <span className="text-sm lg:text-base font-custom3">{user.name}</span>
-                                            {user.made && (
-                                                <span className="text-[10px] lg:text-[10px] font-custom3 text-white">{user.made}</span>
-                                            )}
+                                        </div>
+
+                                        {/* E djathta */}
+                                        {user.made && (
+                                            <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">
+                                            {user.made}
+                                            </span>
+                                        )}
                                         </button>
                                     </a>
                                 </div>
@@ -271,10 +332,10 @@ const Day4 = () => {
                             
                         </div>
                         <div
-                            className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                            className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
                            
                         >
-                            <p className="uppercase text-center lg:text-left font-custom3 text-3xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
+                            <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl tracking-[1px] text-[#FF4B2B]">
                                 MAX Love
                             </p>
                         
@@ -292,14 +353,21 @@ const Day4 = () => {
                                         href={user.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block"
+                                        className="block w-full"
                                     >
-                                        <button className="flex items-center w-[270px] justify-start space-x-3 font-custom2 py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white">
-                                            <FaInstagram color='#FF4B2B' className="w-6 h-6" />
+                                         <button className="flex items-center justify-between w-full lg:w-[300px] py-3 px-4 border-b-[2px] border-[#FF4B2B] text-[#FF4B2B] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white font-custom2">
+                                        {/* E majta */}
+                                        <div className="flex items-center space-x-3">
+                                            <FaInstagram color="#FF4B2B" className="w-6 h-6" />
                                             <span className="text-sm lg:text-base font-custom3">{user.name}</span>
-                                            {user.made && (
-                                                <span className="text-[10px] lg:text-[10px] font-custom3 text-white">{user.made}</span>
-                                            )}
+                                        </div>
+
+                                        {/* E djathta */}
+                                        {user.made && (
+                                            <span className="text-[10px] lg:text-[10px] font-custom3 text-[#FF4B2B]">
+                                            {user.made}
+                                            </span>
+                                        )}
                                         </button>
                                     </a>
                                 </div>
@@ -315,10 +383,20 @@ const Day4 = () => {
                     autoPlay
                     playsInline
                     loop
-                    muted
-                    >
+                    muted={isMuted}
+                >
                     <source src={poster4} type="video/mp4" />
-                    </video>
+                </video>
+                <button
+                    onClick={toggleMute}
+                    className="absolute top-2 right-2 text-white text-sm px-2 py-1 rounded-full"
+                >
+                    {isMuted ? (
+                        <img src={muteIcon} alt="Mute" className="h-6 w-6" />
+                    ) : (
+                        <img src={unmuteIcon} alt="Unmute" className="h-6 w-6" />
+                    )}
+                </button>
                 </div>
                 </div>
             </div>
