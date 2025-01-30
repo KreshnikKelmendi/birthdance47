@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Navbar from '../navbar/Navbar';
-import { FaCalendarCheck, FaInstagram } from 'react-icons/fa';
+import { FaCalendarCheck, FaDownload, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import poster3 from "../assets/birthdance2025/day-3.png"
@@ -64,7 +64,7 @@ const Day3 = () => {
         <div className="text-black bg-[#F08168]">
             <Navbar />
 
-            <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-12 lg:py-20">
+            <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-6 lg:py-20">
                 {/* Back Button */}
                 {/* <div className="absolute top-0 w-fit lg:right-6 left-5 lg:left-16 lg:my-4 z-10 border-[1px] hover:opacity-100 rounded-l-[25px] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white opacity-35">
                     <Link
@@ -76,8 +76,8 @@ const Day3 = () => {
                 </div> */}
 
                 {/* Main Content */}
-                <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
-                    <div className='lg:w-1/2'>
+                <div className="w-full px-5 lg:px-16 flex flex-col-reverse lg:flex-row">
+                    <div className='lg:w-1/2 pt-2 lg:pt-0'>
                         <p className="text-xl lg:text-4xl font-bold text-black leading-tight font-custom3 uppercase">
 
                             <span className="text-xl lg:text-5xl text-black">Dance with a view</span>
@@ -98,7 +98,7 @@ const Day3 = () => {
 
                         <div className="grid lg:grid-cols-1">
                             <div
-                                className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
+                                className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 pt-4 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
                                 <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
@@ -142,7 +142,7 @@ const Day3 = () => {
 
                             </div>
                             <div
-                                className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                                className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
                                 <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
@@ -187,7 +187,7 @@ const Day3 = () => {
                             </div>
 
                             <div
-                                className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                                className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
                                 <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
@@ -231,7 +231,7 @@ const Day3 = () => {
 
                             </div>
                             <div
-                                className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                                className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
                                 <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
@@ -275,7 +275,7 @@ const Day3 = () => {
 
                             </div>
                             <div
-                                className="my-8 grid lg:grid-cols-1 gap-3 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
+                                className="my-8 grid lg:grid-cols-1 gap-1 lg:gap-2 lg:border-none w-full lg:w-fit rounded-[25px]"
 
                             >
                                 <p className="uppercase text-center lg:text-left font-custom3 text-2xl lg:text-3xl text-black">
@@ -320,8 +320,17 @@ const Day3 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-1/2 sticky top-0 h-fit flex justify-center items-center border-[3px] border-black'>
-                        <img src={poster3} alt='w-full h-full' />
+                    <div className="lg:w-1/2 lg:sticky top-0 h-fit flex justify-center items-center border-[3px] border-black relative">
+                        <img src={poster3} alt="Poster" />
+
+                        {/* Download Button */}
+                        <a
+                            href={poster3}
+                            download="birthdance1.png"
+                            className="absolute bottom-0 lg:bottom-4 lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-sm hover:text-white hover:scale-105 hover:duration-300 ease-out font-custom3 font-semibold pt-1 rounded-lg transition"
+                        >
+                            Download Poster <FaDownload className="ml-1" />
+                        </a>
                     </div>
                 </div>
             </div>

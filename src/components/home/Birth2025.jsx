@@ -23,58 +23,6 @@ const GridItem = ({ item }) => {
     ease: 'easeOut',
   };
 
-  const handleDownload = () => {
-    if (item.video && item.video.endsWith('.mp4')) {
-      fetch(item.video)
-        .then(response => response.blob())
-        .then(blob => {
-          const url = window.URL.createObjectURL(blob);
-          const link = document.createElement('a');
-          link.href = url;
-          link.download = item.title || 'video.mp4';
-          link.click();
-          window.URL.revokeObjectURL(url);
-        })
-        .catch(error => {
-          console.error('Error downloading video:', error);
-        });
-    } else if (item.video && item.video.endsWith('.htm')) {
-      fetch(item.video)
-        .then(response => response.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-          const videoUrl = doc.querySelector('video source')?.src;
-
-          if (videoUrl) {
-            fetch(videoUrl)
-              .then(response => response.blob())
-              .then(blob => {
-                const url = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = url;
-                link.download = item.title || 'video.mp4';
-                link.click();
-                window.URL.revokeObjectURL(url);
-              })
-              .catch(error => {
-                console.error('Error downloading video from .htm:', error);
-              });
-          } else {
-            console.error('Video URL not found inside the .htm file');
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching .htm file:', error);
-        });
-    } else {
-      const link = document.createElement('a');
-      link.href = item.image;
-      link.download = item.title || 'image';
-      link.click();
-    }
-  };
-
   return (
     <div
       className="col-span-1 relative group overflow-hidden transition-all duration-300"
@@ -115,52 +63,6 @@ const GridItem = ({ item }) => {
           </button>
      
       </div>
-
-      {/* Original Commented Sections */}
-      {/* <div
-        className="mt-4 mx-auto flex justify-between items-center"
-        initial="hidden"
-        animate={inView ? 'visible' : 'hidden'}
-        variants={textVariants}
-        transition={transition}
-      >
-        <p className="text-sm mb-2" style={{ color: item.textColor }}>
-          {item.date}
-        </p>
-        <button
-          onClick={handleDownload}
-          className="text-[11px] text-white py-2 rounded-lg hover:text-blue-600"
-          title="Download this poster and Share it only with LOVE"
-        >
-          Download
-        </button>
-      </div> */}
-      {/* <div className="mt-4">
-        <p className="text-base font-bold text-white">
-          <span style={{ color: item.textColor }}>{item.title}</span>
-        </p>
-        <p style={{ color: item.textColor }}>{item.subtitle}</p>
-        <p className="text-sm mb-4" style={{ color: item.textColor }}>
-          {item.day}
-        </p>
-      </div> */}
-      {/* Single Button */}
-      {/* <div className="mt-4">
-        <Link to={item.route} onClick={() =>
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth",
-          })
-        }>
-          <button
-            className="text-white border-b-2 text-sm"
-            style={{ borderColor: item.textColor }}
-          >
-            Show Details
-          </button>
-        </Link>
-      </div> */}
          </Link>
     </div>
   );

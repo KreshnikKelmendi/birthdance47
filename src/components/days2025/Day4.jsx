@@ -4,51 +4,10 @@ import { FaArrowDown, FaCalendarCheck, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from "../assets/47---WHITE.png"
 
-import poster4 from "../assets/birthdance2025/ArAund (1).mp4"
-import muteIcon from '../assets/off.png';
-import unmuteIcon from '../assets/on.png';
+
+import ZonePoster from './ZonePoster';
 
 const Day4 = () => {
-    const [isMuted, setIsMuted] = useState(false); // Sound enabled by default
-    const [userInteracted, setUserInteracted] = useState(false);
-
-     useEffect(() => {
-        const video = document.querySelector("video");
-    
-        // Play the video when the component mounts
-        video.play();
-    
-        // Mute the video by default if not interacted
-        video.muted = !userInteracted;
-    
-        const handleInteraction = () => {
-          if (!userInteracted) {
-            setUserInteracted(true);
-          }
-        };
-    
-        // Add event listeners for user interaction
-        document.addEventListener("click", handleInteraction);
-        document.addEventListener("keydown", handleInteraction);
-    
-        return () => {
-          // Remove event listeners when component is unmounted
-          document.removeEventListener("click", handleInteraction);
-          document.removeEventListener("keydown", handleInteraction);
-        };
-      }, [userInteracted]);
-    
-      useEffect(() => {
-        const video = document.querySelector("video");
-        video.muted = isMuted;
-      }, [isMuted]);
-    
-      const toggleMute = () => {
-        setIsMuted(!isMuted);
-      };
-
-    
-
     const users = [
         { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
         { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
@@ -101,13 +60,13 @@ const Day4 = () => {
             <div className='flex justify-center items-center'>
             <Link to="/">
             <img
-              className="px-4 lg:mx-1 lg:w-[130px] w-24 flex justify-center items-center h-auto object-contain z-50"
+              className="px-4 lg:mx-1 pt-6 lg:w-[130px] w-24 flex justify-center items-center h-auto object-contain z-50"
               src={logo}
               alt="Logo"
             />
           </Link>
           </div>
-            <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-12 lg:py-20">
+            <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-6 lg:py-20">
                 {/* Back Button */}
                 {/* <div className="absolute top-0 w-fit lg:right-6 left-5 lg:left-16 lg:my-4 z-10 border-[1px] hover:opacity-100 rounded-l-[25px] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white opacity-35">
                     <Link
@@ -120,21 +79,9 @@ const Day4 = () => {
                
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
-                <div className=' lg:w-1/2 pb-4 h-fit lg:hidden justify-center items-center relative'>
-                    <video loop playsInline autoPlay muted={isMuted} className='w-full h-full'>
-                    <source src={poster4} type="video/mp4" />
-                    </video>
-                    <button
-                        onClick={toggleMute}
-                        className="absolute bottom-4 left-0 bg-black rounded-full text-black text-sm p-1"
-                    >
-                        {isMuted ? (
-                            <img src={muteIcon} alt="Mute" className="h-4 w-4" />
-                        ) : (
-                            <img src={unmuteIcon} alt="Unmute" className="h-4 w-4" />
-                        )}
-                    </button>
-                </div>
+                <div className='block lg:hidden '>
+                        <ZonePoster />
+                    </div>
                 <div className='lg:w-1/2'>
                     
                     <p className="text-2xl lg:text-4xl font-bold text-[#FF4B2B] leading-tight font-custom3 uppercase">
@@ -380,27 +327,9 @@ const Day4 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='hidden lg:w-1/2 sticky top-0 h-fit lg:flex justify-center items-center border-[3px] border-[#FF4B2B]'>
-                <video
-                    className="w-full h-full"
-                    autoPlay
-                    playsInline
-                    loop
-                    muted={isMuted}
-                >
-                    <source src={poster4} type="video/mp4" />
-                </video>
-                <button
-                    onClick={toggleMute}
-                    className="absolute top-2 right-2 text-white text-sm px-2 py-1 rounded-full"
-                >
-                    {isMuted ? (
-                        <img src={muteIcon} alt="Mute" className="h-6 w-6" />
-                    ) : (
-                        <img src={unmuteIcon} alt="Unmute" className="h-6 w-6" />
-                    )}
-                </button>
-                </div>
+                <div className='hidden lg:flex lg:w-1/2 sticky top-0 h-fit justify-center items-center border-[3px] border-[#FF4B2B]'>
+                        <ZonePoster />
+                    </div>
                 </div>
             </div>
         </div>
