@@ -16,11 +16,10 @@ const Day1 = () => {
 
     const location = [
         { name: 'Monroe', link: 'https://www.instagram.com/monroe.pr/' },
-
     ];
 
     const music = [
-        { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
+        { name: 'Secret', made: "Surprise", link: '' },
         { name: 'Noki', made: "Home", link: 'https://www.instagram.com/lakuru_/' },
         { name: 'Vocado', made: "Swiss", link: 'https://www.instagram.com/vildyvocado/' },
         { name: 'R3BR', made: "Swiss", link: 'https://www.instagram.com/r.3.b.r/' },
