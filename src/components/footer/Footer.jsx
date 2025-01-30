@@ -27,7 +27,7 @@ const Footer = () => {
     '/birthdance/day-2': {
       bgColor: '#EFEFEF',
       textColor: '#000000',
-      quote: '“You are what you dance!”',
+      quote: '“Progress is dancing to the same song you used to cry to.”',
     },
     '/birthdance/day-3': {
       bgColor: '#F08168',
@@ -69,7 +69,7 @@ const Footer = () => {
 
   return (
     <div
-      className="py-16 lg:py-32 px-5 lg:px-0 text-center"
+      className="pb-20 pt-9 lg:py-24 px-5 lg:px-0 text-center"
       style={{ backgroundColor: currentStyle.bgColor, color: currentStyle.textColor }}
     >
       {/* Social Links Section */}
@@ -111,9 +111,9 @@ const Footer = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-16 px-5 lg:px-0 text-xl lg:text-2xl lg:w-[28%] mx-auto font-custom3 italic"
+        className="px-5 lg:px-0 text-xl lg:text-2xl lg:w-[30%] mx-auto font-custom3 italic"
       >
-        <p>{currentStyle.quote}</p>
+        <p className='mt-7'>{currentStyle.quote}</p>
       </motion.div>
     </div>
   );
