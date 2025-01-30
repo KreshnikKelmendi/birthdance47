@@ -78,7 +78,7 @@ const Day2 = () => {
 
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col-reverse lg:flex-row">
-                    <div className='lg:w-1/2 pt-2 lg:pt-0'>
+                    <div className='lg:w-1/2 pt-14 lg:pt-0'>
                         <p className="text-xl lg:text-4xl font-bold text-black font-custom3 uppercase">
 
                             <span className="text-xl lg:text-5xl text-black">White Theme Dance <span className='text-xl'>(white only)</span></span> <br />
@@ -302,7 +302,7 @@ const Day2 = () => {
                                             rel="noopener noreferrer"
                                             className="block"
                                         >
-                                            <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom2">
+                                            <button className="flex items-center justify-between w-72 lg:w-[300px] py-3 px-4 border-b-[2px] border-black text-black hover:shadow-md hover:shadow-black hover:border-none hover:text-black font-custom3">
                                                 {/* E majta */}
                                                 <div className="flex items-center space-x-3">
                                                     <FaInstagram color="black" className="w-6 h-6" />
@@ -331,7 +331,7 @@ const Day2 = () => {
                         <a
                             href={poster2}
                             download="birthdance2.png"
-                            className="absolute bottom-0 lg:bottom-4 lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-sm hover:text-white hover:scale-105 hover:duration-300 ease-out font-custom3 font-semibold pt-1 rounded-lg transition"
+                            className="absolute bottom-[-40px] lg:bottom-[-50px] lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-[11px] lg:text-sm border-black border-b-[3px] hover:shadow-md shadow-black hover:border-none hover:text-black hover:scale-105 hover:duration-300 ease-out font-custom3 p-1 lg:p-2 transition"
                         >
                             Download Poster <FaDownload className="ml-1" />
                         </a>

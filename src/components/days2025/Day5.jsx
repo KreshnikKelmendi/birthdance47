@@ -84,7 +84,7 @@ const Day5 = () => {
 
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col-reverse lg:flex-row">
-                    <div className='lg:w-1/2 pt-2 lg:pt-0'>
+                    <div className='lg:w-1/2 pt-14 lg:pt-0'>
                         <p className="text-2xl lg:text-4xl font-bold text-black leading-tight font-custom3 uppercase">
 
                             <span className="text-xl lg:text-5xl text-black">Last dance<p>with healthy food, yoga...</p></span>
@@ -343,8 +343,8 @@ const Day5 = () => {
                         {/* Download Button */}
                         <a
                             href={poster5}
-                            download="birthdance1.png"
-                            className="absolute bottom-0 lg:bottom-4 lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-sm hover:text-white hover:scale-105 hover:duration-300 ease-out font-custom3 font-semibold pt-1 rounded-lg transition"
+                            download="birthdance2.png"
+                            className="absolute bottom-[-40px] lg:bottom-[-50px] lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-[11px] lg:text-sm border-black border-b-[3px] hover:shadow-md shadow-black hover:border-none hover:text-black hover:scale-105 hover:duration-300 ease-out font-custom3 p-1 lg:p-2 transition"
                         >
                             Download Poster <FaDownload className="ml-1" />
                         </a>

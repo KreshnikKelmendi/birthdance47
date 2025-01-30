@@ -46,7 +46,7 @@ const TiranaPoster = () => {
                 animate={isMuted ? { scale: [1, 1.1, 1], opacity: [1, 0.8, 1] } : {}}
                 transition={isMuted ? { repeat: Infinity, duration: 1.2, ease: "easeInOut" } : {}}
             >
-                <img src={isMuted ? muteIcon : unmuteIcon} alt="Sound Toggle" className="h-6 w-6" />
+                <img src={isMuted ? muteIcon : unmuteIcon} alt="Sound Toggle" className="h-4 w-4" />
             </motion.button>
 
             {/* Download Button */}

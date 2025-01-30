@@ -52,7 +52,7 @@ const ZonePoster = () => {
             {/* Download Button */}
             <a
                 href={poster4}
-                download="birthdance4.mp4"
+                download="birthdance47-zoneposter.mp4"
                 className="lg:absolute lg:bottom-4 lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-end lg:text-black text-white text-sm hover:text-white hover:scale-105 hover:duration-300 ease-out font-custom3 font-semibold pt-1 rounded-lg transition"
             >
                 Download Poster <FaDownload className='ml-2' />
