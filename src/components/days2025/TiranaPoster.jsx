@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import poster6 from "../assets/birthdance2025/Tunnel (1) (1).mp4";
+import poster6 from "../assets/birthdance2025/TUNNEL.mp4";
 import muteIcon from '../assets/off.png';
 import unmuteIcon from '../assets/on.png';
 import { FaDownload } from 'react-icons/fa';
@@ -52,7 +52,7 @@ const TiranaPoster = () => {
             {/* Download Button */}
             <a
                 href={poster6}
-                download="TiranaPoster.mp4"
+                download="birthdance-47.mp4"
                 className="lg:absolute lg:bottom-4 lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-end lg:text-black text-white text-sm hover:text-white hover:scale-105 hover:duration-300 ease-out font-custom3 font-semibold pt-1 rounded-lg transition"
             >
                 Download Poster <FaDownload className='ml-2' />

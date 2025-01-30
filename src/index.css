@@ -29,12 +29,12 @@
   background-position: cover;
   background-size: cover;
 }
-.bg-banner{
+/* .bg-banner{
   background-image: url(./components/assets/birthdance2025/PIKAT.png);
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
-}
+} */
 
 
 @keyframes rotateAnimation {
