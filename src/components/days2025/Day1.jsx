@@ -39,7 +39,9 @@ const Day1 = () => {
     ];
 
     const love = [
+        { name: 'Monroe', made: "Family", link: 'https://www.instagram.com/monroe.pr/' },
         { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
+        { name: 'Don Rozhaja', made: "My Bro", link: 'https://www.instagram.com/donrozhaja/' },
     ];
 
 

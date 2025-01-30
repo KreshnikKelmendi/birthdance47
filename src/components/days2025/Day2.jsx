@@ -16,7 +16,7 @@ const Day2 = () => {
     ];
 
     const location = [
-        { name: 'Grape', made: "Hotel Garden", link: 'https://www.instagram.com/grapemembers/' },
+        { name: 'Grape Club', made: "Hotel Garden", link: 'https://www.instagram.com/grapemembers/' },
 
     ];
 
@@ -42,8 +42,8 @@ const Day2 = () => {
 
     const love = [
         { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
+        { name: 'Grape', made: "Family", link: 'https://www.instagram.com/grapemembers/' },
         { name: 'Valdrin Drenovci', made: "The 1", link: 'https://www.instagram.com/valdrindre/' },
-
     ];
 
     // const { ref: containerRef, inView: containerInView } = useInView({

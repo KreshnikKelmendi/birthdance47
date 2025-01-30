@@ -15,7 +15,7 @@ const Day5 = () => {
     ];
 
     const location = [
-        { name: 'EDHE', made: "", link: 'https://www.instagram.com/e.dh.e/' },
+        { name: 'edhe', made: "", link: 'https://www.instagram.com/e.dh.e/' },
 
     ];
 
@@ -48,6 +48,7 @@ const Day5 = () => {
     ];
 
     const love = [
+        { name: 'edhe', made: "Family", link: 'https://www.instagram.com/e.dh.e/' },
         { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
     ];
 

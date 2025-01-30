@@ -1,12 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import poster4 from "../assets/birthdance2025/ArAund (1).mp4";
-import muteIcon from '../assets/off.png';
-import unmuteIcon from '../assets/on.png';
-import { FaDownload } from 'react-icons/fa';
+import { FaPlay, FaPause, FaDownload } from 'react-icons/fa'; // Importing Play and Pause icons
+import poster4 from "../assets/birthdance2025/ArAund (1).mp4"
 
 const ZonePoster = () => {
     const [isMuted, setIsMuted] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(true); // Track if video is playing or paused
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -24,6 +23,17 @@ const ZonePoster = () => {
         }
     };
 
+    const togglePlayPause = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying); // Toggle the state of the video play/pause
+        }
+    };
+
     return (
         <div className="relative w-full h-full">
             <video
@@ -37,25 +47,28 @@ const ZonePoster = () => {
                 <source src={poster4} type="video/mp4" />
             </video>
 
-            {/* Mute/Unmute Button with Animation */}
-            <motion.button
-                onClick={toggleMute}
-                className="absolute top-0 left-0 bg-black/50 p-2 rounded-full shadow-lg"
-                whileHover={{ scale: 1.1, rotate: 10 }}
-                whileTap={{ scale: 0.9 }}
-                animate={isMuted ? { scale: [1, 1.1, 1], opacity: [1, 0.8, 1] } : {}}
-                transition={isMuted ? { repeat: Infinity, duration: 1.2, ease: "easeInOut" } : {}}
-            >
-                <img src={isMuted ? muteIcon : unmuteIcon} alt="Sound Toggle" className="h-4 w-4" />
-            </motion.button>
+            {/* Play Music Button - Centered at Bottom */}
+            <div className="absolute top-[-35px] left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                <motion.button
+                    onClick={toggleMute}
+                    className="flex items-center space-x-2 text-[#FF4B2B] px-3 py-2"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    whileTap={{ scale: 0.9 }}
+                    animate={isMuted ? { scale: [1, 1.1, 1], opacity: [1, 0.8, 1] } : {}}
+                    transition={isMuted ? { repeat: Infinity, duration: 1.2, ease: "easeInOut" } : {}}
+                >
+                    <p className='text-[11px] font-custom3'>Play music</p>
+                    {isMuted ? <FaPlay className="h-4 w-4" /> : <FaPause className="h-4 w-4" />}
+                </motion.button>
+            </div>
 
             {/* Download Button */}
             <a
                 href={poster4}
-                download="birthdance47-zoneposter.mp4"
-                className="lg:absolute lg:bottom-4 lg:left-1/2 lg:-translate-x-1/2 flex items-center justify-end lg:text-black text-white text-sm hover:text-white hover:scale-105 hover:duration-300 ease-out font-custom3 font-semibold pt-1 rounded-lg transition"
+                download="birthdance4.mp4"
+                className="absolute bottom-[-40px] lg:bottom-[-50px] left-1/2 transform -translate-x-1/2 flex items-center justify-center text-#FF4B2B text-[11px] lg:text-sm border-[#FF4B2B] border-b-[3px] hover:shadow-md shadow-white hover:border-none hover:text-white hover:scale-105 transition duration-300 ease-out font-custom3 p-1 lg:p-2"
             >
-                Download Poster <FaDownload className='ml-2' />
+                Download Poster <FaDownload className="ml-1" />
             </a>
         </div>
     );

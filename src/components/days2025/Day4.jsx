@@ -48,8 +48,9 @@ const Day4 = () => {
     ];
 
     const love = [
-        { name: 'Kushtrim Sahiti', made: "Lumturia jonë", link: 'https://www.instagram.com/kushtrimsahiti/' },
-        { name: 'Salih Sinani', made: "Birthday", link: 'https://www.instagram.com/saalihsinani/' },
+        { name: 'Zone', made: "Family", link: 'https://www.instagram.com/zoneclub/' },
+        { name: 'Salih Sinani', made: "Birthday33", link: 'https://www.instagram.com/saalihsinani/' },
+        { name: 'Lon Mehmeti', made: "Our Bro", link: 'https://www.instagram.com/lonmehmeti/' },
         { name: 'Gera Tagani', made: "Birthday30", link: 'https://www.instagram.com/dr_geratagani/' },
         { name: 'Secret3148', made: "Love", link: 'https://www.instagram.com/gencgenc3148/' },
     ];
@@ -79,10 +80,10 @@ const Day4 = () => {
                
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
-                <div className='block lg:hidden '>
+                <div className='block lg:hidden border-[2px] border-[#FF4B2B] mt-4 lg:mt-0'>
                         <ZonePoster />
                     </div>
-                <div className='lg:w-1/2'>
+                <div className='lg:w-1/2 pt-14 lg:pt-0'>
                     
                     <p className="text-2xl lg:text-4xl font-bold text-[#FF4B2B] leading-tight font-custom3 uppercase">
                           

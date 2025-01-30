@@ -38,7 +38,7 @@ const Day6 = () => {
 
     const love = [
         { name: 'Danier Shkurti', made: "The 1", link: 'https://www.instagram.com/danier.sh/' },
-        { name: 'Rubin Beqo', made: "", link: 'https://www.instagram.com/rubinbeqo/' },
+        { name: 'Rubin Beqo', made: "Our Bro", link: 'https://www.instagram.com/rubinbeqo/' },
 
     ];
 
@@ -57,11 +57,11 @@ const Day6 = () => {
 
             <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-6 lg:py-20">
                 {/* Main Content */}
-                <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row">
-                    <div className='block lg:hidden'>
+                <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row mt-4 lg:mt-0">
+                    <div className='block lg:hidden border-[3px] border-[#FFD200]'>
                         <TiranaPoster />
                     </div>
-                    <div className='lg:w-1/2 pt-3 lg:pt-0'>
+                    <div className='lg:w-1/2 pt-14 lg:pt-0'>
                         <p className="text-2xl lg:text-4xl font-bold text-[#FFD200] leading-tight font-custom3 uppercase">
 
                             <span className="text-xl lg:text-5xl text-[#FFD200]">1ST BIRTHDANCE IN TIRANA</span>
