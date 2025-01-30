@@ -10,7 +10,9 @@ import poster2 from "../assets/birthdance2025/day-2.png"
 const Day2 = () => {
     const users = [
         // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
-        { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        // { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name: 'Waiting4you', made: "", link: '' },
+
     ];
 
     const location = [
@@ -33,14 +35,14 @@ const Day2 = () => {
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Donat Krasniqi', made: "Live Art", link: 'https://www.instagram.com/donatkrasniqi_/' },
-        { name: 'Adrianus', made: "Magic", link: 'https://www.instagram.com/adriankqiku/' },
+        { name: 'Searching', made: "Live Art", link: '' },
+        { name: 'Searching', made: "Magic", link: '' },
         { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
 
     const love = [
         { name: 'Yllka Brada', made: "My ♥", link: 'https://www.instagram.com/yllkabradaofficial/' },
-        { name: 'Valdrin Drenovci', made: "The 1", link: 'https://www.instagram.com/yllkabradaofficial/' },
+        { name: 'Valdrin Drenovci', made: "The 1", link: 'https://www.instagram.com/valdrindre/' },
 
     ];
 
@@ -81,7 +83,7 @@ const Day2 = () => {
                     <div className='lg:w-1/2 pt-14 lg:pt-0'>
                         <p className="text-xl lg:text-4xl font-bold text-black font-custom3 uppercase">
 
-                            <span className="text-xl lg:text-5xl text-black">White Theme Dance <span className='text-xl'>(white only)</span></span> <br />
+                            <span className="text-xl lg:text-5xl text-black">White Theme Dance <span className='text-sm'>(white only)</span></span> <br />
                             <span className="flex text-xl lg:text-3xl pt-1 items-center">
                                 20.02.2025 Thursday
                             </span>

@@ -2,24 +2,36 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const textContainer = {
-  hidden: { opacity: 1 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.05, // Stagger letters for a wave-like effect
+      staggerChildren: 0.12, // Slower stagger for smoother appearance
+      delayChildren: 0.5, // Adds a slight delay before animation starts
     },
   },
 };
 
 const textWave = {
-  hidden: { y: "100%", opacity: 0 },
+  hidden: { y: "120%", opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.6,
-      ease: "easeOut",
+      duration: 1.2, // Slower duration for a professional feel
+      ease: "easeInOut",
     },
+  },
+};
+
+const hoverEffect = {
+  y: [0, -6, 0], // Subtle floating effect
+  textShadow: "0px 0px 12px rgba(255, 255, 255, 0.9)",
+  transition: {
+    duration: 1,
+    ease: "easeInOut",
+    repeat: Infinity,
+    repeatType: "reverse",
   },
 };
 
@@ -29,7 +41,7 @@ const Hero2025 = () => {
   const line3 = "FOURTY SEVEN".split(" ");
 
   return (
-    <div className="text-black px-4 lg:px-10 pt-10 flex flex-col justify-center lg:justify-start items-start mx-auto lg:items-start h-[34vh] lg:h-fit space-y-4">
+    <div className="text-black px-4 lg:px-10 pt-0 lg:pt-10 flex flex-col justify-center lg:justify-start items-start mx-auto lg:items-start h-[33vh] lg:h-fit space-y-4">
       {/* Line 1 */}
       <motion.div
         className="flex"
@@ -42,15 +54,7 @@ const Hero2025 = () => {
             key={index}
             className="font-custom3 text-[12vw] lg:text-[10vw] leading-none inline-block"
             variants={textWave}
-            whileHover={{
-              y: [0, -5, 0], // Delicate float up and down
-              textShadow: "0px 0px 10px rgba(255, 255, 255, 0.8)", // Glow effect
-              transition: {
-                duration: 0.8,
-                repeat: Infinity,
-                repeatType: "reverse", // Smooth hover animation
-              },
-            }}
+            whileHover={hoverEffect}
           >
             {char}
           </motion.span>
@@ -70,15 +74,7 @@ const Hero2025 = () => {
               key={index}
               className="font-custom3 text-[12vw] lg:text-[10vw] leading-none inline-block"
               variants={textWave}
-              whileHover={{
-                y: [0, -5, 0],
-                textShadow: "0px 0px 10px rgba(255, 255, 255, 0.8)",
-                transition: {
-                  duration: 0.8,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                },
-              }}
+              whileHover={hoverEffect}
             >
               {char}
             </motion.span>
@@ -90,7 +86,7 @@ const Hero2025 = () => {
           className="block text-[10px] lg:leading-10 lg:text-3xl pl-6"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
+          transition={{ delay: 2, duration: 1.2, ease: "easeOut" }}
         >
           <p className="font-custom3">19.02 - 01.03</p>
           <p className="font-custom3">PRISHTINA FIVE NIGHTS</p>
@@ -110,15 +106,7 @@ const Hero2025 = () => {
             key={index}
             className="font-custom3 text-[12vw] lg:text-[10vw] leading-none mx-1 inline-block"
             variants={textWave}
-            whileHover={{
-              y: [0, -5, 0],
-              textShadow: "0px 0px 10px rgba(255, 255, 255, 0.8)",
-              transition: {
-                duration: 0.8,
-                repeat: Infinity,
-                repeatType: "reverse",
-              },
-            }}
+            whileHover={hoverEffect}
           >
             {word}
           </motion.span>

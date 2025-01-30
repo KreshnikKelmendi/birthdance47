@@ -10,6 +10,7 @@ import TiranaPoster from './TiranaPoster';
 const Day6 = () => {
     const users = [
         { name: 'WinMusicFreedom', made: "Albania", link: 'https://www.instagram.com/winmusicfreedomalbania/' },
+        { name: 'Waiting4you', made: "", link: '' },
     ];
 
     const location = [
@@ -30,13 +31,15 @@ const Day6 = () => {
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Moki Wear', made: "Kimono", link: 'https://www.instagram.com/moki.wear/' },
         { name: 'Faces & Places', made: "Hotel", link: 'https://www.instagram.com/facesandplaces.al/' },
-        { name: 'Unknown', made: "Make up", link: '' },
-        { name: 'Unknown', made: "Live Art", link: '' },
+        { name: 'Searching', made: "Make up", link: '' },
+        { name: 'Searching', made: "Live Art", link: '' },
         { name: 'Adrianus', made: "Magic", link: 'https://www.instagram.com/adriankqiku/' },
     ];
 
     const love = [
         { name: 'Danier Shkurti', made: "The 1", link: 'https://www.instagram.com/danier.sh/' },
+        { name: 'Rubin Beqo', made: "", link: 'https://www.instagram.com/rubinbeqo/' },
+
     ];
 
     return (

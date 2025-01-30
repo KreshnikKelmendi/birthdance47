@@ -10,8 +10,8 @@ import poster3 from "../assets/birthdance2025/day-3.png"
 const Day3 = () => {
     const users = [
         // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
-        { name: 'Red Bull', made: " Kosova", link: 'https://www.instagram.com/redbullkosova/' },
-
+        // { name: 'Red Bull', made: " Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name: 'Waiting4you', made: "", link: '' },
     ];
 
     const location = [
@@ -33,8 +33,8 @@ const Day3 = () => {
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Donat Krasniqi', made: "Live Art", link: 'https://www.instagram.com/donatkrasniqi_/' },
-        { name: 'Adrianus', made: "Magic", link: 'https://www.instagram.com/adriankqiku/' },
+        { name: 'Searching', made: "Live Art", link: '' },
+        { name: 'Searching', made: "Magic", link: '' },
         { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
 

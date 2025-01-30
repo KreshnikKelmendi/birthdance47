@@ -9,10 +9,10 @@ import ZonePoster from './ZonePoster';
 
 const Day4 = () => {
     const users = [
-        { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
-        { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
-        { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
-
+        // { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
+        // { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
+        // { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name: 'Waiting4you', made: "", link: '' },
     ];
 
     const location = [
@@ -42,8 +42,8 @@ const Day4 = () => {
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Donat Krasniqi', made: "Live Art", link: 'https://www.instagram.com/donatkrasniqi_/' },
-        { name: 'Adrianus', made: "Magic", link: 'https://www.instagram.com/adriankqiku/' },
+        { name: 'Searching', made: "Live Art", link: '' },
+        { name: 'Searching', made: "Magic", link: '' },
         { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
 

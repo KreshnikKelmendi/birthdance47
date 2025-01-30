@@ -10,8 +10,8 @@ import poster5 from "../assets/birthdance2025/day-5.png"
 const Day5 = () => {
     const users = [
         // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
-        { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
-
+        // { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name: 'Waiting4you', made: "", link: '' },
     ];
 
     const location = [
@@ -24,6 +24,8 @@ const Day5 = () => {
         { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
         { name: 'Rayo', made: "Montenegro", link: 'https://www.instagram.com/rayo_positive_crew/' },
         { name: 'Noki', made: "Home", link: 'https://www.instagram.com/lakuru_/' },
+        { name: 'Nesim Maxhuni', made: "Drum session", link: 'https://www.instagram.com/nesimmaxhuni/' },
+        { name: 'Marti', made: "Hip Hop", link: '' },
         { name: 'Secret47', made: "Yours", link: 'https://www.instagram.com/secret47file/' },
 
     ];
@@ -33,16 +35,15 @@ const Day5 = () => {
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Crust N Crumb', made: "Juices & Desserts", link: 'https://www.instagram.com/crustncrumb.ks/' },
         { name: 'Yoga', made: "Yoga", link: 'https://www.instagram.com/drith_yoga/' },
+        { name: 'Pharmaser', made: "Pharmacy", link: 'https://www.instagram.com/pharmaser_/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
         { name: 'Shuki', made: "Stand up", link: 'https://www.instagram.com/shukimentor/' },
-        { name: 'Nesim Maxhuni', made: "Drum session", link: 'https://www.instagram.com/nesimmaxhuni/' },
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Donat Krasniqi', made: "Live Art", link: 'https://www.instagram.com/donatkrasniqi_/' },
+        { name: 'Searching', made: "Live Art", link: '' },
         { name: 'Tonny Gravity', made: "Calisthenics", link: 'https://www.instagram.com/__tonnygravity__/' },
-
-        { name: 'Adrianus', made: "Magic", link: 'https://www.instagram.com/adriankqiku/' },
+        { name: 'Searching', made: "Magic", link: '' },
         { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
 
