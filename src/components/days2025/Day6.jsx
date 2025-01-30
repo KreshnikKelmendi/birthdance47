@@ -58,7 +58,7 @@ const Day6 = () => {
             <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-6 lg:py-20">
                 {/* Main Content */}
                 <div className="w-full px-5 lg:px-16 flex flex-col lg:flex-row mt-4 lg:mt-0">
-                    <div className='block lg:hidden border-[3px] border-[#FFD200]'>
+                    <div className='block lg:hidden border-[2px] border-[#FFD200]'>
                         <TiranaPoster />
                     </div>
                     <div className='lg:w-1/2 pt-14 lg:pt-0'>
@@ -251,7 +251,7 @@ const Day6 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='hidden lg:flex lg:w-1/2 sticky top-0 h-fit justify-center items-center border-[3px] border-[#FFD200]'>
+                    <div className='hidden lg:flex lg:w-1/2 sticky top-0 h-fit justify-center items-center border-[2px] border-[#FFD200]'>
                         <TiranaPoster />
                     </div>
                 </div>

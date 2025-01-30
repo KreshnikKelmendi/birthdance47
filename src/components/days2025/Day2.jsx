@@ -92,7 +92,7 @@ const Day2 = () => {
                         </span> */}
                         </p>
                         <p className="text-[14px] lg:text-lg text-black mt-3 lg:pr-5 font-custom3">
-                            22:00h Grape / Limited Capacity <br /> Please Reserve with Grape
+                            22:00h Grape / Limited Capacity <br /> Please Reserve with Grape Club
                         </p>
                         <p className="text-base lg:text-lg text-black mt-3 lg:pr-5 font-custom3">
                             Dress Code <span className='bg-white p-2'>WHITE</span>only allowed
@@ -326,14 +326,14 @@ const Day2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 lg:sticky top-0 h-fit flex justify-center items-center border-[3px] border-black relative">
+                    <div className="lg:w-1/2 lg:sticky top-0 h-fit flex justify-center items-center border-[2px] border-black relative">
                         <img src={poster2} alt="Poster" />
 
                         {/* Download Button */}
                         <a
                             href={poster2}
                             download="birthdance2.png"
-                            className="absolute bottom-[-40px] lg:bottom-[-50px] lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-[11px] lg:text-sm border-black border-b-[3px] hover:shadow-md shadow-black hover:border-none hover:text-black hover:scale-105 hover:duration-300 ease-out font-custom3 p-1 lg:p-2 transition"
+                            className="absolute bottom-[-40px] lg:bottom-[-50px] lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-[11px] lg:text-sm border-black border-b-[2px] hover:shadow-md shadow-black hover:border-none hover:text-black hover:scale-105 hover:duration-300 ease-out font-custom3 p-1 lg:p-2 transition"
                         >
                             Download Poster <FaDownload className="ml-1" />
                         </a>

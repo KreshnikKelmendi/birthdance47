@@ -300,14 +300,14 @@ const Day1 = () => {
                         </div>
                     </div>
 
-                    <div className="lg:w-1/2 lg:sticky top-0 h-fit flex justify-center items-center border-[3px] border-black relative">
+                    <div className="lg:w-1/2 lg:sticky top-0 h-fit flex justify-center items-center border-[2px] border-black relative">
                         <img src={poster1} alt="Poster" />
 
                         {/* Download Button */}
                         <a
                             href={poster1}
                             download="birthdance1.png"
-                            className="absolute bottom-[-40px] lg:bottom-[-50px] lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-[11px] lg:text-sm border-black border-b-[3px] hover:shadow-md shadow-black hover:border-none hover:text-black hover:scale-105 hover:duration-300 ease-out font-custom3 p-1 lg:p-2 transition"
+                            className="absolute bottom-[-40px] lg:bottom-[-50px] lg:left-1/2 lg:-translate-x-1/2 flex items-center text-black text-[11px] lg:text-sm border-black border-b-[2px] hover:shadow-md shadow-black hover:border-none hover:text-black hover:scale-105 hover:duration-300 ease-out font-custom3 p-1 lg:p-2 transition"
                         >
                             Download Poster <FaDownload className="ml-1" />
                         </a>

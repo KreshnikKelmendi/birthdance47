@@ -328,7 +328,7 @@ const Day4 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='hidden lg:flex lg:w-1/2 sticky top-0 h-fit justify-center items-center border-[3px] border-[#FF4B2B]'>
+                <div className='hidden lg:flex lg:w-1/2 sticky top-0 h-fit justify-center items-center border-[2px] border-[#FF4B2B]'>
                         <ZonePoster />
                     </div>
                 </div>

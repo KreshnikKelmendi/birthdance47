@@ -66,7 +66,7 @@ const ZonePoster = () => {
             <a
                 href={poster4}
                 download="birthdance4.mp4"
-                className="absolute bottom-[-40px] lg:bottom-[-50px] left-1/2 transform -translate-x-1/2 flex items-center justify-center text-#FF4B2B text-[11px] lg:text-sm border-[#FF4B2B] border-b-[3px] hover:shadow-md shadow-white hover:border-none hover:text-white hover:scale-105 transition duration-300 ease-out font-custom3 p-1 lg:p-2"
+                className="absolute bottom-[-40px] lg:bottom-[-50px] left-1/2 transform -translate-x-1/2 flex items-center justify-center text-#FF4B2B text-[11px] lg:text-sm border-[#FF4B2B] border-b-[2px] hover:shadow-md shadow-white hover:border-none hover:text-white hover:scale-105 transition duration-300 ease-out font-custom3 p-1 lg:p-2"
             >
                 Download Poster <FaDownload className="ml-1" />
             </a>
