@@ -33,6 +33,8 @@ const Day5 = () => {
     const produced = [
         { name: 'Trekuartista', made: "Powered", link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
+        { name: 'Elios Dhora', made: "Photographer", instagram: 'https://www.instagram.com/prettylightsz/'},
+        { name: 'Erald Halili', made: "Visual Storyteller", instagram: 'https://www.instagram.com/erald.halili/'},
         { name: 'Crust N Crumb', made: "Juices & Desserts", link: 'https://www.instagram.com/crustncrumb.ks/' },
         { name: 'Yoga', made: "Yoga", link: 'https://www.instagram.com/drith_yoga/' },
         { name: 'Pharmaser', made: "Pharmacy", link: 'https://www.instagram.com/pharmaser_/' },
