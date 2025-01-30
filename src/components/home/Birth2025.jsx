@@ -80,6 +80,7 @@ const Birth2025 = () => {
           BirthDance is one of the most iconic nights/weekends in this part of the world, where we present the most amazing artists & with guests that fly from all over the world to be part of the dancefloors.
         </p> */}
       </div>
+      <p className='text-center font-custom3 uppercase text-[12px] animate-bounce'>Click posters for full info</p>
       <AudioPlayer audioSrc={musicFile} />
       <div className="grid grid-cols-1  lg:grid-cols-3 justify-center ">
         {birth2025?.map((item, index) => (
