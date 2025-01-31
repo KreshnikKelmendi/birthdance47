@@ -28,7 +28,7 @@ const Day1 = () => {
 
     const produced = [
         { name: 'Trekuartista', made: "Powered", link: 'https://www.instagram.com/trekuartista/' },
-        { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
+        { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/arianahmetiart/' },
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },

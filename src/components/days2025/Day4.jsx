@@ -30,7 +30,7 @@ const Day4 = () => {
         { name: 'PM Creative Studio', made: "47",link: 'https://www.instagram.com/pellumbmetastudio/' },
         { name: 'Dekor Tropikal', made: "Decor",link: 'https://www.instagram.com/dekortropikal/' },
         { name: 'Trekuartista', made: "Powered",link: 'https://www.instagram.com/trekuartista/' },
-        { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/trekuartista/' },
+        { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/arianahmetiart/' },
         { name: 'Yllka Brada', made: "Clothes", link: 'https://www.instagram.com/yllkabradaofficial/' },
         { name: 'Elios Dhora', made: "Photographer", instagram: 'https://www.instagram.com/prettylightsz/'},
         { name: 'Erald Halili', made: "Visual Storyteller", instagram: 'https://www.instagram.com/erald.halili/'},
