@@ -26,7 +26,7 @@ function App() {
             <Route path="/my-biography" element={<BiographyPage />} />
             <Route path="/photos" element={<PhotoPage />} />
             <Route path="/birthdance/2024" element={<Birthdance2024 />} />
-            {/* <Route path="/birthdance/2025" element={<Birthdance2025 />} /> */}
+            <Route path="/test47" element={<Birthdance2025 />} />
             <Route path="/birthdance/day-1" element={<Day1 />} />
             <Route path="/birthdance/day-2" element={<Day2 />} />
             <Route path="/birthdance/day-3" element={<Day3 />} />
