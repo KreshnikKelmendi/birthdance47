@@ -24,7 +24,7 @@ const Day5 = () => {
         { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
         { name: 'Rayo', made: "Montenegro", link: 'https://www.instagram.com/rayo_positive_crew/' },
         { name: 'Noki', made: "Home", link: 'https://www.instagram.com/lakuru_/' },
-        { name: 'Nesim Maxhuni', made: "Drum session", link: 'https://www.instagram.com/nesimmaxhuni/' },
+        // { name: 'Nesim Maxhuni', made: "Drum session", link: 'https://www.instagram.com/nesimmaxhuni/' },
         { name: 'Marti', made: "Hip Hop", link: '' },
         { name: 'Secret47', made: "Yours", link: 'https://www.instagram.com/secret47file/' },
 
@@ -39,7 +39,7 @@ const Day5 = () => {
         { name: 'Yoga', made: "Yoga", link: 'https://www.instagram.com/drith_yoga/' },
         { name: 'Pharmaser', made: "Pharmacy", link: 'https://www.instagram.com/pharmaser_/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Shuki', made: "Stand up", link: 'https://www.instagram.com/shukimentor/' },
+        { name: 'Shuki', made: "5min StandUp", link: 'https://www.instagram.com/shukimentor/' },
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
