@@ -10,9 +10,9 @@ import ZonePoster from './ZonePoster';
 const Day4 = () => {
     const users = [
         // { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
-        // { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
+        { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
         // { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
-        { name: 'Waiting4you', made: "", link: '' },
+        // { name: 'Waiting4you', made: "", link: '' },
     ];
 
     const location = [
@@ -49,7 +49,6 @@ const Day4 = () => {
 
     const love = [
         { name: 'Zone', made: "Family", link: 'https://www.instagram.com/zoneclub/' },
-        { name: 'Salih Sinani', made: "Birthday33", link: 'https://www.instagram.com/saalihsinani/' },
         { name: 'Lon Mehmeti', made: "Our Bro", link: 'https://www.instagram.com/lonmehmeti/' },
         { name: 'Gera Tagani', made: "Birthday30", link: 'https://www.instagram.com/dr_geratagani/' },
         { name: 'Secret3148', made: "Love", link: 'https://www.instagram.com/gencgenc3148/' },
