@@ -10,6 +10,7 @@ import TiranaPoster from './TiranaPoster';
 const Day6 = () => {
     const users = [
         { name: 'WinMusicFreedom', made: "Albania", link: 'https://www.instagram.com/winmusicfreedomalbania/' },
+        // { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
         { name: 'Waiting4you', made: "", link: '' },
     ];
 
