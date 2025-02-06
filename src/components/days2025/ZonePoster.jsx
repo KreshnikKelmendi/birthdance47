@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaPlay, FaPause, FaDownload } from 'react-icons/fa'; // Importing Play and Pause icons
-import poster4 from "../assets/birthdance2025/ArAund (1).mp4"
+import poster4 from "../assets/birthdance2025/poster-zoneclub.mp4"
 
 const ZonePoster = () => {
     const [isMuted, setIsMuted] = useState(true);

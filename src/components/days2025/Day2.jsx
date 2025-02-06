@@ -9,9 +9,9 @@ import poster2 from "../assets/birthdance2025/day-2.png"
 
 const Day2 = () => {
     const users = [
-        // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
+        { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
         // { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
-        { name: 'Waiting4you', made: "", link: '' },
+        // { name: 'Waiting4you', made: "", link: '' },
 
     ];
 
