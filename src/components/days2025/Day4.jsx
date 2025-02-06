@@ -26,6 +26,7 @@ const Day4 = () => {
 
     const produced = [
         { name: 'Kuju', made: "Visuals",link: 'https://www.instagram.com/kujulightfestival/' },
+        { name: 'Trekuartista Print', made: "Gifts47", link: 'https://www.instagram.com/trekuartistaprintinghouse/' },
         { name: 'Foto Gagi', made: "47 Gifts",link: 'https://www.instagram.com/gagi_giftshop/' },
         { name: 'PM Creative Studio', made: "47",link: 'https://www.instagram.com/pellumbmetastudio/' },
         { name: 'Dekor Tropikal', made: "Decor",link: 'https://www.instagram.com/dekortropikal/' },

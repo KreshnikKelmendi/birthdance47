@@ -30,6 +30,7 @@ const Day6 = () => {
     const produced = [
         { name: 'Trekuartista', made: "Powered", link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/arianahmetiart/' },
+        { name: 'Trekuartista Print', made: "Gifts47", link: 'https://www.instagram.com/trekuartistaprintinghouse/' },
         { name: 'Moki Wear', made: "Kimono", link: 'https://www.instagram.com/moki.wear/' },
         { name: 'Faces & Places', made: "Hotel", link: 'https://www.instagram.com/facesandplaces.al/' },
         { name: 'Searching', made: "Make up", link: '' },
