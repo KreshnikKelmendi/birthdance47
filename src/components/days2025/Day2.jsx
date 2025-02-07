@@ -9,6 +9,7 @@ import poster2 from "../assets/birthdance2025/day-2.png"
 
 const Day2 = () => {
     const users = [
+        { name: 'Kos - Trade ', made: "Kosova", link: 'https://www.instagram.com/kos.trade/' },
         { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
         { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
         // { name: 'Waiting4you', made: "", link: '' },
@@ -33,6 +34,7 @@ const Day2 = () => {
         { name: 'Trekuartista', made: "Powered", link: 'https://www.instagram.com/trekuartista/' },
         { name: 'Arian Ahmeti', made: "Art & Logo", link: 'https://www.instagram.com/arianahmetiart/' },
         { name: 'Trekuartista Print', made: "Gifts47", link: 'https://www.instagram.com/trekuartistaprintinghouse/' },
+        { name: 'PhotoMe', made: "Photo Booth", link: 'https://www.instagram.com/photome.ks/' },
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },

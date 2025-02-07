@@ -11,6 +11,8 @@ const Day3 = () => {
     const users = [
         { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
         { name: 'Red Bull', made: " Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
+        { name: 'Kos - Trade ', made: "Kosova", link: 'https://www.instagram.com/kos.trade/' },
         // { name: 'Waiting4you', made: "", link: '' },
     ];
 

@@ -11,7 +11,8 @@ const Day1 = () => {
     const users = [
         // { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
         { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
-        { name: 'Waiting4you', made: "", link: '' },
+        { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
+        // { name: 'Waiting4you', made: "", link: '' },
     ];
 
     const location = [
