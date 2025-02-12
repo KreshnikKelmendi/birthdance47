@@ -26,8 +26,6 @@ const Day2 = () => {
         { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
         { name: 'Lakuru', made: "Swiss", link: 'https://www.instagram.com/lakuru_/' },
         { name: 'Secret47', made: "Yours", link: 'https://www.instagram.com/secret47file/' },
-
-
     ];
 
     const produced = [

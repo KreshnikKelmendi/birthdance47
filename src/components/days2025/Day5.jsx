@@ -21,7 +21,7 @@ const Day5 = () => {
 
     const music = [
         { name: 'Shuki', made: "5min StandUp", link: 'https://www.instagram.com/shukimentor/' },
-        { name: 'Yoga', made: "Yoga", link: 'https://www.instagram.com/drith_yoga/' },
+        { name: 'Yoga', made: "Drith", link: 'https://www.instagram.com/drith_yoga/' },
         { name: 'Marti', made: "Hip Hop", link: '' },
         { name: 'Laila', made: "Swiss", link: 'https://www.instagram.com/lailammusic/' },
         { name: 'Nadal', made: "France", link: 'https://www.instagram.com/nadal_jr/' },
