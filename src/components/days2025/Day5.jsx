@@ -75,7 +75,6 @@ const Day5 = () => {
     return (
         <div className="text-black bg-[#00EDBF]">
             <Navbar />
-
             <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between lg:px-0 py-6 lg:py-20">
                 {/* Back Button */}
                 {/* <div className="absolute top-0 w-fit lg:right-6 left-5 lg:left-16 lg:my-4 z-10 border-[1px] hover:opacity-100 rounded-l-[25px] hover:bg-gradient-to-r from-[#FF0903] to-[#5c0200] hover:text-white opacity-35">
