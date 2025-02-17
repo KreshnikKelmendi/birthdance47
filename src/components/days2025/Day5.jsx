@@ -45,7 +45,7 @@ const Day5 = () => {
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Zana Artist', made: "Live Art", link: 'https://www.instagram.com/zanaartist/' },
         { name: 'Tonny Gravity', made: "Calisthenics", link: 'https://www.instagram.com/__tonnygravity__/' },
-        { name: 'Searching', made: "Magic", link: '' },
+        { name: 'Agon', made: "Magic", link: 'https://www.instagram.com/agonmagic/' },
         { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
 
