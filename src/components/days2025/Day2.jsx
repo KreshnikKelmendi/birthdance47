@@ -36,7 +36,7 @@ const Day2 = () => {
         { name: 'Duka Alfa Studio', made: "Love Sound", link: 'https://www.instagram.com/dukalfaudio/' },
         { name: 'Garden', made: "Hotels", link: 'https://www.instagram.com/garden_hotels/' },
         { name: 'Moon Artwork', made: "Make up", link: 'https://www.instagram.com/moon_artwork.lk/' },
-        { name: 'Searching', made: "Live Art", link: '' },
+        { name: 'Zana Artist', made: "Live Art", link: 'https://www.instagram.com/zanaartist/' },
         { name: 'Searching', made: "Magic", link: '' },
         { name: 'Reks Ballon', made: "Ballons", link: 'https://www.instagram.com/reksballoon/' },
     ];
