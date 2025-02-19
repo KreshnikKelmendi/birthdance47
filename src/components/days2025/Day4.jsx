@@ -12,6 +12,7 @@ const Day4 = () => {
         // { name:'Jagermeister', made: "Kosova", instagram:'https://www.instagram.com/jagermeisterko/'},
         { name: 'WinMusicFreedom', made:"Kosova", link: 'https://www.instagram.com/WinMusicFreedom' },
         { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
+        { name: 'Gekos Group ', made: "Drinks", link: 'https://www.instagram.com/gekosgroup/' },
         // { name: 'Waiting4you', made: "", link: '' },
     ];
 
