@@ -12,6 +12,8 @@ const Day5 = () => {
         { name: 'WinMusicFreedom', link: 'https://www.instagram.com/WinMusicFreedom' },
         { name: 'Red Bull', made: "Kosova", link: 'https://www.instagram.com/redbullkosova/' },
         { name: 'Gekos Group ', made: "Drinks", link: 'https://www.instagram.com/gekosgroup/' },
+        { name: 'Super Bock ', made: "Kosova", link: 'https://www.instagram.com/superbock.kosova/' },
+
         // { name: 'Waiting4you', made: "", link: '' },
     ];
 
