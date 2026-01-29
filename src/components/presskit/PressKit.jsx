@@ -8,41 +8,82 @@ import bannerVideo from "../assets/superkit/banner-secret.mp4";
 import muteIcon from "../assets/off.png";
 import unmuteIcon from "../assets/on.png";
 
+// Import images from superkit folder (genti, genti-1 ... genti-6)
+import imgGenti from "../assets/superkit/genti.webp";
+import imgGenti1 from "../assets/superkit/genti-1.jpg";
+import imgGenti2 from "../assets/superkit/genti-2.png";
+import imgGenti3 from "../assets/superkit/genti-3.png";
+import imgGenti4 from "../assets/superkit/genti-4.png";
+import imgGenti5 from "../assets/superkit/genti-5.png";
+import imgGenti6 from "../assets/superkit/genti-6.png";
+
 // Import videos from superkit folder
 import video1 from "../assets/superkit/video-2.mp4";
 import video2 from "../assets/superkit/video-1.mp4";
 import video3 from "../assets/superkit/video-3.mp4";
 import video4 from "../assets/superkit/video-4.mp4";
-import video5 from "../assets/superkit/video-5.mp4";
 
+const pressKitImages = [
+    { id: "genti-1", src: imgGenti1, name: "genti-1", ext: "jpg" },
+    { id: "genti-2", src: imgGenti2, name: "genti-2", ext: "png" },
+    { id: "genti-3", src: imgGenti3, name: "genti-3", ext: "png" },
+    { id: "genti-4", src: imgGenti4, name: "genti-4", ext: "png" },
+    { id: "genti-5", src: imgGenti5, name: "genti-5", ext: "png" },
+    { id: "genti-6", src: imgGenti6, name: "genti-6", ext: "png" },
+];
 
+// Videos Bento grid: works on mobile (2 cols) and desktop (3 cols)
 const videos = [
-    { id: 1, src: video1, title: "Video 1", colSpan: "md:col-span-1", rowSpan: "md:row-span-2", height: "h-[400px] md:h-[86vh]" },
-    { id: 2, src: video2, title: "Video 2", colSpan: "md:col-span-1", rowSpan: "md:row-span-2", height: "h-[300px] md:h-[42.5vh]" },
-    // { id: 3, src: video3, title: "Video 3", colSpan: "md:col-span-1", rowSpan: "md:row-span-", height: "h-[300px] md:h-[42.5vh]" },
-    { id: 4, src: video4, title: "Video 4", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", height: "h-[300px] md:h-[42.5vh]" },
-    { id: 5, src: video5, title: "Video 5", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", height: "h-[300px] md:h-[42.5vh]" },
+    { id: 1, src: video1, colSpan: "col-span-2 md:col-span-2", rowSpan: "row-span-2 md:row-span-2", height: "h-[320px] md:h-[70vh]" },
+    { id: 2, src: video2, colSpan: "col-span-1 md:col-span-1", rowSpan: "row-span-1 md:row-span-1", height: "h-[250px] md:h-[34vh]" },
+    { id: 3, src: video3, colSpan: "col-span-1 md:col-span-1", rowSpan: "row-span-1 md:row-span-1", height: "h-[250px] md:h-[34vh]" },
+    { id: 4, src: video4, colSpan: "col-span-2 md:col-span-2", rowSpan: "row-span-1 md:row-span-1", height: "h-[250px] md:h-[34vh]" },
 ];
 
 // Biography content component
 const BiographyContent = ({ isExpanded }) => {
-    const biographyText = `From New York to Pristina & beyond, few have not heard about him and enjoyed his charismatic personality. Notorious event planner & dj, known to organize some of the best parties in New York and beyond, Genti has a deep passion not only for music but for bringing it to the masses. As a promoter he's organized over 500 nights & played over 2000
+    const biographyText = `Secret47 – Life 47% of it
+
+
+
+From New York to Pristina & beyond, few have not heard about him and enjoyed his charismatic personality. Notorious event planner & dj, known to organize some of the best parties in New York and beyond, Genti has a deep passion not only for music but for bringing it to the masses. As a promoter he’s organized over 500 nights & played over 2000 
+
+
 
 Genti was born with a silver turntable in his mouth. Well, Kind of. His aunt Ilirjana, a famous pop singer, took him to see his uncle Ilir (the first DJ in Kosova) playing at a club. He was 5-years-old, the legal age to party in Kosovo. He watched his uncle on the turntables mixing funk and soul music, feeling the energy it gave to people, made his first Nightmove on an un-suspecting 7 year old girl, and knew right there and then that music would be a big part of his life.
 
+
+
 When Cd's finally arrived in Kosovo around 1997, he received a copy of Kruder and Dorfmeisters DJ Kicks & Thievery Corporation Sounds of Thievery Hi-Fi which had a huge impact on his thoughts about music.
+
+
 
 Then came New York City - Twilo/Vinyl - Danny Tenagia/Danny Howells/Lee Burridge etc. In the winter of 2000, Genti, his brother Noki & Probus founded Buyrum, a promotional company that began renting loft spaces and various clubs, organizing boat parties, gigs at hotel penthouses and lounges throughout the city, with crowds who shared a love for music and a sense of belonging. Buyrum opened its doors to various artists who jammed at the parties – singers, percussionists, guitar, sax players, DJs and VJs, who became and remained dedicated contributors. In 2005, New York Times wrote a very favorable review on Buyrum parties. This year will be the Annual 24th year Halloween night.
 
+
+
 In 2003, he established Music Logistics, a company that creates unique sound identity for upscale companies such as hotels, boutiques, restaurants, etc.
+
+
 
 In 2005, he co-founded the More Lounge in mid-town Manhattan, a successful small restorant/club that hosted different events every day of the week & the best afterhours place at the time, that kept the doors open until the sun came up.
 
-He worked with the top promoters, musicians, fashion designers and DJs in New York, played in the best clubs such as Cielo, Crobar, Pacha, Spirit, Sullivan Room, Le Souk etc, also Kazantip & Exit Festival, Katerholzig - Berlin, London, Miami, Brazil, San Francisco, Swiss, Amsterdam, Los Angeles - Voodoo, Paris, Morocco, Burning man etc. Playing next to DJ's: Acid Pauli, Ricardo Villalobos, Nu, Luciano, Lee Burridge, Black Coffee, Mira, Livio & Roby, Tale of Us, Seth Troxler, Sabo, Nic Fanciulli, Naka, Audiofly, Satoshi Tomiie, Funk D'void, Pascal Feos, Richard Dorfmeister, Loco Dice, Lee Jones, Terry Francis, Terje Bakke, Eddie Richards, Toton, Heidi, Italoboyz, Adultnapper, Dave Mothersole, Johnny D, Oxia, Luke Fair, M.A.N.D.Y, FEX, Chaim, Andrea Oliva, Kabale und Liebe, Dave Seaman, Anja Schneider, Sonja Moonear, Timo Mass, Adriatique, Guti, Goldcap, Laura Jones, Nina Kraviz, Ame, Dixon, Be Svendsen, Eduardo Castillo, Shonky and many more ….
+
+
+He worked with the top promoters, musicians, fashion designers and DJs in New York, played in the best clubs such as Cielo, Crobar, Pacha, Spirit, Sullivan Room, Le Souk etc, also Kazantip & Exit Festival, Katerholzig - Berlin, London, Miami, Brazil, San Francisco, Swiss, Amsterdam, Los Angeles - Voodoo, Paris, Morocco, Burning man etc. Playing next to DJ's: Acid Pauli, Ricardo Villalobos, Nu, Luciano, Lee Burridge, Nico Stojan, Black Coffee, Mira, Livio & Roby, Tale of Us, Seth Troxler, Sabo, Nic Fanciulli, Naka, Audiofly, Satoshi Tomiie, Funk D'void, Pascal Feos, Richard Dorfmeister, Loco Dice, Lee Jones, Terry Francis, Terje Bakke, Eddie Richards, Toton, Heidi, Italoboyz, Adultnapper, Dave Mothersole, Johnny D, Oxia, Luke Fair, M.A.N.D.Y, FEX, Chaim, Andrea Oliva, Kabale und Liebe, Dave Seaman, Anja Schneider, Sonja Moonear, Timo Mass, Adriatique, Guti, Goldcap, Laura Jones, Nina Kraviz, Ame, Dixon, Be Svendsen, Eduardo Castillo, Shonky and many more ….
+
+
 
 In 2006 a big decision was made: He cut his hair and went back to Kosova/Prishtina, brought the experience home and founded Spray Club with his cousin Bersant. In two years, Spray became world famous, booking over 60 International Dj's a year. Dj Mag had a two page story that followed later.
 
-Now, he plays regularly at top 10 best clubs in the world www.nordstern.com & he is part of UNUM festival & Epizode in Albania & was part of the team at White Ocean (biggest stage in Burning man) & Habitas
+
+
+Now, he plays regularly at top 10 best clubs in the world www.nordstern.com & he is part of UNUM festival & Epizode in Albania & was part of the team at White Ocean (biggest stage in Burning man) & Habitas & played for Secret Society for almost 2 decades.  
+
+
+
+Genti is a very positive force. On his free time he likes long walks on short piers and enjoys picnics with sashimi & homemade lemonde  
+
 
 `;
 
@@ -99,6 +140,7 @@ const PressKit = () => {
     const [isFullscreen, setIsFullscreen] = useState(false);
     const [videoMutedStates, setVideoMutedStates] = useState({});
     const [isBiographyExpanded, setIsBiographyExpanded] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null); // { src, name, ext } for lightbox
     const videoRef = useRef(null);
     const videoContainerRef = useRef(null);
     const videoRefs = useRef({});
@@ -241,7 +283,7 @@ const PressKit = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 lg:gap-12 items-stretch"
+                    className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 lg:gap-0 items-stretch"
                 >
                     {/* Image - first on mobile, left on large */}
                     <motion.div
@@ -254,12 +296,12 @@ const PressKit = () => {
                         <img
                             src={gentImage}
                             alt="Secret 47"
-                            className="w-full h-[280px] lg:h-full lg:min-h-[450px] object-contain rounded-2xl"
+                            className="w-full h-[280px] lg:h-full lg:min-h-[450px] object-contain lg:object-cover rounded-2xl"
                         />
                     </motion.div>
 
                     {/* Text block */}
-                    <div className="flex-1 flex flex-col">
+                    <div className="flex-1 flex flex-col lg:pl-12">
                         {/* Title */}
                         <motion.div
                             className="mb-8 text-center lg:text-left"
@@ -278,7 +320,7 @@ const PressKit = () => {
                         </motion.div>
 
                         {/* Biography Content */}
-                        <div className="bg-white bg-opacity-30 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-lg border border-black border-opacity-5 flex-1">
+                        <div className="bg-white bg-opacity-30 backdrop-blur-sm rounded-2xl p-8 lg:p-0  flex-1">
                             <BiographyContent isExpanded={isBiographyExpanded} />
                             
                             {!isBiographyExpanded && (
@@ -310,27 +352,43 @@ const PressKit = () => {
                 </motion.div>
             </div>
 
-            {/* Videos Section */}
-            <div className="relative z-10 px-4 lg:px-16 py-12 lg:py-20">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="text-2xl lg:text-3xl font-bold font-custom1 uppercase mb-4 text-center text-black"
-                >
-                    Videos
-                </motion.h2>
+            {/* Images & Videos Section - separate */}
+            <div className="relative z-10 w-full px-4 lg:px-16 pb-10 lg:py-24">
+                {/* Instruction text at top */}
                 <motion.p
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="text-sm lg:text-base font-custom2 text-black text-center mb-8"
+                    transition={{ duration: 0.5 }}
+                    className="text-center lg:text-left text-lg font-custom2 p-6 lg:p-12 rounded-2xl lg:text-3xl lg:w-1/2 mx-auto text-black/80 mb-8 lg:mb-16"
                 >
-                    CLICK TO DOWNLOAD
+                    You can easily view images and videos in full size by clicking on them, then download your favorite <b>Secret 47</b> content directly to your device in just one step.
                 </motion.p>
-                <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
+
+                {/* Images Section - grid only */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 w-full mb-4">
+                    {pressKitImages.map((img, index) => (
+                        <motion.button
+                            key={img.id}
+                            type="button"
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.05 }}
+                            onClick={() => setSelectedImage({ src: img.src, name: img.name, ext: img.ext })}
+                            className="group aspect-square w-full rounded-xl overflow-hidden bg-black/5 shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#FF0903]/40 transition-all duration-400"
+                        >
+                            <img
+                                src={img.src}
+                                alt={img.name}
+                                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                            />
+                        </motion.button>
+                    ))}
+                </div>
+
+                {/* Videos Section - Bento grid for mobile and desktop */}
+                <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-2">
                     {videos.map((video, index) => {
                         const isVideoMuted = videoMutedStates[video.id] !== undefined ? videoMutedStates[video.id] : true;
                         
@@ -352,7 +410,7 @@ const PressKit = () => {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className={`relative ${video.colSpan} ${video.rowSpan} ${video.height} rounded-lg overflow-hidden border border-black border-opacity-10 group`}
+                                className={`relative ${video.colSpan} ${video.rowSpan} ${video.height} rounded-lg overflow-hidden border border-black/10 group`}
                             >
                                 <video
                                     ref={(el) => (videoRefs.current[video.id] = el)}
@@ -368,7 +426,7 @@ const PressKit = () => {
                                 {/* Mute/Unmute Button */}
                                 <button
                                     onClick={toggleVideoMute}
-                                    className="absolute bottom-4 left-4 p-3 bg-black bg-opacity-70 hover:bg-opacity-90 rounded-full transition-all duration-300 z-10"
+                                    className="absolute bottom-3 left-3 lg:bottom-4 lg:left-4 p-2 lg:p-3 bg-black bg-opacity-70 hover:bg-opacity-90 rounded-full transition-all duration-300 z-10"
                                 >
                                     <img
                                         src={isVideoMuted ? muteIcon : unmuteIcon}
@@ -380,7 +438,7 @@ const PressKit = () => {
                                 <a
                                     href={video.src}
                                     download={`video-${video.id}.mp4`}
-                                    className="absolute bottom-4 right-4 px-2 py-1 bg-transparent text-white font-custom2 uppercase text-[10px] lg:text-xs hover:opacity-80 transition-all duration-300 z-10 flex items-center gap-1"
+                                    className="absolute bottom-3 right-3 lg:bottom-4 lg:right-4 px-2 py-1 bg-transparent text-white font-custom2 uppercase text-[10px] lg:text-xs hover:opacity-80 transition-all duration-300 z-10 flex items-center gap-1"
                                 >
                                     <FaDownload className="text-white text-[10px] lg:text-xs" />
                                     <span>Download</span>
@@ -390,6 +448,48 @@ const PressKit = () => {
                     })}
                 </div>
             </div>
+
+            {/* Image Lightbox - full view + download */}
+            {selectedImage && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <motion.div
+                        initial={{ scale: 0.92, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.92, opacity: 0 }}
+                        className="relative flex flex-col items-center justify-center"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <img
+                            src={selectedImage.src}
+                            alt={selectedImage.name}
+                            className="max-w-full max-h-[80vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+                        />
+                        <a
+                            href={selectedImage.src}
+                            download={selectedImage.ext ? `${selectedImage.name}.${selectedImage.ext}` : selectedImage.name}
+                            className="mt-6 px-6 py-3 bg-[#FF0903] text-white font-custom2 uppercase text-sm rounded-lg hover:bg-[#e00802] flex items-center gap-2 shadow-lg transition-colors"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <FaDownload />
+                            Download
+                        </a>
+                        <button
+                            type="button"
+                            onClick={() => setSelectedImage(null)}
+                            className="absolute -top-2 -right-2 lg:top-4 lg:right-4 p-2 bg-white/95 rounded-full hover:bg-white text-black shadow-lg"
+                            aria-label="Close"
+                        >
+                            <span className="text-xl leading-none">×</span>
+                        </button>
+                    </motion.div>
+                </motion.div>
+            )}
 
             {/* SoundCloud Section - At the End */}
             <div className="relative z-10 px-4 lg:px-16 py-12 lg:py-20">
