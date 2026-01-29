@@ -360,9 +360,9 @@ const PressKit = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="text-center lg:text-left text-lg font-custom2 p-6 lg:p-12 rounded-2xl lg:text-3xl lg:w-1/2 mx-auto text-black/80 mb-8 lg:mb-16"
+                    className="text-center lg:text-left text-lg font-custom2 p-4 uppercase lg:p-12 rounded-2xl lg:text-5xl lg:w-1/2 mx-auto text-black/80 mb-4 lg:mb-8"
                 >
-                    Click to <b>download</b> photos & videos
+                    Click to <b>download</b>
                 </motion.p>
 
                 {/* Images Section - grid only */}
