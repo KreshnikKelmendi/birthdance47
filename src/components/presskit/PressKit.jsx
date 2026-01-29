@@ -360,7 +360,7 @@ const PressKit = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="text-center lg:text-left text-lg font-custom2 p-4 uppercase lg:p-12 rounded-2xl lg:text-5xl lg:w-1/2 mx-auto text-black/80 mb-4 lg:mb-8"
+                    className="text-center lg:text-left text-lg font-custom2 p-4 uppercase lg:p-12 rounded-2xl lg:text-5xl mx-auto text-black/80 mb-4 lg:mb-8"
                 >
                     Click to <b>download</b>
                 </motion.p>
@@ -498,7 +498,7 @@ const PressKit = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className=" mx-auto"
+                    className="mx-auto"
                 >
                     <h2 className="text-2xl lg:text-3xl font-bold font-custom1 uppercase mb-4 text-center text-black">
                         Music
@@ -518,9 +518,63 @@ const PressKit = () => {
                             title="SoundCloud Player"
                         ></iframe>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center mb-10">
                         <a
                             href="https://soundcloud.com/goldcap/the-goldcast-147-oct-17-2025#t=47:00"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm lg:text-base text-[#FF0903] hover:underline font-custom2"
+                        >
+                            Listen on SoundCloud →
+                        </a>
+                    </div>
+
+                    {/* DISORIENTNATION / Secret 47 */}
+                    <div className="mb-10">
+                        <p className="text-sm lg:text-base font-custom2 text-black mb-3 font-semibold">
+                            DISORIENTNATION / Secret 47
+                        </p>
+                        <div className="mb-3">
+                            <iframe
+                                width="100%"
+                                height="166"
+                                scrolling="no"
+                                frameBorder="no"
+                                allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/secret47/disorientnation&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                                className="w-full"
+                                title="DISORIENTNATION Secret 47"
+                            ></iframe>
+                        </div>
+                        <a
+                            href="https://soundcloud.com/secret47/disorientnation"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm lg:text-base text-[#FF0903] hover:underline font-custom2"
+                        >
+                            Listen on SoundCloud →
+                        </a>
+                    </div>
+
+                    {/* Goldcast 047 with guest mix by Secret 47 */}
+                    <div>
+                        <p className="text-sm lg:text-base font-custom2 text-black mb-3 font-semibold">
+                            Goldcast 047 – Guest mix by Secret 47
+                        </p>
+                        <div className="mb-3">
+                            <iframe
+                                width="100%"
+                                height="166"
+                                scrolling="no"
+                                frameBorder="no"
+                                allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/goldcap/goldcast-047-nov-20-2020-with-guestmix-by-secret-47&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                                className="w-full"
+                                title="Goldcast 047 Secret 47 Guest Mix"
+                            ></iframe>
+                        </div>
+                        <a
+                            href="https://soundcloud.com/goldcap/goldcast-047-nov-20-2020-with-guestmix-by-secret-47"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm lg:text-base text-[#FF0903] hover:underline font-custom2"
