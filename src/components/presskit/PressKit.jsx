@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaPlay, FaPause, FaDownload } from 'react-icons/fa';
+import { FaPlay, FaDownload } from 'react-icons/fa';
 import whiteLogo from "../assets/47---WHITE.png";
-import secretLogo from "../assets/Secret47---Logo.png";
 import bannerVideo from "../assets/superkit/banner-secret.mp4";
 import muteIcon from "../assets/off.png";
 import unmuteIcon from "../assets/on.png";

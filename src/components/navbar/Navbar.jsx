@@ -5,34 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false); // New state for mobile dropdown
-
-  const dropdownRef = useRef(null); // Reference to the dropdown
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    setIsMobileDropdownOpen(false); // Close mobile dropdown when the menu opens/closes
-  };
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   const toggleMobileDropdown = () => {
     setIsMobileDropdownOpen(!isMobileDropdownOpen);
   };
-
-  // Handle scroll behavior
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const links = [
     { name: "Home", to: "/" },
