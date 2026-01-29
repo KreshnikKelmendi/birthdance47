@@ -42,10 +42,7 @@ const videos = [
 
 // Biography content component
 const BiographyContent = ({ isExpanded }) => {
-    const biographyText = `Secret47 – Life 47% of it
-
-
-
+    const biographyText = `
 From New York to Pristina & beyond, few have not heard about him and enjoyed his charismatic personality. Notorious event planner & dj, known to organize some of the best parties in New York and beyond, Genti has a deep passion not only for music but for bringing it to the masses. As a promoter he’s organized over 500 nights & played over 2000 
 
 
@@ -504,7 +501,7 @@ const PressKit = () => {
                         Music
                     </h2>
                     <p className="text-sm lg:text-base text-black text-center mb-6 font-custom2">
-                        Listen Secret from minutes 47
+                        Listen Secret from 59th minute
                     </p>
                     <div className="mb-6">
                         <iframe
