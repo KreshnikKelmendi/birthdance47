@@ -19,6 +19,11 @@ const Footer = () => {
 
   // Define background and text colors based on route
   const routeStyles = {
+    '/press-kit': {
+      bgColor: 'transparent',
+      textColor: '#000000',
+      quote: '"The best way to predict the future is to create it."',
+    },
     '/birthdance/day-1': {
       bgColor: '#D9C1DF',
       textColor: '#000000',

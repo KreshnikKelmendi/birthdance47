@@ -5,6 +5,7 @@ import PhotoPage from "./components/pages/PhotoPage";
 import BiographyPage from "./components/pages/BiographyPage";
 import Birthdance2024 from "./components/pages/Birthdance2024";
 import Birthdance2025 from "./components/pages/Birthdance2025";
+import PressKitPage from "./components/pages/PressKitPage";
 import Footer from "./components/footer/Footer";
 import ScrollToTopButton from "./components/home/ScrollToTopButton";
 import Day1 from "./components/days2025/Day1";
@@ -25,6 +26,7 @@ function App() {
             {/* <Route path="/" element={<HomePage />} /> */}
             <Route path="/my-biography" element={<BiographyPage />} />
             <Route path="/photos" element={<PhotoPage />} />
+            <Route path="/press-kit" element={<PressKitPage />} />
             <Route path="/birthdance/2024" element={<Birthdance2024 />} />
             <Route path="/test47" element={<Birthdance2025 />} />
             <Route path="/birthdance/day-1" element={<Day1 />} />

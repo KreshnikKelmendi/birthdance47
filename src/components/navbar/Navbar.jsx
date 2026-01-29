@@ -47,13 +47,11 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`w-full relative top-0 z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-transparent" : "bg-transparent"
-      } lg:px-6`}
+      className="w-full relative top-0 z-50 transition-colors duration-300 lg:px-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <div className="flex items-center justify-center lg:justify-center pt-6">
+      <div className="flex items-center justify-between lg:justify-between px-4 lg:px-8 pt-6">
         {/* Logo */}
         <motion.div
           className="flex items-center"
@@ -63,12 +61,25 @@ const Navbar = () => {
         >
           <Link to="/">
             <img
-              className="px-4 lg:mx-1 lg:w-[130px] w-24 h-auto object-contain z-50"
+              className="lg:mx-1 lg:w-[130px] w-24 h-auto object-contain z-50"
               src={logo}
               alt="Logo"
             />
           </Link>
           
+        </motion.div>
+
+        {/* Press Kit Button on Right */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link to="/press-kit">
+            <button className="px-4 lg:px-8 py-2 lg:py-3 bg-transparent text-black underline underline-offset-2 font-custom1 uppercase tracking-[1px] text-sm lg:text-lg hover:opacity-80 transition-all duration-300">
+              Press Kit
+            </button>
+          </Link>
         </motion.div>
 
         {/* Desktop Links */}
