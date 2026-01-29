@@ -362,7 +362,7 @@ const PressKit = () => {
                     transition={{ duration: 0.5 }}
                     className="text-center lg:text-left text-lg font-custom2 p-6 lg:p-12 rounded-2xl lg:text-3xl lg:w-1/2 mx-auto text-black/80 mb-8 lg:mb-16"
                 >
-                    You can easily view images and videos in full size by clicking on them, then download your favorite <b>Secret 47</b> content directly to your device in just one step.
+                    Click to <b>download</b> photos & videos
                 </motion.p>
 
                 {/* Images Section - grid only */}
