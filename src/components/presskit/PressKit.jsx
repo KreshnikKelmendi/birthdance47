@@ -114,19 +114,6 @@ Genti is a very positive force. On his free time he likes long walks on short pi
                     </motion.p>
                 );
             })}
-            
-            {isExpanded && (
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="pt-8 mt-8 border-t-2 border-[#FF0903] border-opacity-20"
-                >
-                    <p className="text-xl lg:text-2xl font-semibold italic text-center text-[#FF0903] leading-relaxed">
-                        Genti is a very positive force. On his free time he likes long walks on short piers and enjoys picnics with sashimi & homemade lemonde
-                    </p>
-                </motion.div>
-            )}
         </div>
     );
 };
