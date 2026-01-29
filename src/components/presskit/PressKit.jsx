@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaPlay, FaDownload } from 'react-icons/fa';
 import whiteLogo from "../assets/47---WHITE.png";
+import gentImage from "../assets/superkit/genti.webp";
 import bannerVideo from "../assets/superkit/banner-secret.mp4";
 import muteIcon from "../assets/off.png";
 import unmuteIcon from "../assets/on.png";
@@ -17,8 +18,8 @@ import video5 from "../assets/superkit/video-5.mp4";
 
 const videos = [
     { id: 1, src: video1, title: "Video 1", colSpan: "md:col-span-1", rowSpan: "md:row-span-2", height: "h-[400px] md:h-[86vh]" },
-    { id: 2, src: video2, title: "Video 2", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", height: "h-[300px] md:h-[42.5vh]" },
-    { id: 3, src: video3, title: "Video 3", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", height: "h-[300px] md:h-[42.5vh]" },
+    { id: 2, src: video2, title: "Video 2", colSpan: "md:col-span-1", rowSpan: "md:row-span-2", height: "h-[300px] md:h-[42.5vh]" },
+    // { id: 3, src: video3, title: "Video 3", colSpan: "md:col-span-1", rowSpan: "md:row-span-", height: "h-[300px] md:h-[42.5vh]" },
     { id: 4, src: video4, title: "Video 4", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", height: "h-[300px] md:h-[42.5vh]" },
     { id: 5, src: video5, title: "Video 5", colSpan: "md:col-span-1", rowSpan: "md:row-span-1", height: "h-[300px] md:h-[42.5vh]" },
 ];
@@ -50,7 +51,7 @@ Now, he plays regularly at top 10 best clubs in the world www.nordstern.com & he
     const displayText = isExpanded ? biographyText : previewWords.join(' ') + '...';
 
     return (
-        <div className="space-y-6 text-sm lg:text-base leading-[1.9] font-custom2 text-black">
+        <div className="space-y-4 text-sm lg:text-sm leading-tighter font-custom2 text-black">
             {displayText.split('\n\n').map((paragraph, index) => {
                 if (!paragraph.trim()) return null;
                 
@@ -168,8 +169,11 @@ const PressKit = () => {
                     />
                 </Link>
             </header>
-            
-            {/* Absolute Video Section */}
+
+            {/* Spacer so main area takes space in flow; biography sits below */}
+            <div className="relative w-full h-screen shrink-0" aria-hidden="true" />
+
+            {/* Absolute Video Section - overlays the spacer */}
             <div 
                 ref={videoContainerRef}
                 className="absolute top-0 left-0 w-full h-screen z-0"
@@ -230,60 +234,78 @@ const PressKit = () => {
                 </div>
             </div>
 
-            {/* Biography Section - Beautiful with Read More */}
-            <div className="relative z-10 px-4 lg:px-16 py-16 lg:py-6" style={{ marginTop: '80vh' }}>
+            {/* Biography Section - Image + Text, flex-col mobile / flex large (below main in flow) */}
+            <div className="relative z-10 px-4 lg:px-16 pt-0 pb-6 lg:pt-0">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-5xl mx-auto"
+                    className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 lg:gap-12 items-stretch"
                 >
-                    {/* Title */}
+                    {/* Image - first on mobile, left on large */}
                     <motion.div
-                        className="mb-12 text-center"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
+                        className="w-full lg:w-2/5 flex-shrink-0 rounded-2xl"
                     >
-                        <h2 className="text-4xl lg:text-6xl font-bold font-custom1 uppercase text-black mb-3">
-                            Secret<span className="text-[#FF0903] font-custom ml-2">47</span>
-                        </h2>
-                        <div className="w-24 h-0.5 bg-[#FF0903] mx-auto mb-4"></div>
-                        <p className="text-lg lg:text-xl font-custom2 text-gray-700 italic">
-                            Life 47% of it
-                        </p>
+                        <img
+                            src={gentImage}
+                            alt="Secret 47"
+                            className="w-full h-[280px] lg:h-full lg:min-h-[450px] object-contain rounded-2xl"
+                        />
                     </motion.div>
 
-                    {/* Biography Content */}
-                    <div className="bg-white bg-opacity-50 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-lg border border-black border-opacity-5">
-                        <BiographyContent isExpanded={isBiographyExpanded} />
-                        
-                        {!isBiographyExpanded && (
-                            <div className="mt-8 text-center">
-                                <button
-                                    onClick={() => setIsBiographyExpanded(true)}
-                                    className="px-6 py-3 text-black font-custom2 uppercase tracking-wide rounded-lg hover:shadow-lg transition-all duration-300"
-                                >
-                                    Read More
-                                </button>
-                            </div>
-                        )}
-                        
-                        {isBiographyExpanded && (
-                            <div className="mt-8 text-center">
-                                <button
-                                    onClick={() => {
-                                        setIsBiographyExpanded(false);
-                                        window.scrollTo({ top: window.scrollY - 500, behavior: 'smooth' });
-                                    }}
-                                    className="px-6 py-3  text-black font-custom2 uppercase tracking-wide rounded-lg hover:bg-gray-700 transition-all duration-300"
-                                >
-                                    Show Less
-                                </button>
-                            </div>
-                        )}
+                    {/* Text block */}
+                    <div className="flex-1 flex flex-col">
+                        {/* Title */}
+                        <motion.div
+                            className="mb-8 text-center lg:text-left"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <h2 className="text-4xl lg:text-6xl font-bold font-custom1 uppercase text-black mb-3">
+                                Secret<span className="text-black font-custom ml-2">47</span>
+                            </h2>
+                            <div className="w-24 h-0.5 bg-gray-400 mb-4 lg:mx-0 mx-auto"></div>
+                            <p className="text-lg lg:text-xl font-custom2 text-black italic">
+                                Life 47% of it
+                            </p>
+                        </motion.div>
+
+                        {/* Biography Content */}
+                        <div className="bg-white bg-opacity-30 backdrop-blur-sm rounded-2xl p-8 lg:p-12 shadow-lg border border-black border-opacity-5 flex-1">
+                            <BiographyContent isExpanded={isBiographyExpanded} />
+                            
+                            {!isBiographyExpanded && (
+                                <div className="mt-8 text-center">
+                                    <button
+                                        onClick={() => setIsBiographyExpanded(true)}
+                                        className="px-6 py-3 text-black font-custom2 uppercase tracking-wide rounded-lg hover:shadow-lg transition-all duration-300"
+                                    >
+                                        Read More
+                                    </button>
+                                </div>
+                            )}
+                            
+                            {isBiographyExpanded && (
+                                <div className="mt-8 text-center">
+                                    <button
+                                        onClick={() => {
+                                            setIsBiographyExpanded(false);
+                                            window.scrollTo({ top: window.scrollY - 500, behavior: 'smooth' });
+                                        }}
+                                        className="px-6 py-3 text-black font-custom2 uppercase tracking-wide rounded-lg hover:bg-gray-700 transition-all duration-300"
+                                    >
+                                        Show Less
+                                    </button>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </motion.div>
             </div>
@@ -295,10 +317,19 @@ const PressKit = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-2xl lg:text-3xl font-bold font-custom1 uppercase mb-8 text-center text-black"
+                    className="text-2xl lg:text-3xl font-bold font-custom1 uppercase mb-4 text-center text-black"
                 >
                     Videos
                 </motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    className="text-sm lg:text-base font-custom2 text-black text-center mb-8"
+                >
+                    CLICK TO DOWNLOAD
+                </motion.p>
                 <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
                     {videos.map((video, index) => {
                         const isVideoMuted = videoMutedStates[video.id] !== undefined ? videoMutedStates[video.id] : true;
@@ -349,9 +380,10 @@ const PressKit = () => {
                                 <a
                                     href={video.src}
                                     download={`video-${video.id}.mp4`}
-                                    className="absolute bottom-4 right-4 p-3 bg-black bg-opacity-70 hover:bg-opacity-90 rounded-full transition-all duration-300 z-10"
+                                    className="absolute bottom-4 right-4 px-2 py-1 bg-transparent text-white font-custom2 uppercase text-[10px] lg:text-xs hover:opacity-80 transition-all duration-300 z-10 flex items-center gap-1"
                                 >
-                                    <FaDownload className="text-white text-sm" />
+                                    <FaDownload className="text-white text-[10px] lg:text-xs" />
+                                    <span>Download</span>
                                 </a>
                             </motion.div>
                         );
